@@ -7,7 +7,9 @@ Hello folks! I've recently started GMing a *very* small system ([located here, f
 Naturally, I wanted a bot to handle rolling and such. While there were a few existing bots for these purposes, there weren't any that had all of the features I wanted. So I made my own.
 
 ##Prerequisites
+
 The bot requires
+
 *Python 3
 *discord.py
 *fuzzywuzzy
@@ -27,6 +29,7 @@ You will also need your own Discord bot set up, with token. Instructions for tha
 5. Use the bot!
 
 ##Using the bot
+
 By default, the bot's prefix is a forward slash (/). This can be changed in the settings.json, or by using the prefix command while interacting with the bot.
 
 The bot itself has a "help" command, which *should* provide enough help for basic use. The bot was mostly made for my personal use, and I'm not terribly good at writeup, so please, ask as many questions and give as much feedback as you want. 
