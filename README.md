@@ -11,7 +11,9 @@ Naturally, I wanted a bot to handle rolling and such. While there were a few exi
 The bot requires
 
 *Python 3
+
 *discord.py
+
 *fuzzywuzzy
 
 Python 3 is probably best installed by googling it.
