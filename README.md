@@ -17,7 +17,9 @@ The bot requires
 * fuzzywuzzy
 
 Python 3 is probably best installed by googling it.
+
 Discord.py installation instructions are [here](https://github.com/Rapptz/discord.py).
+
 fuzzywuzzy installation instructions are [here](https://pypi.python.org/pypi/fuzzywuzzy).
 
 You will also need your own Discord bot set up, with token. Instructions for that are located [here](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
