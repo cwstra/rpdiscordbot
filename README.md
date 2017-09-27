@@ -12,11 +12,23 @@ The bot requires
 
 * Python 3
 
+* numpy
+
+* scipy
+
+* matplotlib
+
+* asteval
+
 * discord.py
 
 * fuzzywuzzy
 
 Python 3 is probably best installed by googling it.
+
+numpy/scipy/matplotlib installation instructions are [here](https://scipy.org/install.html).
+
+asteval installation instructions are [here](https://newville.github.io/asteval/installation.html).
 
 Discord.py installation instructions are [here](https://github.com/Rapptz/discord.py).
 
