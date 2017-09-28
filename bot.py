@@ -585,6 +585,10 @@ async def on_message(message):
                                 attrs.append(i)
                         if attrs==[]:
                             attrs="None"
+                        elif len(attrs)==1:
+                            attrs = attrs[0]
+                        elif len(attrs)==2:
+                            attrs = attrs[0]+' and '+attrs[1]
                         else:
                             attrs = ', '.join(attrs[:-1])+', and '+attrs[-1]
                         await client.send_message(message.channel, attrs)    
