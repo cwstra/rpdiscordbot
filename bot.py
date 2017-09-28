@@ -267,7 +267,11 @@ async def on_message(message):
             work = work.split()
             if len(work)<2 or work[1]=='' and len(work)<3:
                 await client.send_message(message.channel, '<@'+message.author.id+'>'+" tried to roll, but didn't know how the syntax works!")
-            work = ' '.join(work[1:])
+            if len(work)>2:
+                details = ' '.join(work[2:])
+            else:
+                details = ''
+            work = work[1]
             if work.count('`')>1:
                 try:
                     initial = '<@'+message.author.id+'>'+ ' calculated '+work
@@ -292,6 +296,8 @@ async def on_message(message):
                     await client.send_message(message.channel, '<@'+message.author.id+'>'+" calculation didn't make any sense to me!")
             else:
                 initial = '<@'+message.author.id+'>'+ ' rolled '+work
+                if details != '':
+                    initial += ' for ' + details
                 await client.send_message(message.channel, initial)
                 result,matches = diceRoll(work)
                 out = '<@'+message.author.id+">'s result:`"+result[0]+'='+result[1]+'`'
@@ -579,6 +585,10 @@ async def on_message(message):
                                 attrs.append(i)
                         if attrs==[]:
                             attrs="None"
+                        elif len(attrs)==1:
+                            attrs = attrs[0]
+                        elif len(attrs)==2:
+                            attrs = attrs[0]+' and '+attrs[1]
                         else:
                             attrs = ', '.join(attrs[:-1])+', and '+attrs[-1]
                         await client.send_message(message.channel, attrs)    
