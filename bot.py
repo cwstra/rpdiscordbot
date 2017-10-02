@@ -264,14 +264,9 @@ async def on_message(message):
                         work = work.replace('$'+twork[i]+'$',tout[i])
                 except:
                     work = ''
-            work = work.split()
-            if len(work)<2 or work[1]=='' and len(work)<3:
+            test = work.split()
+            if len(test)<2 or test[1]=='' and len(test)<3:
                 await client.send_message(message.channel, '<@'+message.author.id+'>'+" tried to roll, but didn't know how the syntax works!")
-            if len(work)>2:
-                details = ' '.join(work[2:])
-            else:
-                details = ''
-            work = work[1]
             if work.count('`')>1:
                 try:
                     initial = '<@'+message.author.id+'>'+ ' calculated '+work
@@ -295,6 +290,12 @@ async def on_message(message):
                     print(e)
                     await client.send_message(message.channel, '<@'+message.author.id+'>'+" calculation didn't make any sense to me!")
             else:
+                work = work.split()
+                if len(work)>2:
+                    details = ' '.join(work[2:])
+                else:
+                    details = ''
+                work = work[1]
                 initial = '<@'+message.author.id+'>'+ ' rolled '+work
                 if details != '':
                     initial += ' for ' + details
