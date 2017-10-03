@@ -278,10 +278,13 @@ async def on_message(message):
                     while len(s)>1:
                         rolls.append(s[0])
                         s = s[2:]
-                    out = ""
+                    out = "'<@'+message.author.id+">'s result"
+                    if len(rolls)>1:
+                        out+='s'
+                    out+=':\n'
                     for roll in rolls:
                         evaluation = aeval(roll)
-                        out = '<@'+message.author.id+">'s result:`"+roll+'='+str(evaluation)
+                        out += "`"+roll+'='+str(evaluation)
                         if aeval.error!=[]:
                             out+= " ("+aeval.error[0].msg+")"
                         out+= '`\n'
