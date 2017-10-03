@@ -278,7 +278,7 @@ async def on_message(message):
                     while len(s)>1:
                         rolls.append(s[0])
                         s = s[2:]
-                    out = '<@'+message.author.id+>"'s result"
+                    out = '<@'+message.author.id+">'s result"
                     if len(rolls)>1:
                         out+='s'
                     out+=':\n'
