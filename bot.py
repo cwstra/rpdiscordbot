@@ -452,7 +452,10 @@ async def on_message(message):
                                     if k!='rolls':
                                         t[0].append(int(k))
                                         t[1].append(l/n)
-                                plt.bar(t[0],t[1])
+                                if len(t[0])>100:
+                                    plt.plot(t[0],t[1],'b-')
+                                else:
+                                    plt.bar(t[0],t[1])
                                 plt.savefig('work.png')
                                 plt.clf()
                                 await client.send_file(message.channel, 'work.png',content="Recorded "+i)
@@ -463,26 +466,16 @@ async def on_message(message):
                                     for k,l in probs[i].items():
                                         t[0].append(int(k))
                                         t[1].append(l)
-                                    plt.bar(t[0],t[1])
+                                    if len(t[0])>100:
+                                        plt.plot(t[0],t[1],'b-')
+                                    else:
+                                        plt.bar(t[0],t[1])
                                     plt.savefig('Probabilities/'+i+'.png')
                                     plt.clf()
                                     await client.send_file(message.channel,'Probabilities/'+i+'.png',content="Expected "+i)
                                     probs[i]['image']='Probabilities/'+i+'.png'
                                     with open('statistics.json','w') as data_file:    
                                         json.dump(myself['statistics'],data_file,indent=4)
-                            """ Text version
-                            for i,j in stats.items():
-                                s+="Recorded "+i+":\n"
-                                n = j['rolls']
-                                for k,l in j.items():
-                                    if k!='rolls':
-                                        s+=k+":"+str(round(l/n*100,2))+"%"+" "
-                                s = s[:-1]+"\n"
-                                s+="Expected "+i+":\n"
-                                for k,l in probs[i].items():
-                                    s+=k+":"+str(l)+"%"+" "
-                                s = s[:-1]+"\n"
-                            """
                         else:
                             await client.send_message(message.channel, '<@'+message.author.id+'>: Results for '+mentioned+"'s rolls of "+work[2]+".\n")
                             if work[2] in stats:
