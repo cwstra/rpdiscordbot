@@ -207,7 +207,7 @@ def gBinom(n,k):
 def diceProb(n,t,d):
     def singleRollSum(j):
         return ((-1)**j)*gBinom(n,j)*gBinom(t-d*j-1,n-1)
-    return d**(-n)*sum([singleRollSum(j) for j in range(int((t-n)/d))])
+    return d**(-n)*sum([singleRollSum(j) for j in range(int((t-n)/d)+1)])
 
 @client.event
 async def on_ready():
