@@ -391,8 +391,13 @@ async def on_message(message):
                                         myself['statistics']['probability'][i[0]][str(j)]=1/d
                                 else:
                                     m = p1*p2+1
+                                    hold = OrderedDict()
                                     for j in range(p1,p1+math.ceil((m-p1)/2)):
-                                        myself['statistics']['probability'][i[0]][str(j)]=myself['statistics']['probability'][i[0]][str(m-j+p1-1)]=diceProb(p1,j,p2)
+                                        myself['statistics']['probability'][i[0]][str(j)]=hold[str(m-j+p1-1)]=diceProb(p1,j,p2)
+                                    hold=hold.items()
+                                    hold.reverse()
+                                    hold=OrderedDict(hold)
+                                    myself['statistics']['probability'][i[0]].update(hold)
                         if '!' in i[0]:
                             pass
                         elif i[0] in myself['statistics']['@'+message.author.id]:
