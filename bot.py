@@ -394,7 +394,7 @@ async def on_message(message):
                                     hold = OrderedDict()
                                     for j in range(p1,p1+math.ceil((m-p1)/2)):
                                         myself['statistics']['probability'][i[0]][str(j)]=hold[str(m-j+p1-1)]=diceProb(p1,j,p2)
-                                    hold=hold.items()
+                                    hold=list(hold.items())
                                     hold.reverse()
                                     hold=OrderedDict(hold)
                                     myself['statistics']['probability'][i[0]].update(hold)
