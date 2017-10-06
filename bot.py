@@ -667,4 +667,9 @@ async def on_message(message):
                 else:
                     await client.send_message(message.channel, "That character does not exist; use newchar to create them.") 
 
-client.run(token)
+try:
+    client.run(token)
+except discord.errors.LoginFailure as e:
+    print("The client failed to login with error: "+e.args[0])
+    if e.args[0]=="Improper token has been passed.":
+        print("Did you put a valid token into settings.json?")
