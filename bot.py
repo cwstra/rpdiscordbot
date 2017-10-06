@@ -22,7 +22,14 @@ aeval = asteval.Interpreter()
 aeval.symtable["r_randint"]=random.randint
 aeval.symtable["r_randrange"]=random.randrange
 aeval.symtable["r_choice"]=random.choice
-aeval.symtable["r_choices"]=random.choices
+if hasattr(random,'choices'):
+    aeval.symtable["r_choices"]=random.choices
+else:
+    def aeval.symtable["r_choices"](population, weights=None, k=1):
+        """
+        Replacement for `random.choices()`, which is only available in Python 3.6+.
+        """
+        return numpy.random.choice(population, size=k, p=weights)
 aeval.symtable["r_shuffle"]=random.shuffle
 aeval.symtable["r_sample"]=random.sample
 aeval.symtable["r_random"]=random.random
