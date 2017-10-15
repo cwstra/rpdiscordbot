@@ -570,7 +570,7 @@ async def on_message(message):
                 race = race[0].split('=')[1].lower()
                 if not(race[0].split('=')[1].lower() in raceList):
                     race = random.choice(['human','changeling','clockwork','dwarf','goblin','orc'])
-            attributes = ['name','background','personality','age','gender'] + raceList[race]
+            attributes = ['name','background','personality','age','gender','wealth','thing'] + raceList[race]
             givenList={}
             statmods = {}
             while len(work)>0:
@@ -637,6 +637,7 @@ async def on_message(message):
                     else:
                         char+= "GM's choice\n"
                         app = None
+                char += 'Quirk: '
                 if 'quirk' in givenList:
                     try:
                         s = int(givenList['quirk'])-1
@@ -908,21 +909,7 @@ async def on_message(message):
                 stats['Languages and Professions']="Spoken Common, Spoken Elvish, before any other bonuses."
                 stats['Immunities']="Damage from disease; charmed, diseased"
                 stats['Additional Traits']="Iron Vulnerability, Shadowsight, Sneaky"
-            elif race=='goblin':
-                stats['Perception']=stats['Intellect']+1
-                stats['Defense']=stats['Agility']
-                stats['Health']=stats['Strength']
-                stats['Healing Rate']=math.floor(stats['Health']/4)
-                stats['Size']="1/2"
-                stats['Speed']=10
-                stats['Power']=0
-                stats['Damage']=0
-                stats['Insanity']=0
-                stats['Corruption']=0
-                stats['Languages and Professions']="Spoken Common, Spoken Elvish, before any other bonuses."
-                stats['Immunities']="Damage from disease; charmed, diseased"
-                stats['Additional Traits']="Iron Vulnerability, Shadowsight, Sneaky"
-            elif race=='goblin':
+            elif race=='orc':
                 stats['Perception']=stats['Intellect']+1
                 stats['Defense']=stats['Agility']
                 stats['Health']=stats['Strength']
@@ -939,10 +926,21 @@ async def on_message(message):
                 stats['Insanity']+=statmods['Insanity']
             if 'Corruption' in statmods:
                 stats['Corruption']+=statmods['Corruption']
+            intro+='Ancestry: '+race.title()+'\n'
             for i in ["Strength","Agility","Intellect","Will",'Bonus','Perception','Defense','Health','Healing Rate','Size','Speed','Power','Damage','Insanity','Corruption','Languages and Professions','Immunities','Additional Traits']:
                 if i in stats:
                     intro+=i+': '+str(stats[i])+'\n'
-            char = intro+char
+            char = intro+char+'Wealth: '
+            if 'wealth' in givenList:
+                try:
+                    s = myself['chargen']['wealth'][int(givenList['wealth'])]
+                    char+=s
+                except:
+                    char+=givenList['wealth']
+            else:
+                char+=random.choice(myself['chargen']['wealth'])
+            char+='\nInteresting Thing: '
+            char+=random.choice(myself['chargen']['thing'])
             if len(char)>2000:
                 while char!='':
                     i=char[:2000].rfind('\n')
