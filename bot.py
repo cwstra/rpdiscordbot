@@ -12,6 +12,7 @@ import scipy.special
 import asteval
 import itertools
 import time
+import string
 import matplotlib.pyplot as plt
 from collections import OrderedDict
 from fuzzywuzzy import fuzz
@@ -58,6 +59,9 @@ with open('bookdata.json') as data_file:
     bookdata = json.load(data_file)
 myself['bookdata'] = bookdata
 
+with open('chargen.json') as data_file:    
+    chargen = json.load(data_file)
+myself['chargen'] = chargen
 
 plt.bar([1],[1])
 plt.savefig('work.png')
@@ -550,6 +554,292 @@ async def on_message(message):
                     await client.send_message(message.channel, "I'm afraid I can't do that, <@%s>. Only administrators can change my prefix."%(message.author.id))
             else:
                 await client.send_message(message.channel, "My "+thing+"s can't have spaces.")
+        elif message.content.startswith(myself['prefix']+'chargen'):
+            work = shlex.split(message.content)
+            raceList={'human':['religion','build','appearance'],
+                      'changeling':['true age','apparent gender','apparent ancestry','quirk'],
+                      'clockwork':['purpose','form','appearance'],
+                      'dwarf':['build','hatred','appearance'],
+                      'goblin':['build','habit','odd habit','distinctive appearance','appearance'],
+                      'orc':['build','appearance']}
+            race = [i for i in work if 'race=' in i.lower() or 'ancestry=' in i.lower()]
+            if len(race)==0:
+                race = random.choice(['human','changeling','clockwork','dwarf','goblin','orc'])
+            else:
+                race = race[0].split('=')[1].lower()
+                if not(race[0].split('=')[1].lower() in raceList):
+                    race = random.choice(['human','changeling','clockwork','dwarf','goblin','orc'])
+            attributes = ['name','background','personality','age','gender'] + raceList[race]
+            givenlist={}
+            statmods = {}
+            while len(work)>0:
+                if work[0].find('=')!=-1:
+                    w = work[0].split('=')
+                    if w[0].lower() in attributes:
+                        givenList[w[0].lower()]=w[1]
+                work=work[1:]
+            #Name
+            char = "Name: "
+            if 'name' in givenList:
+                char+=givenList['name']+'\n'
+            elif race=='clockwork':
+                char+=''.join(random.choices(string.ascii_uppercase,k=random.randint(2,5)))+''.join(random.choices(string.digits,k=random.randint(3,7)))+'\n'
+            else:
+                char+=random.choice(myself['chargen']['names'][race])+'\n'
+            #Gender
+            if race=='changeling':
+                char+='Apparent '
+            elif race=='clockwork':
+                char+='Voice '            
+            char+='Gender: '
+            if 'apparent gender' in givenList:
+                char+=givenList['apparent gender']+'\n'
+            elif 'gender' in givenList:
+                char+=givenList['gender']+'\n'
+            else:
+                if race=='clockwork':
+                    char+=random.choice(['Male','Female','Indeterminate'])+'\n'
+                else:
+                    char+=random.choice(['Male','Female'])+'\n'
+            #Age
+            if race=='changeling':
+                char+='True '
+            char+='Age: '
+            if 'true age' in givenList:
+                char+=givenList['true age']+'\n'
+            elif 'age' in givenList:
+                char+=givenList['age']+'\n'
+            else:
+                char+=random.choice(myself['chargen']['age'][race])+'\n'
+            #Changling info
+            if race=='changeling':
+                char+='Apparent Ancestry: '
+                if 'apparent ancestry' in givenList:
+                    char+= givenList['apparent ancestry']+"\n"
+                    app=givenList['apparent ancestry'].lower()
+                else:
+                    i = random.randint(0,5)+random.randint(0,5)+random.randint(0,5)
+                    if i<5:
+                        char+= "Goblin\n"
+                        app = 'goblin'
+                    elif i<8:
+                        char+= "Dwarf\n"
+                        app = 'dwarf'
+                    elif i<16:
+                        char+= "Human\n"
+                        app = 'human'
+                    elif i<18:
+                        char+= "Orc\n"
+                        app = 'orc'
+                    else:
+                        char+= "GM's choice\n"
+                        app = None
+                if 'quirk' in givenList:
+                    try:
+                        s = int(givenList['quirk'])-1
+                        char+=myself['chargen']['quirk'][s]+'\n'
+                    except:
+                        char+=givenList['quirk']
+                else:
+                    char+=random.choice(myself['chargen']['quirk'])+'\n'
+                if app and app in ['goblin','dwarf','human','orc']:
+                    char+='Apparent Age: '
+                    char+=random.choice(myself['chargen']['age'][app])+'\n'
+                    char+='Apparent Build: '
+                    char+=random.choice(myself['chargen']['build'][app])+'\n'
+                    char+='Appearance: '
+                    s = random.choice(myself['chargen']['appearance'][app])
+                    while s.find('[[')>-1:
+                        w = s[s.find('[[')+2:s.find(']]')]
+                        if extra and w == extra[1]:
+                            last = extra[1] = eval(w)
+                            w = str(extra[1])
+                        else:
+                            last = eval(w)
+                            w = str(last)
+                        s = s[:s.find('[[')]+w+s[s.find(']]')+2:]
+                    char+=s+'\n'
+            #Build/Form
+            if race!='changeling':
+                if race=='clockwork':
+                    char+='Form: '
+                    if 'form' in givenList:
+                        value = givenList['form']
+                    elif 'build' in givenList:
+                        value = givenList['build']
+                    else:
+                        value = random.randint(0,5)+random.randint(0,5)+random.randint(0,5)
+                    try:
+                        i = int(value)-3
+                        if i == 3:
+                            char+="You are a small winged clockwork. Reduce your Health by 5 and your Size to 1/2. You can fly, but you must land at the end of your movement or fall. You are 3 feet tall and weigh 50 pounds."
+                            if 'Health' in statmods:
+                                statmods['Health']-=5
+                            else:
+                                statmods['Health']=-5
+                            statmods['Size']=0.5
+                        elif i<6:
+                            char+="You are a small spider-like clockwork with functional hands. Reduce your Size to 1/2. You ignore the effects of difficult terrain when you climb. You are 3 feet tall and weigh 50 pounds."
+                            statmods['Size']=0.5
+                        elif i<10:
+                            char+="You are a small humanoid clockwork. Reduce your Size to 1/2. You are 4 feet tall and weigh 75 pounds."
+                            statmods['Size']=0.5
+                        elif i<16:
+                            char+="You are a humanoid clockwork. You are 6 feet tall and weigh 300 pounds."
+                        elif i<18:
+                            char+="You are a large humanoid clockwork. Increase your Size to 2, but reduce your Speed and your Defense by 2. You are 10 feet tall and weigh 750 pounds."
+                            if 'Speed' in statmods:
+                                statmods['Speed']-=2
+                            else:
+                                statmods['Speed']=-2
+                            if 'Defense' in statmods:
+                                statmods['Defense']-=2
+                            else:
+                                statmods['Defense']=-2
+                            statmods['Size']=2
+                        else:
+                            char+="You are a large clockwork with the lower body of a horse. Increase your Size to 2 and your Speed by 2. However, reduce your Defense by 3. You are 6 feet long, 6 feet tall, and weigh 750 pounds."
+                            if 'Speed' in statmods:
+                                statmods['Speed']+=2
+                            else:
+                                statmods['Speed']=2
+                            if 'Defense' in statmods:
+                                statmods['Defense']-=3
+                            else:
+                                statmods['Defense']=-3
+                            statmods['Size']=2
+                    except:
+                        char+=value+"\n"
+                else:
+                    char+='Build: '
+                    if 'build' in givenList:
+                        try:
+                            s=random.choice(myself['chargen']['build'][race])
+                        except:
+                            s=givenList['build']
+                        char+=s+'\n'
+                    else:
+                        char+=random.choice(myself['chargen']['build'][race])+'\n'
+            #Appearance
+            if race!='changeling':
+                char+='Appearance: '
+                if 'appearance' in givenList:
+                    try:
+                        i = int(char)
+                    except:
+                        char+=givenList['appearance']+'\n'
+                        i = "string"
+                if i!='string':
+                    if isinstance(i,int):
+                        if race=='goblin':
+                            i-=1
+                        else:
+                            i-=3
+                    elif race=='goblin':
+                        i = random.randint(0,19)
+                    else:
+                        i = random.randint(0,5)+random.randint(0,5)+random.randint(0,5)
+                    work = myself['chargen']['appearance'][race][i]
+                    while work.find('[[')>-1:
+                        w = work[work.find('[[')+2:work.find(']]')]
+                        if extra and w == extra[1]:
+                            last = extra[1] = eval(w)
+                            w = str(extra[1])
+                        else:
+                            last = eval(w)
+                            w = str(last)
+                        work = work[:work.find('[[')]+w+work[work.find(']]')+2:]
+                    char+=work+'\n'
+            #Race Specific
+            if race=='human':
+                char += 'Religion: '
+                if 'religion' in givenList:
+                    try: 
+                        s = myself['chargen']['religion'][int(givenList['religion'])-3]
+                        char += s + '\n'
+                    except:
+                        char += givenList['religion'] + '\n'
+                else:
+                    char += random.choice(myself['chargen']['religion']) + '\n'
+            elif race=='clockwork':
+                char += 'Purpose: '
+                if 'purpose' in givenList:
+                    try: 
+                        s = myself['chargen']['purpose'][int(givenList['purpose'])-1]
+                        char += s + '\n'
+                    except:
+                        char += givenList['purpose'] + '\n'
+                else:
+                    char += random.choice(myself['chargen']['purpose']) + '\n'
+            elif race=='dwarf':
+                char += 'Hatred: '
+                if 'hatred' in givenList:
+                    try: 
+                        s = myself['chargen']['hatred'][int(givenList['hatred'])-1]
+                        char += s + '\n'
+                    except:
+                        char += givenList['hatred'] + '\n'
+                else:
+                    char += random.choice(myself['chargen']['hatred']) + '\n'
+            elif race=='goblin':
+                char += 'Odd Habit: '
+                if 'odd habit' in givenList:
+                    try: 
+                        s = myself['chargen']['habit'][int(givenList['odd habit'])-1]
+                        char += s + '\n'
+                    except:
+                        char += givenList['odd habit'] + '\n'
+                elif 'habit' in givenList:
+                    try: 
+                        s = myself['chargen']['habit'][int(givenList['habit'])-1]
+                        char += s + '\n'
+                    except:
+                        char += givenList['habit'] + '\n'
+                else:
+                    char += random.choice(myself['chargen']['habit']) + '\n'
+            #Background
+            char+='Background: '
+            if 'background' in givenList:
+                try:
+                    work=myself['chargen']['backgrounds'][int(givenList['background'])-1]
+                except:
+                    work=givenList['background']
+            else:
+                work=random.choice(myself['chargen']['backgrounds'][race])
+            if work!=givenList['background']:
+                extra = False
+                if isinstance(work,list):
+                    extra = work[1]
+                    work = work[0]
+                while work.find('[[')>-1:
+                    w = work[work.find('[[')+2:work.find(']]')]
+                    if extra and w == extra[1]:
+                        last = extra[1] = eval(w)
+                        w = str(extra[1])
+                    else:
+                        last = eval(w)
+                        w = str(last)
+                    work = work[:work.find('[[')]+w+work[work.find(']]')+2:]
+                if extra:
+                    if extra[0] in statmods:
+                        statmods[extra[0]]+=extra[1]
+                    else:
+                        statmods[extra[0]]=extra[1]
+                    if len(extra)>2:
+                        if extra[2] in statmods:
+                            statmods[extra[2]]+=extra[3]
+                        else:
+                            statmods[extra[2]]=extra[3]
+            char += work + "\n"
+            #Personality
+            char+='Personality: '
+            if 'personality' in givenList:
+                try:
+                    char+=myself['chargen']['personality'][int(givenList['personality'])-1]+ "\n"
+                except:
+                    char+=givenList['personality']+ "\n"
+            else:
+                char+=random.choice(myself['chargen']['personality'][race])+ "\n"
         elif message.content.startswith(myself['prefix']+'newchar'):
             work = shlex.split(message.content)
             if len(work)==1:
