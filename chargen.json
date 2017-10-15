@@ -1,12 +1,12 @@
 {
-    "names":{
+    "name":{
         "human": ["Aengus", "Agnes", "Aine", "Alice", "Anselm", "Beatrice", "Breandan", "Caitlin", "Charles", "Cormac", "Ella", "Fiona", "Geoffrey", "Giselle", "Henry", "Hugh", "Joan", "John", "Kane", "Kiera", "Manfred", "Margery", "Oriel", "Richard", "Robert", "Roisin", "Rordan", "Rosalind", "Saraid", "Seamus", "Walter", "Yvonne"],
-        "changling": ["Coy", "Jester", "Mirth", "Rook", "Shadow", "Slick", "Sly"],
+        "changeling": ["Coy", "Jester", "Mirth", "Rook", "Shadow", "Slick", "Sly"],
         "dwarf": ["Anise", "Brunhild", "Doogan", "Erika", "Franz", "Grete", "Guntur", "Heida", "Helmut", "Ilse", "Martok", "Oda", "Ragnar"],
         "goblin": ["Blix", "Blunder", "Bubo", "Cough", "Drips", "Hack", "Pecker", "Phlegm", "Poop", "Pox", "Puke", "Sludge", "Snot", "Vomit"],
         "orc": ["Bastard", "Bunion", "Dredface", "Grubthumb", "Hate", "Killer", "Mung", "Pliers", "Pung", "Stenchfist", "Wossname"]
     },
-    "backgrounds":{
+    "background":{
         "human": [
             ["You died and returned to life. You start the game with [[random.randint(1,6)]] Insanity.",["Insanity","random.randint(1,6)"]], 
             ["You were briefly possessed by a demon. You start the game with 1 Corruption.",["Corruption",1]], 
@@ -29,7 +29,7 @@
             "Someone important and powerful owes you a favor.", 
             "You came into money and start the game with [[random.randint(1,6)+random.randint(1,6)]] cp."
             ],
-        "changling": [
+        "changeling": [
             ["You only recently discovered your true nature, and you are having a difficult time adjusting to your new reality. You start the game with 1 Insanity",["Insanity",1]],
             ["You have no idea that you’re a changeling. You think you are a member of the ancestry whose form you adopted. Add an extra random profession. Until you become incapacitated or touch iron for the first time, you cannot use Steal Identity.",["Profession",1]], 
             ["You were enslaved by a hag and forced to perform unspeakable acts as she commanded you. You start the game with 1 Corruption.",["Corruption",1]], 
@@ -140,9 +140,9 @@
             "You came into money and start the game with [[random.randint(1,6)+random.randint(1,6)]] cp."
             ]
     },
-    "ages":{
+    "age":{
         "human":     ["11-","12-17","12-17","12-17","12-17","18-35","18-35","18-35","18-35","18-35","36-55", "36-55", "36-55", "56-75",  "56-75",  "76+"],
-        "changling": ["8-", "9-14", "9-14", "9-14", "9-14", "15-25","15-25","15-25","15-25","15-25","26-40", "26-40", "26-40", "41-60",  "41-60",  "61+"],
+        "changeling": ["8-", "9-14", "9-14", "9-14", "9-14", "15-25","15-25","15-25","15-25","15-25","26-40", "26-40", "26-40", "41-60",  "41-60",  "61+"],
         "clockwork": ["5-", "5-",   "5-",   "5-",   "5-",   "5-",   "6-10", "6-10", "6-10", "6-10", "11-50", "11-50", "11-50", "51-150", "51-150", "150+"],
         "dwarf":     ["20-","20-30","20-30","20-30","20-30","31-50","31-50","31-50","31-50","31-50","51-100","51-100","51-100","101-150","101-150","151+"],
         "goblin":    ["6-", "7-10", "7-10", "7-10", "7-10", "11-25","11-25","11-25","11-25","11-25","26-50", "26-50", "26-50", "51-75",  "51-75",  "76+"],
@@ -393,5 +393,43 @@
         "You like to hide.", 
         "Make something up!"
     ],
-    
+    "attributes":{
+        "human":{
+            "Strength":10,
+            "Agility":10,
+            "Intellect":10,
+            "Will":10,
+            "Bonus":"+1 to any attribute"
+        },
+        "changeling":{
+            "Strength":9,
+            "Agility":10,
+            "Intellect":10,
+            "Will":10
+        },
+        "clockwork":{
+            "Strength":9,
+            "Agility":8,
+            "Intellect":9,
+            "Will":9
+        },
+        "dwarf":{
+            "Strength":10,
+            "Agility":9,
+            "Intellect":10,
+            "Will":10
+        },
+        "goblin":{
+            "Strength":8,
+            "Agility":12,
+            "Intellect":10,
+            "Will":9
+        },
+        "orc":{
+            "Strength":11,
+            "Agility":10,
+            "Intellect":9,
+            "Will":9
+        }
+    }
 }

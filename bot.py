@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import discord
 import asyncio
 import random
 import json
@@ -7,14 +6,15 @@ import os
 import re
 import shlex
 import math
-import numpy
-import scipy.special
-import asteval
 import itertools
 import time
 import string
-import matplotlib.pyplot as plt
 from collections import OrderedDict
+import discord
+import numpy
+import scipy.special
+import asteval
+import matplotlib.pyplot as plt
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 
@@ -26,11 +26,12 @@ aeval.symtable["r_choice"]=random.choice
 if hasattr(random,'choices'):
     aeval.symtable["r_choices"]=random.choices
 else:
-    def aeval.symtable["r_choices"](population, weights=None, k=1):
+    def f(population, weights=None, k=1):
         """
         Replacement for `random.choices()`, which is only available in Python 3.6+.
         """
         return numpy.random.choice(population, size=k, p=weights)
+    aeval.symtable["r_choices"] = f
 aeval.symtable["r_shuffle"]=random.shuffle
 aeval.symtable["r_sample"]=random.sample
 aeval.symtable["r_random"]=random.random
@@ -570,7 +571,7 @@ async def on_message(message):
                 if not(race[0].split('=')[1].lower() in raceList):
                     race = random.choice(['human','changeling','clockwork','dwarf','goblin','orc'])
             attributes = ['name','background','personality','age','gender'] + raceList[race]
-            givenlist={}
+            givenList={}
             statmods = {}
             while len(work)>0:
                 if work[0].find('=')!=-1:
@@ -585,7 +586,7 @@ async def on_message(message):
             elif race=='clockwork':
                 char+=''.join(random.choices(string.ascii_uppercase,k=random.randint(2,5)))+''.join(random.choices(string.digits,k=random.randint(3,7)))+'\n'
             else:
-                char+=random.choice(myself['chargen']['names'][race])+'\n'
+                char+=random.choice(myself['chargen']['name'][race])+'\n'
             #Gender
             if race=='changeling':
                 char+='Apparent '
@@ -611,6 +612,8 @@ async def on_message(message):
                 char+=givenList['age']+'\n'
             else:
                 char+=random.choice(myself['chargen']['age'][race])+'\n'
+            intro = char
+            char = ''
             #Changling info
             if race=='changeling':
                 char+='Apparent Ancestry: '
@@ -651,12 +654,8 @@ async def on_message(message):
                     s = random.choice(myself['chargen']['appearance'][app])
                     while s.find('[[')>-1:
                         w = s[s.find('[[')+2:s.find(']]')]
-                        if extra and w == extra[1]:
-                            last = extra[1] = eval(w)
-                            w = str(extra[1])
-                        else:
-                            last = eval(w)
-                            w = str(last)
+                        last = eval(w)
+                        w = str(last)
                         s = s[:s.find('[[')]+w+s[s.find(']]')+2:]
                     char+=s+'\n'
             #Build/Form
@@ -708,6 +707,7 @@ async def on_message(message):
                             else:
                                 statmods['Defense']=-3
                             statmods['Size']=2
+                        char+='\n'
                     except:
                         char+=value+"\n"
                 else:
@@ -729,6 +729,8 @@ async def on_message(message):
                     except:
                         char+=givenList['appearance']+'\n'
                         i = "string"
+                else:
+                    i=None
                 if i!='string':
                     if isinstance(i,int):
                         if race=='goblin':
@@ -742,12 +744,8 @@ async def on_message(message):
                     work = myself['chargen']['appearance'][race][i]
                     while work.find('[[')>-1:
                         w = work[work.find('[[')+2:work.find(']]')]
-                        if extra and w == extra[1]:
-                            last = extra[1] = eval(w)
-                            w = str(extra[1])
-                        else:
-                            last = eval(w)
-                            w = str(last)
+                        last = eval(w)
+                        w = str(last)
                         work = work[:work.find('[[')]+w+work[work.find(']]')+2:]
                     char+=work+'\n'
             #Race Specific
@@ -801,12 +799,12 @@ async def on_message(message):
             char+='Background: '
             if 'background' in givenList:
                 try:
-                    work=myself['chargen']['backgrounds'][int(givenList['background'])-1]
+                    work=myself['chargen']['background'][int(givenList['background'])-1]
                 except:
                     work=givenList['background']
             else:
-                work=random.choice(myself['chargen']['backgrounds'][race])
-            if work!=givenList['background']:
+                work=random.choice(myself['chargen']['background'][race])
+            if not ('background' in givenList) or work!=givenList['background']:
                 extra = False
                 if isinstance(work,list):
                     extra = work[1]
@@ -840,6 +838,118 @@ async def on_message(message):
                     char+=givenList['personality']+ "\n"
             else:
                 char+=random.choice(myself['chargen']['personality'][race])+ "\n"
+            stats = myself['chargen']['attributes'][race]
+            if 'Strength' in statmods:
+                stats['Strength']+=statmods['Strength']
+            if race=='human':
+                stats['Perception']=stats['Intellect']
+                stats['Defense']=stats['Agility']
+                stats['Health']=stats['Strength']
+                stats['Healing Rate']=math.floor(stats['Health']/4)
+                stats['Size']="1/2 or 1"
+                stats['Speed']=10
+                stats['Power']=0
+                stats['Damage']=0
+                stats['Insanity']=0
+                stats['Corruption']=0
+                stats['Languages and Professions']="Spoken Common, along with one additional profession or language, before any other bonuses."
+            elif race=='changeling':
+                stats['Perception']=stats['Intellect']+1
+                stats['Defense']=stats['Agility']
+                stats['Health']=stats['Strength']
+                stats['Healing Rate']=math.floor(stats['Health']/4)
+                stats['Size']="1"
+                stats['Speed']=10
+                stats['Power']=0
+                stats['Damage']=0
+                stats['Insanity']=0
+                stats['Corruption']=0
+                stats['Languages and Professions']="Spoken Common, before any other bonuses."
+                stats['Immunities']="Damage from disease; charmed, diseased."
+                stats['Additional Traits']="Iron Vulnerability, Shadowsight, Steal Identity"
+            elif race=='clockwork':
+                stats['Perception']=stats['Intellect']
+                stats['Defense']=13
+                stats['Health']=stats['Strength']
+                stats['Healing Rate']=math.floor(stats['Health']/4)
+                stats['Size']="1"
+                stats['Speed']=8
+                stats['Power']=0
+                stats['Damage']=0
+                stats['Insanity']=0
+                stats['Corruption']=0
+                stats['Languages and Professions']="Spoken Common, before any other bonuses."
+                stats['Immunities']="Damage from disease and poison; asleep, diseased, fatigued, poisoned."
+                stats['Additional Traits']="Key, Mechanical Body, Repairing Damage"
+            elif race=='dwarf':
+                stats['Perception']=stats['Intellect']+1
+                stats['Defense']=stats['Agility']
+                stats['Health']=stats['Strength']+4
+                stats['Healing Rate']=math.floor(stats['Health']/4)
+                stats['Size']="1/2"
+                stats['Speed']=8
+                stats['Power']=0
+                stats['Damage']=0
+                stats['Insanity']=0
+                stats['Corruption']=0
+                stats['Languages and Professions']="Spoken Common, Spoken and Written Dwarfish, before any other bonuses."
+                stats['Additional Traits']="Darksight, Hated Creature, Robust Constitution"
+            elif race=='goblin':
+                stats['Perception']=stats['Intellect']+1
+                stats['Defense']=stats['Agility']
+                stats['Health']=stats['Strength']
+                stats['Healing Rate']=math.floor(stats['Health']/4)
+                stats['Size']="1/2"
+                stats['Speed']=10
+                stats['Power']=0
+                stats['Damage']=0
+                stats['Insanity']=0
+                stats['Corruption']=0
+                stats['Languages and Professions']="Spoken Common, Spoken Elvish, before any other bonuses."
+                stats['Immunities']="Damage from disease; charmed, diseased"
+                stats['Additional Traits']="Iron Vulnerability, Shadowsight, Sneaky"
+            elif race=='goblin':
+                stats['Perception']=stats['Intellect']+1
+                stats['Defense']=stats['Agility']
+                stats['Health']=stats['Strength']
+                stats['Healing Rate']=math.floor(stats['Health']/4)
+                stats['Size']="1/2"
+                stats['Speed']=10
+                stats['Power']=0
+                stats['Damage']=0
+                stats['Insanity']=0
+                stats['Corruption']=0
+                stats['Languages and Professions']="Spoken Common, Spoken Elvish, before any other bonuses."
+                stats['Immunities']="Damage from disease; charmed, diseased"
+                stats['Additional Traits']="Iron Vulnerability, Shadowsight, Sneaky"
+            elif race=='goblin':
+                stats['Perception']=stats['Intellect']+1
+                stats['Defense']=stats['Agility']
+                stats['Health']=stats['Strength']
+                stats['Healing Rate']=math.floor(stats['Health']/4)
+                stats['Size']="1"
+                stats['Speed']=12
+                stats['Power']=0
+                stats['Damage']=0
+                stats['Insanity']=0
+                stats['Corruption']=1
+                stats['Languages and Professions']="Spoken Common, Spoken Dark Speech, before any other bonuses."
+                stats['Additional Traits']="Shadowsight"
+            if 'Insanity' in statmods:
+                stats['Insanity']+=statmods['Insanity']
+            if 'Corruption' in statmods:
+                stats['Corruption']+=statmods['Corruption']
+            for i in ["Strength","Agility","Intellect","Will",'Bonus','Perception','Defense','Health','Healing Rate','Size','Speed','Power','Damage','Insanity','Corruption','Languages and Professions','Immunities','Additional Traits']:
+                if i in stats:
+                    intro+=i+': '+str(stats[i])+'\n'
+            char = intro+char
+            if len(char)>2000:
+                while char!='':
+                    i=char[:2000].rfind('\n')
+                    await client.send_message(message.channel, char[:i])
+                    char = char[i+1:]
+            else:
+                await client.send_message(message.channel, char)
         elif message.content.startswith(myself['prefix']+'newchar'):
             work = shlex.split(message.content)
             if len(work)==1:
