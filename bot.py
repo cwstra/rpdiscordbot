@@ -568,13 +568,14 @@ async def on_message(message):
                 race = random.choice(['human','changeling','clockwork','dwarf','goblin','orc'])
             else:
                 race = race[0].split('=')[1].lower()
-                if not(race[0].split('=')[1].lower() in raceList):
+                if not(race in raceList):
                     race = random.choice(['human','changeling','clockwork','dwarf','goblin','orc'])
             attributes = ['name','background','personality','age','gender','wealth','thing'] + raceList[race]
             givenList={}
             statmods = {}
             while len(work)>0:
                 if work[0].find('=')!=-1:
+                    print(work[0])
                     w = work[0].split('=')
                     if w[0].lower() in attributes:
                         givenList[w[0].lower()]=w[1]
