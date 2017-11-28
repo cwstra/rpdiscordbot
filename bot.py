@@ -677,7 +677,7 @@ while True:
         if e.args[0]=="Improper token has been passed.":
             print("Did you put a valid token into settings.json?")
             break
-    except BaseException as e
+    except BaseException as e:
         print("Something went wrong:") 
         print("Error: "+e.args[0])
         time.sleep(sleeptimes[sleeptime])
