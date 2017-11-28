@@ -64,6 +64,10 @@ with open('chargen.json') as data_file:
     chargen = json.load(data_file)
 myself['chargen'] = chargen
 
+with open('itemgen.json') as data_file:    
+    itemgen = json.load(data_file)
+myself['itemgen'] = itemgen
+
 plt.bar([1],[1])
 plt.savefig('work.png')
 plt.clf()
@@ -949,6 +953,25 @@ async def on_message(message):
                     char = char[i+1:]
             else:
                 await client.send_message(message.channel, char)
+        elif message.content.startswith(myself['prefix']+'itemgen'):
+            work = shlex.split(message.content)[1:]
+            attributes=['form','properties','desc']
+            results={'form':0,'properties':0,'desc':0}
+            while len(work)>0:
+                if work[0].find('=')!=-1:
+                    w = work[0].split('=')
+                    if w[0].lower() in attributes:
+                        try:
+                            int(w[1])
+                            results[w[0].lower()]=int(w[1])
+                work=work[1:]
+            for i,j in results.items():
+                if j==0:
+                    results[i]=randint(1,20)
+            results['properties']=math.floor(results['properties']/4)
+            output = 'Item Form: '+myself['itemgen']['form'][results['form']-1]+'\n'
+            output += 'Item Description: '+myself['itemgen']['desc'][results['properties']][results['desc']-1]
+            await client.send_message(message.channel, output)
         elif message.content.startswith(myself['prefix']+'newchar'):
             work = shlex.split(message.content)
             if len(work)==1:
