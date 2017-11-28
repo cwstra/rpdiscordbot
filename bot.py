@@ -1088,10 +1088,19 @@ async def on_message(message):
                         await client.send_message(message.channel, char+' belongs to <@'+myself['characters'][char]['__creator__']+'>. Only the creator or an administrator can edit them.')
                 else:
                     await client.send_message(message.channel, "That character does not exist; use newchar to create them.") 
-
-try:
-    client.run(token)
-except discord.errors.LoginFailure as e:
-    print("The client failed to login with error: "+e.args[0])
-    if e.args[0]=="Improper token has been passed.":
-        print("Did you put a valid token into settings.json?")
+sleeptime=0
+sleeptimes=[5,5,30,60,60*5]
+while True:
+    try: 
+        client.loop.run_until_complete(client.start(token))
+    except discord.errors.LoginFailure as e:
+        print("The client failed to login with error: "+e.args[0])
+        if e.args[0]=="Improper token has been passed.":
+            print("Did you put a valid token into settings.json?")
+            break
+    except BaseException as e
+        print("Something went wrong:") 
+        print("Error: "+e.args[0])
+        time.sleep(sleeptimes[sleeptime])
+        if sleeptime<4:
+            sleeptime+=1
