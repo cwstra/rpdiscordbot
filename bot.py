@@ -43,6 +43,7 @@ myself = {}
 
 with open('settings.json') as data_file:    
     settings = json.load(data_file)
+myself['git'] = settings['git_link']
 myself['prefix'] = settings['prefix']
 myself['charsign'] = settings['charsign']
 myself['help'] = settings['help']
@@ -421,6 +422,8 @@ async def on_message(message):
                         json.dump(myself['statistics'],data_file,indent=4)
         elif message.content.startswith(myself['prefix']+'poke'):
             await client.send_message(message.channel, myself['navi'].state())
+        elif message.content.startswith(myself['prefix']+'git'):
+            await client.send_message(message.channel, myself['git'])
         elif message.content.startswith(myself['prefix']+'poll'):
             await client.add_reaction(message,"\N{THUMBS UP SIGN}")
             await client.add_reaction(message,"\N{THUMBS DOWN SIGN}")
