@@ -675,6 +675,7 @@ sleeptimes=[5,5,30,60,60*5]
 while True:
     try: 
         client.loop.run_until_complete(client.start(token))
+        sleeptime=0
     except discord.errors.LoginFailure as e:
         print("The client failed to login with error: "+e.args[0])
         if e.args[0]=="Improper token has been passed.":
