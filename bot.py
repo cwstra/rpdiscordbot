@@ -58,8 +58,16 @@ myself['statistics'] = statistics
 
 with open('bookdata.json') as data_file:    
     bookdata = json.load(data_file)
-myself['bookdata'] = bookdata
-
+myself['bookdata']={}
+def merge_two_dicts(x, y):
+    """Given two dicts, merge them into a new dict as a shallow copy."""
+    z = x.copy()
+    z.update(y)
+    return z
+for i in bookdata:
+    myself['bookdata']=merge_two_dicts(myself['bookdata'], bookdata[i])
+myself['bookdata'] = {"all":myself['bookdata']}
+myself['bookdata'] = merge_two_dicts(myself['bookdata'],bookdata)
 
 plt.bar([1],[1])
 plt.savefig('work.png')
@@ -534,8 +542,12 @@ async def on_message(message):
                 work = message.content.split(" ",1)
             poss = bookdata.keys()
             poss = process.extractOne(work[1], poss)
-            if poss[1]>80: 
-                await client.send_message(message.channel, bookdata[poss[0]])
+            if poss[1]>80:
+                if type(bookdata[poss[0]]) is str:
+                    await client.send_message(message.channel, bookdata[poss[0]])
+                else:
+                    for i in bookdata[poss[0]]:
+                        await client.send_message(message.channel, i)
             else:
                 await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match.")
         elif message.content.startswith(myself['prefix']+'prefix') or message.content.startswith(myself['prefix']+'charsign'):
