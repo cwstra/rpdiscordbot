@@ -532,6 +532,11 @@ async def on_message(message):
                                 await client.send_message(message.channel, '<@'+message.author.id+'>: '+mentioned+" doesn't seem to have ever rolled "+work[2]+".")
                     else:
                         await client.send_message(message.channel, '<@'+message.author.id+'>: '+mentioned+" doesn't have any rolls on record")
+        elif message.content.startswith(myself['prefix']+'ref categories'):
+            outgoing = ''
+            for i in myself['bookdata'].keys():
+                outgoing += i+'\n'
+            await client.send_message(message.channel, outgoing)
         elif message.content.startswith(myself['prefix']+'ref'):
             test = message.content.split(" ",2)
             if len(test)==3 and test[1] in myself['bookdata'].keys():
@@ -550,6 +555,50 @@ async def on_message(message):
                         await client.send_message(message.channel, i)
             else:
                 await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match.")
+        elif message.content.startswith(myself['prefix']+'top'):
+            test = message.content.split(" ",3)
+            def test_int(i):
+                try:
+                    int(i)
+                    return True
+                except:
+                    return False
+            if len(test)>=3 and test_int(test[1]):
+                if len(test)==4 and test[2] in myself['bookdata'].keys():
+                    bookdata = myself['bookdata'][test[2]]
+                    work = (int(test[1]),test[0],test[2])
+                else:
+                    bookdata = myself['bookdata']['all']
+                    work = [int(test[1]),message.content.split(" ",2)[0],message.content.split(" ",2)[2]]
+            elif len(test)>=3 and test[1] in myself['bookdata'].keys():
+                if len(test)==4:
+                    test=[test[0],test[1],test[2]+" "+test[3]]
+                bookdata = myself['bookdata'][test[1]]
+                work = (5,test[0],test[2])
+            else:
+                bookdata = myself['bookdata']['all']
+                work = [5]+message.content.split(" ",1)
+            poss = bookdata.keys()
+            print(work[2])
+            poss = process.extract(work[2], poss,limit=work[0])
+            if len(poss)>5:
+                location = message.author
+            else:
+                location = message.channel
+            if len(poss)==0:
+                outgoing = "No matches"
+            else:
+                weak=False
+                if poss[0][1]>80:
+                    outgoing = 'Strong Matches:\n'
+                else:
+                    outgoing = ''
+                for i in poss:
+                    if not(weak) and i[1]<=80:
+                        weak=True
+                        outgoing+='Weak Matches:\n'
+                    outgoing+='   '+i[0]+' ('+str(i[1])+')\n'
+            await client.send_message(location, outgoing)
         elif message.content.startswith(myself['prefix']+'prefix') or message.content.startswith(myself['prefix']+'charsign'):
             work = message.content.split()
             thing = work[0][len(myself['prefix']):]
