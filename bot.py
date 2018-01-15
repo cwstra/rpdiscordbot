@@ -599,7 +599,7 @@ async def on_message(message):
                         weak=True
                         outgoing+='Weak Matches:\n'
                     outgoing+='   '+i[0]+' ('+str(i[1])+')\n'
-            while outgoing > 2000:
+            while len(outgoing) > 2000:
                 index = outgoing[:2000].rfind('\n')
                 await client.send_message(location, outgoing[:index])
                 outgoing = outgoing[index+1:]
