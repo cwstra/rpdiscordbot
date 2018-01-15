@@ -535,7 +535,7 @@ async def on_message(message):
         elif message.content.startswith(myself['prefix']+'ref categories'):
             outgoing = ''
             for i in myself['bookdata'].keys():
-                if i!=='all':
+                if i!='all':
                     outgoing += i+'\n'
             await client.send_message(message.channel, outgoing)
         elif message.content.startswith(myself['prefix']+'ref'):
