@@ -275,7 +275,7 @@ async def on_message(message):
             outgoing="<@"+message.author.id+">:\n"+myself['help'].replace('<spec:prefix>',myself['prefix']).replace('<spec:charsign>',myself['charsign']).replace('<spec:top_amount>',str(myself['top_amount']))
             while len(outgoing) > 2000:
                 index = outgoing[:2000].rfind('\n')
-                await client.send_message(location, outgoing[:index])
+                await client.send_message(message.author, outgoing[:index])
                 outgoing = outgoing[index+1:]
             await client.send_message(message.author,outgoing)
         elif message.content.startswith(myself['prefix']+'roll') or message.content.startswith(myself['prefix']+'r '):
