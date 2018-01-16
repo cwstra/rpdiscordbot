@@ -47,6 +47,7 @@ myself['git'] = settings['git_link']
 myself['prefix'] = settings['prefix']
 myself['charsign'] = settings['charsign']
 myself['help'] = settings['help']
+myself['top_amount'] = settings['top_amount']
 
 with open('characters.json') as data_file:    
     characters = json.load(data_file)
@@ -240,16 +241,20 @@ async def on_message(message):
     if message.content.startswith(myself['prefix']):
         print(message.content)
         if message.author.id in myself['waiting']:
-            if myself['waiting'][message.author.id][0]=='prefix' or myself['waiting'][message.author.id][0]=='charsign':
+            if myself['waiting'][message.author.id][0]=='prefix' or myself['waiting'][message.author.id][0]=='charsign' or myself['waiting'][message.author.id][0]=='top_amount':
                 thing = myself['waiting'][message.author.id][0]
                 if message.content.strip() == myself['prefix']+'Yes':
                     with open('settings.json') as data_file:
                         settings = json.load(data_file)
-                    settings[thing] = myself['waiting'][message.author.id][1]
+                    settings[thing] = myself['waiting'][message.author.id][1] 
                     with open('settings.json','w') as data_file:
                         json.dump(settings,data_file,indent=4)
                     myself[thing] = settings[thing]
-                    await client.send_message(message.channel, thing+" changed to "+myself[thing])
+                    if type(myself[thing]) is str:
+                        newthing = myself[thing]
+                    else:
+                        newthing = str(myself[thing])
+                    await client.send_message(message.channel, thing+" changed to "+newthing)
                 elif message.content.strip() == myself['prefix']+'No':
                     await client.send_message(message.channel, thing+" change cancelled")
                 else:
@@ -267,7 +272,12 @@ async def on_message(message):
                     await client.send_message(message.channel, "That was an invalid response. Character deletion cancelled.")
                 del myself['waiting'][message.author.id]
         elif message.content.startswith(myself['prefix']+'help'):
-            await client.send_message(message.author, "<@"+message.author.id+">:\n"+myself['help'].replace('<spec:prefix>',myself['prefix']).replace('<spec:charsign>',myself['charsign']))
+            outgoing="<@"+message.author.id+">:\n"+myself['help'].replace('<spec:prefix>',myself['prefix']).replace('<spec:charsign>',myself['charsign']).replace('<spec:top_amount>',str(myself['top_amount']))
+            while len(outgoing) > 2000:
+                index = outgoing[:2000].rfind('\n')
+                await client.send_message(location, outgoing[:index])
+                outgoing = outgoing[index+1:]
+            await client.send_message(message.author,outgoing)
         elif message.content.startswith(myself['prefix']+'roll') or message.content.startswith(myself['prefix']+'r '):
             work = message.content.replace(' +','+').replace('+ ','+')
             if message.content.find(myself['charsign']):
@@ -556,6 +566,31 @@ async def on_message(message):
                         await client.send_message(message.channel, i)
             else:
                 await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match.")
+        elif message.content.startswith(myself['prefix']+'prefix') or message.content.startswith(myself['prefix']+'charsign') or message.content.startswith(myself['prefix']+'top_amount'):
+            def test_int(i):
+                try:
+                    int(i)
+                    return True
+                except:
+                    return False
+            work = message.content.split()
+            thing = work[0][len(myself['prefix']):]
+            if len(work)==1:
+                if message.author.server_permissions.administrator:
+                    await client.send_message(message.channel, "<@%s>: My current %s is %s. If you'd like to change it, type %sprefix <new prefix>"%(message.author.id,thing,myself[thing],myself['prefix']))
+                else:
+                    await client.send_message(message.channel, "<@%s>: My current %s is %s. If you'd like to change it, you'll have to ask an administrator."%(message.author.id,thing,myself[thing]))
+            elif len(work)==2:
+                if message.author.server_permissions.administrator:
+                    myself['waiting'][message.author.id]=[thing,work[1]]
+                    if thing!='top_amount' or test_int(work[1]):
+                        await client.send_message(message.channel, '<@%s>: My current %s is %s. Are you sure you want to change it to "%s"? Use %sYes or %sNo'%(message.author.id,thing,myself[thing],work[1],myself['prefix'],myself['prefix']))
+                    else:
+                        await client.send_message(message.channel, "I'm afraid I can't do that, <@%s>. My top_amount must be an integer."%(message.author.id))
+                else:
+                    await client.send_message(message.channel, "I'm afraid I can't do that, <@%s>. Only administrators can change my prefix."%(message.author.id))
+            else:
+                await client.send_message(message.channel, "My "+thing+"s can't have spaces.")
         elif message.content.startswith(myself['prefix']+'top'):
             test = message.content.split(" ",3)
             def test_int(i):
@@ -575,14 +610,14 @@ async def on_message(message):
                 if len(test)==4:
                     test=[test[0],test[1],test[2]+" "+test[3]]
                 bookdata = myself['bookdata'][test[1]]
-                work = (5,test[0],test[2])
+                work = (myself['top_amount'],test[0],test[2])
             else:
                 bookdata = myself['bookdata']['all']
-                work = [5]+message.content.split(" ",1)
+                work = [myself['top_amount']]+message.content.split(" ",1)
             poss = bookdata.keys()
             print(work[2])
             poss = process.extract(work[2], poss,limit=work[0])
-            if len(poss)>5:
+            if len(poss)>myself['top_amount']:
                 location = message.author
             else:
                 location = message.channel
@@ -604,22 +639,6 @@ async def on_message(message):
                 await client.send_message(location, outgoing[:index])
                 outgoing = outgoing[index+1:]
             await client.send_message(location, outgoing)
-        elif message.content.startswith(myself['prefix']+'prefix') or message.content.startswith(myself['prefix']+'charsign'):
-            work = message.content.split()
-            thing = work[0][len(myself['prefix']):]
-            if len(work)==1:
-                if message.author.server_permissions.administrator:
-                    await client.send_message(message.channel, "<@%s>: My current %s is %s. If you'd like to change it, type %sprefix <new prefix>"%(message.author.id,thing,myself[thing],myself['prefix']))
-                else:
-                    await client.send_message(message.channel, "<@%s>: My current %s is %s. If you'd like to change it, you'll have to ask an administrator."%(message.author.id,thing,myself[thing]))
-            elif len(work)==2:
-                if message.author.server_permissions.administrator:
-                    myself['waiting'][message.author.id]=[thing,work[1]]
-                    await client.send_message(message.channel, '<@%s>: My current %s is %s. Are you sure you want to change it to "%s"? Use %sYes or %sNo'%(message.author.id,thing,myself[thing],work[1],myself['prefix'],myself['prefix']))
-                else:
-                    await client.send_message(message.channel, "I'm afraid I can't do that, <@%s>. Only administrators can change my prefix."%(message.author.id))
-            else:
-                await client.send_message(message.channel, "My "+thing+"s can't have spaces.")
         elif message.content.startswith(myself['prefix']+'newchar'):
             work = shlex.split(message.content)
             if len(work)==1:
@@ -735,7 +754,7 @@ async def on_message(message):
                     else:
                         await client.send_message(message.channel, char+' belongs to <@'+myself['characters'][char]['__creator__']+'>. Only the creator or an administrator can edit them.')
                 else:
-                    await client.send_message(message.channel, "That character does not exist; use newchar to create them.") 
+                    await client.send_message(message.channel, "That character does not exist; use newchar to create them.")
 sleeptime=0
 sleeptimes=[5,5,30,60,60*5]
 while True:
