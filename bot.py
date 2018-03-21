@@ -48,10 +48,15 @@ myself['prefix'] = settings['prefix']
 myself['charsign'] = settings['charsign']
 myself['help'] = settings['help']
 myself['top_amount'] = settings['top_amount']
+myself['dexhelp'] = settings['dexhelp']
 
 with open('characters.json') as data_file:    
     characters = json.load(data_file)
 myself['characters'] = characters
+
+with open('dexdata.json') as data_file:    
+    dex = json.load(data_file, object_pairs_hook=OrderedDict)
+myself['pokedex'] = dex
 
 with open('statistics.json') as data_file:    
     statistics = json.load(data_file, object_pairs_hook=OrderedDict)
@@ -548,6 +553,53 @@ async def on_message(message):
                 if i!='all':
                     outgoing += i+'\n'
             await client.send_message(message.channel, outgoing)
+        elif message.content.lower().startswith(myself['prefix']+'ref dex '):
+            keylist = [i for i in myself['pokedex']['Bulbasaur']['001']]
+            keylist.append("Dump")
+            test = message.content[message.content.lower().find('dex ')+4:].split(" ",2)
+            if len(test)>1:
+                print(test)
+                mon = test[0]
+                if len(test)==3:
+                    form = test[1]
+                    key = test[2]
+                else:
+                    form='Normal'
+                    key = test[1]
+                print('Key:')
+                print(key)
+                print('Keylist:')
+                print(keylist)
+                poss = process.extractOne(key, keylist)
+                if poss[1]>80:
+                    key = poss[0]
+                    poss = process.extractOne(mon, myself['pokedex'].keys())
+                    if poss[1]>80:
+                        mon = myself['pokedex'][poss[0]]
+                        poss = process.extractOne(form, mon.keys())
+                        if poss[1]>80:
+                            output = mon[poss[0]]
+                            while type(output) is str:
+                                output = mon[output]
+                            if key == 'Dump':
+                                output = [output[i] for i in output.keys()]
+                                output = [output[0].split('\n',2)[0]+'\n'+output[0].split('\n',2)[1]] + [i.split('\n',2)[2] for i in output]
+                                output = '\n\n'.join(output)
+                                while len(output)>2000:
+                                    index = output[:2000].rfind('\n')
+                                    await client.send_message(message.author, output[:index])
+                                    output = output[index+1:]
+                                await client.send_message(message.author, output)
+                            else:
+                                await client.send_message(message.channel, output[key])                            
+                        else:
+                            await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match for that Form.")
+                    else:
+                        await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match for that Pokémon.")
+                else:
+                    await client.send_message(message.channel, "<@"+message.author.id+">: "+myself['dexhelp'])
+            else:
+                await client.send_message(message.author, "<@"+message.author.id+">: "+myself['dexhelp'])
         elif message.content.startswith(myself['prefix']+'ref'):
             test = message.content.split(" ",2)
             if len(test)==3 and test[1] in myself['bookdata'].keys():
