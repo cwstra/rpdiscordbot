@@ -54,7 +54,7 @@
             "TMs": "#003: Venusaur\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 05 Roar, **06 Toxic**, **09 Venoshock**, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 16 Light Screen, 17 Protect, 20 Safeguard, 21 Frustration, **22 Solar Beam**, 26 Earthquake, 27 Return, 32 Double Team, **36 Sludge Bomb**, 42 Facade, 44 Rest, 45 Attract, 48 Round, 49 Echoed Voice, **53 Energy Ball**, 68 Giga Impact, 70 Flash, 75 Swords Dance, 78 Bulldoze, **86 Grass Knot**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, 96 Nature Power, 100 Confide", 
             "Egg": "#003: Venusaur\nStandard Form\nNo Egg Moves", 
             "Tutor": "#003: Venusaur\nStandard Form\nTutor Move List:Bind, Body Slam, Block, **Bullet Seed**, Defense Curl, **Frenzy Plant**, Fury Cutter, **Giga Drain**, **Grass Pledge**, Knock Off, Mud-Slap, Natural Gift, Outrage, Secret Power, **Seed Bomb**, Sleep Talk, Snore, String Shot, **Synthesis**, **Worry Seed**", 
-            "Mega": "#003: Venusaur\nStandard Form\nMega Venusaur\nType:Unchanged\nAbility:Thick Fat\nStats: +2, +4, +2, +2"
+            "Mega": "#003: Venusaur\nStandard Form\nMega Venusaur\nType:Unchanged\nAbility:Thick Fat\nStats: +2 Attack, +4 Defense, +2 Special Attack, +2 Special Defense"
         }, 
         "Standard": "003", 
         "(Standard)": "003"
@@ -114,7 +114,7 @@
             "TMs": "#006: Charizard\nStandard Form\nTM/HM Move List:A1 Cut, **A2 Fly**, A4 Strength, 01 Hone Claws, 02 Dragon Claw, 05 Roar, 06 Toxic, 10 Hidden Power, **11 Sunny Day**, 15 Hyper Beam, 17 Protect, **19 Roost**, 21 Frustration, 22 Solar Beam, 26 Earthquake, 27 Return, 28 Dig, 31 Brick Break, 32 Double Team, **35 Flamethrower**, **38 Fire Blast**, 39 Rock Tomb, **40 Aerial Ace**, 42 Facade, **43 Flame Charge**, 44 Rest, 45 Attract, 48 Round, 49 Echoed Voice, **50 Overheat**, 51 Steel Wing, 52 Focus Blast, 56 Fling, **58 Sky Drop**, **59 Incinerate**, **61 Will-O-Wisp**, 65 Shadow Claw, 68 Giga Impact, 75 Swords Dance, 78 Bulldoze, 80 Rock Slide, 82 Dragon Tail, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#006: Charizard\nStandard Form\nNo Egg Moves", 
             "Tutor": "#006: Charizard\nStandard Form\nTutor Move List:**Air Cutter**, **Air Slash (N)**, **Blast Burn**, Body Slam, Counter, Defense Curl, Double-Edge, Dragon Claw (N), Dragon Pulse, Dynamic Punch, **Fire Pledge**, **Fire Punch**, Focus Punch, Fury Cutter, Growl, **Heat Wave**, Hold Hands, Iron Tail, Mega Kick, Mega Punch, Metal Claw, Mud-Slap, Ominous Wind, Outrage, Rage, **Roost**, Seismic Toss, Shadow Claw (N), Sleep Talk, Snore, Steel Wing, Swift, **Tailwind**, Thunder Punch, Twister", 
-            "Mega": "#006: Charizard\nStandard Form\nMega Charizard X\nType:Fire/Dragon\nAbility:Tough Claws\nStats: +5, +3, +2\nMega Charizard Y\nType:Unchanged\nAbility:Drought\nStats: +2, +5, +3"
+            "Mega": "#006: Charizard\nStandard Form\nMega Charizard X\nType:Fire/Dragon\nAbility:Tough Claws\nStats: +5 Attack, +3 Defense, +2 Special Attack\n\nMega Charizard Y\nType:Unchanged\nAbility:Drought\nStats: +2 Attack, +5 Special Attack, +3 Special Defense"
         }, 
         "Standard": "006", 
         "(Standard)": "006"
@@ -174,7 +174,7 @@
             "TMs": "#009: Blastoise\nStandard Form\nTM/HM Move List:**A3 Surf**, A4 Strength, **A5 Waterfall**, **A6 Dive**, 05 Roar, 06 Toxic, 07 Hail, 10 Hidden Power, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, **18 Rain Dance**, 21 Frustration, 23 Smack Down, 26 Earthquake, 27 Return, 28 Dig, 31 Brick Break, 32 Double Team, 39 Rock Tomb, 42 Facade, 44 Rest, 45 Attract, 48 Round, 52 Focus Blast, **55 Scald**, 56 Fling, 68 Giga Impact, 74 Gyro Ball, 78 Bulldoze, 80 Rock Slide, 82 Dragon Tail, 87 Swagger, 88 Sleep Talk, 90 Substitute, 91 Flash Cannon, 94 Rock Smash, 97 Dark Pulse, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#009: Blastoise\nStandard Form\nNo Egg Moves", 
             "Tutor": "#009: Blastoise\nStandard Form\nTutor Move List:**Aqua Tail**, Avalanche, Body Slam, **Brine**, Counter, Defense Curl, **Dive**, Double-Edge, Dynamic Punch, Flash Cannon (N), Focus Punch, **Hydro Cannon**, Ice Punch, Icy Wind, Iron Defense, Iron Tail, Mega Kick, Mega Punch, Mud-Slap, Outrage, Rollout, Seismic Toss, Signal Beam, Sleep Talk, Snore, **Water Pledge**, Zen Headbutt", 
-            "Mega": "#009: Blastoise\nStandard Form\nMega Blastoise\nType:Unchanged\nAbility:Mega Launcher\nStats: +2, +2, +5, +1"
+            "Mega": "#009: Blastoise\nStandard Form\nMega Blastoise\nType:Unchanged\nAbility:Mega Launcher\nStats: +2 Attack, +2 Defense, +5 Special Attack, +1 Special Defense"
         }, 
         "Standard": "009", 
         "(Standard)": "009"
@@ -294,7 +294,7 @@
             "TMs": "#015: Beedrill\nStandard Form\nTM/HM Move List:A1 Cut, **06 Toxic**, **09 Venoshock**, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 17 Protect, 19 Roost, 21 Frustration, 22 Solar Beam, 27 Return, 31 Brick Break, 32 Double Team, **36 Sludge Bomb**, 40 Aerial Ace, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, 54 False Swipe, 62 Acrobatics, 66 Payback, 68 Giga Impact, 70 Flash, 75 Swords Dance, **76 Struggle Bug**, **81 X-Scissor**, **83 Infestation**, **84 Poison Jab**, 87 Swagger, 88 Sleep Talk, **89 U-Turn**, 90 Substitute, 94 Rock Smash", 
             "Egg": "#015: Beedrill\nStandard Form\nNo Egg Moves", 
             "Tutor": "#015: Beedrill\nStandard Form\nTutor Move List:Air Cutter, **Bug Bite**, Double-Edge, Drill Run, Electroweb, Endeavor, **Fury Cutter**, Giga Drain, Knock Off, Ominous Wind, Roost, **Silver Wind**, Sleep Talk, Snore, **String Shot**, Swift, Tailwind", 
-            "Mega": "#015: Beedrill\nStandard Form\nMega Beedrill\nType:Unchanged\nAbility:Adaptability\nStats: +6, -3, +7"
+            "Mega": "#015: Beedrill\nStandard Form\nMega Beedrill\nType:Unchanged\nAbility:Adaptability\nStats: +6 Attack, -3 Special Attack, +7 Speed"
         }, 
         "Standard": "015", 
         "(Standard)": "015"
@@ -354,7 +354,7 @@
             "TMs": "#018: Pidgeot\nStandard Form\nTM/HM Move List:**A2 Fly**, 06 Toxic, **10 Hidden Power**, 11 Sunny Day, **15 Hyper Beam**, **17 Protect**, 18 Rain Dance, **19 Roost**, **21 Frustration**, **27 Return**, **32 Double Team**, **40 Aerial Ace**, **42 Facade**, 44 Rest, **45 Attract**, 46 Thief, **48 Round**, 51 Steel Wing, **68 Giga Impact**, **87 Swagger**, **88 Sleep Talk**, 89 U-Turn, **90 Substitute**", 
             "Egg": "#018: Pidgeot\nStandard Form\nNo Egg Moves", 
             "Tutor": "#018: Pidgeot\nStandard Form\nTutor Move List:**Air Cutter**, **Defog**, **Double-Edge**, Heat Wave, Mud-Slap, Ominous Wind, **Pluck**, **Roost**, **Sky Attack**, **Sleep Talk**, **Snore**, Steel Wing, **Swift**, **Tailwind**, Twister, **Uproar**, **Work Up**", 
-            "Mega": "#018: Pidgeot\nStandard Form\nMega Pidgeot\nType:Unchanged\nAbility:No Guard\nStats: +7, +1, +2"
+            "Mega": "#018: Pidgeot\nStandard Form\nMega Pidgeot\nType:Unchanged\nAbility:No Guard\nStats: +7 Special Attack, +1 Special Defense, +2 Speed"
         }, 
         "Standard": "018", 
         "(Standard)": "018"
@@ -1294,7 +1294,7 @@
             "TMs": "#065: Alakazam\nStandard Form\nTM/HM Move List:**03 Psyshock**, **04 Calm Mind**, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 15 Hyper Beam, **16 Light Screen**, 17 Protect, 18 Rain Dance, 20 Safeguard, 21 Frustration, 27 Return, **29 Psychic**, 30 Shadow Ball, 32 Double Team, **33 Reflect**, 41 Torment, 42 Facade, **44 Rest**, 45 Attract, 46 Thief, 48 Round, 52 Focus Blast, 53 Energy Ball, 56 Fling, 57 Charge Beam, 63 Embargo, 68 Giga Impact, 70 Flash, 73 Thunder Wave, 77 Psych Up, **85 Dream Eater**, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute, **92 Trick Room**, 99 Dazzling Gleam, 100 Confide", 
             "Egg": "#065: Alakazam\nStandard Form\nNo Egg Moves", 
             "Tutor": "#065: Alakazam\nStandard Form\nTutor Move List:**Ally Switch**, Body Slam, Counter, Double-Edge, Drain Punch, Dynamic Punch, Fire Punch, Focus Punch, Foul Play, **Gravity**, Ice Punch, Iron Tail, **Kinesis (N)**, Knock Off, **Magic Coat**, **Magic Room**, Recycle, **Role Play**, **Magic Coat**, Mega Kick, Mega Punch, Metronome, Seismic Toss, Shock Wave, Signal Beam, **Skill Swap**, Sleep Talk, Snatch, Snore, **Telekinesis**, Thunder Punch, **Trick**, **Wonder Room**, **Zen Headbutt**", 
-            "Mega": "#065: Alakazam\nStandard Form\nMega Alakazam\nType:Unchanged\nAbility:Trace\nStats: +2, +4, +3"
+            "Mega": "#065: Alakazam\nStandard Form\nMega Alakazam\nType:Unchanged\nAbility:Trace\nStats: +2 Defense, +4 Special Attack, +3 Speed"
         }, 
         "Standard": "065", 
         "(Standard)": "065"
@@ -1594,7 +1594,7 @@
             "TMs": "#080: Slowbro\nStandard Form\nTM/HM Move List:**A3 Surf**, A4 Strength, **A6 Dive**, **03 Psyshock**, **04 Calm Mind**, 06 Toxic, 07 Hail, 10 Hidden Power, 11 Sunny Day, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, **16 Light Screen**, 17 Protect, **18 Rain Dance**, 20 Safeguard, 21 Frustration, 26 Earthquake, 27 Return, 28 Dig, **29 Psychic**, 30 Shadow Ball, 31 Brick Break, 32 Double Team, 35 Flamethrower, 38 Fire Blast, 40 Aerial Ace, 42 Facade, **44 Rest**, 45 Attract, 48 Round, 49 Echoed Voice, 52 Focus Blast, **55 Scald**, 56 Fling, 59 Incinerate, 68 Giga Impact, 70 Flash, 73 Thunder Wave, 77 Psych Up, 78 Bulldoze, **85 Dream Eater**, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute, **92 Trick Room**, 94 Rock Smash", 
             "Egg": "#080: Slowbro\nStandard Form\nNo Egg Moves", 
             "Tutor": "#080: Slowbro\nStandard Form\nTutor Move List:After You, **Aqua Tail**, Avalanche, Block, Body Slam, **Brine**, Counter, **Dive**, Double-Edge, Drain Punch, Dynamic Punch, Focus Punch, Foul Play, Fury Cutter, **Heal Pulse (N)**, Ice Punch, Icy Wind, Iron Defense, Iron Tail, **Magic Coat**, Mega Kick, Mega Punch, Mud-Slap, Recycle, **Role Play**, Seismic Toss, Signal Beam, **Skill Swap**, Snore, Swift, **Telekinesis**, **Trick**, **Wonder Room**, **Zen Headbutt**", 
-            "Mega": "#080: Slowbro\nStandard Form\nMega Slowbro\nType:Unchanged\nAbility:Shell Armor\nStats: +7, +3"
+            "Mega": "#080: Slowbro\nStandard Form\nMega Slowbro\nType:Unchanged\nAbility:Shell Armor\nStats: +7 Defense, +3 Special Attack"
         }, 
         "Standard": "080", 
         "(Standard)": "080"
@@ -1874,7 +1874,7 @@
             "TMs": "#094: Gengar\nStandard Form\nTM/HM Move List:A4 Strength, **06 Toxic**, **09 Venoshock**, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 24 Thunderbolt, 25 Thunder, 27 Return, 29 Psychic, **30 Shadow Ball**, 31 Brick Break, 32 Double Team, **36 Sludge Bomb**, 41 Torment, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, 52 Focus Blast, 53 Energy Ball, 56 Fling, 61 Will-O-Wisp, 63 Embargo, 64 Explosion, **65 Shadow Claw**, 66 Payback, 68 Giga Impact, 77 Psych Up, 83 Infestation, **84 Poison Jab**, 85 Dream Eater, 87 Swagger, 88 Sleep Talk, 90 Substitute, 92 Trick Room, 94 Rock Smash, 97 Dark Pulse, 98 Power-Up Punch, 99 Dazzling Gleam, 100 Confide", 
             "Egg": "#094: Gengar\nStandard Form\nNo Egg Moves", 
             "Tutor": "#094: Gengar\nStandard Form\nTutor Move List:Body Slam, Counter, Dark Pulse, Drain Punch, Dynamic Punch, Fire Punch, Focus Punch, Foul Play, Giga Drain, Ice Punch, Icy Wind, Knock Off, Magic Coat, Mega Kick, Mega Punch, Metronome, **Ominous Wind**, Pain Split, Role Play, Seismic Toss, Skill Swap, Sleep Talk, **Sludge Wave**, Snatch, Snore, **Spite (N)**, Sucker Punch, Telekinesis, Thunder Punch, Trick, Uproar, Wonder Room", 
-            "Mega": "#094: Gengar\nStandard Form\nMega Gengar\nType:Unchanged\nAbility:Shadow Tag\nStats: +2, +4, +2, +2"
+            "Mega": "#094: Gengar\nStandard Form\nMega Gengar\nType:Unchanged\nAbility:Shadow Tag\nStats: +2 Defense, +4 Special Attack, +2 Special Defense, +2 Speed"
         }, 
         "Standard": "094", 
         "(Standard)": "094"
@@ -2294,7 +2294,7 @@
             "TMs": "#115: Kangaskhan\nStandard Form\nTM/HM Move List:**A1 Cut**, A3 Surf, **A4 Strength**, **05 Roar**, 06 Toxic, 07 Hail, **10 Hidden Power**, 11 Sunny Day, 13 Ice Beam, 14 Blizzard, **15 Hyper Beam**, **17 Protect**, 18 Rain Dance, **20 Safeguard**, **21 Frustration**, 22 Solar Beam, 24 Thunderbolt, 25 Thunder, 26 Earthquake, **27 Return**, 28 Dig, 30 Shadow Ball, 31 Brick Break, **32 Double Team**, 35 Flamethrower, 37 Sandstorm, 38 Fire Blast, 39 Rock Tomb, 40 Aerial Ace, **42 Facade**, 44 Rest, **45 Attract**, 46 Thief, **48 Round**, 52 Focus Blast, 56 Fling, 59 Incinerate, 65 Shadow Claw, **67 Retaliate**, **68 Giga Impact**, 78 Bulldoze, 80 Rock Slide, **87 Swagger**, **88 Sleep Talk**, **90 Substitute**, 94 Rock Smash, 98 Power-Up Punch, **100 Confide**", 
             "Egg": "#115: Kangaskhan\nStandard Form\nEgg Move List:Circle Throw, Counter, **Crush Claw**, **Disable**, **Double-Edge**, **Endeavor**, **Focus Energy**, Focus Punch, **Foresight**, Hammer Arm, **Safeguard**, **Stomp**, **Substitute**, **Trump Card**, **Uproar**", 
             "Tutor": "#115: Kangaskhan\nStandard Form\nTutor Move List:Aqua Tail, Avalanche, **Body Slam**, **Covet**, Drain Punch, Dynamic Punch, **Endeavor**, Fire Punch, Fury Cutter, **Helping Hand**, Ice Punch, Icy Wind, Iron Tail, Knock Off, Low Kick, **Mega Kick**, Mud-Slap, Outrage, Seismic Toss, **Sleep Talk**, **Snore**, Spite, Thunder Punch, **Uproar**, Water Pulse, **Work Up**", 
-            "Mega": "#115: Kangaskhan\nStandard Form\nMega Kangaskhan\nType:Unchanged\nAbility:Parental Bond\nStats: +3, +2, +2, +2, +1"
+            "Mega": "#115: Kangaskhan\nStandard Form\nMega Kangaskhan\nType:Unchanged\nAbility:Parental Bond\nStats: +3 Attack, +2 Defense, +2 Special Attack, +2 Special Defense, +1 Speed"
         }, 
         "Standard": "115", 
         "(Standard)": "115"
@@ -2534,7 +2534,7 @@
             "TMs": "#127: Pinsir\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 06 Toxic, 08 Bulk Up, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 23 Smack Down, 26 Earthquake, 27 Return, 28 Dig, 31 Brick Break, 32 Double Team, 39 Rock Tomb, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, 52 Focus Blast, 54 False Swipe, 56 Fling, 68 Giga Impact, 71 Stone Edge, 75 Swords Dance, **76 Struggle Bug**, 78 Bulldoze, 80 Rock Slide, **81 X-Scissor**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash", 
             "Egg": "#127: Pinsir\nStandard Form\nEgg Move List:**Bug Bite**, Close Combat, Feint Attack, False Swipe, Feint, Flail, Fury Attack, Me First, Quick Attack, Superpower", 
             "Tutor": "#127: Pinsir\nStandard Form\nTutor Move List:Bind, Body Slam, **Bug Bite**, Double-Edge, Focus Punch, **Fury Cutter**, Iron Defense, Knock Off, Sleep Talk, Snore, Stealth Rock, **String Shot**, Superpower", 
-            "Mega": "#127: Pinsir\nStandard Form\nMega Pinsir\nType:Bug/Flying\nAbility:Aerilate\nStats: +3, +2, +1, +2, +2"
+            "Mega": "#127: Pinsir\nStandard Form\nMega Pinsir\nType:Bug/Flying\nAbility:Aerilate\nStats: +3 Attack, +2 Defense, +1 Special Attack, +2 Special Defense, +2 Speed"
         }, 
         "Standard": "127", 
         "(Standard)": "127"
@@ -2594,7 +2594,7 @@
             "TMs": "#130: Gyarados\nStandard Form\nTM/HM Move List:**A3 Surf**, A4 Strength, **A5 Waterfall**, **A6 Dive**, 05 Roar, 06 Toxic, 07 Hail, 10 Hidden Power, 12 Taunt, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, **18 Rain Dance**, 21 Frustration, 24 Thunderbolt, 25 Thunder, 26 Earthquake, 27 Return, 32 Double Team, 35 Flamethrower, 37 Sandstorm, 38 Fire Blast, 41 Torment, 42 Facade, 44 Rest, 45 Attract, 48 Round, **55 Scald**, 59 Incinerate, 66 Payback, 68 Giga Impact, 71 Stone Edge, 73 Thunder Wave, 78 Bulldoze, 82 Dragon Tail, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, 97 Dark Pulse", 
             "Egg": "#130: Gyarados\nStandard Form\nNo Egg Moves", 
             "Tutor": "#130: Gyarados\nStandard Form\nTutor Move List:**Aqua Tail**, Avalanche, Body Slam, **Bounce**, **Brine**, Dark Pulse, **Dive**, Double-Edge, Dragon Pulse, Icy Wind, Iron Head, Iron Tail, Outrage, Sleep Talk, Snore, Spite, Thrash (N), Twister, Uproar, **Water Pulse**", 
-            "Mega": "#130: Gyarados\nStandard Form\nMega Gyarados\nType:Water/Dark\nAbility:Mold Breaker\nStats: +3, +3, +1, +3"
+            "Mega": "#130: Gyarados\nStandard Form\nMega Gyarados\nType:Water/Dark\nAbility:Mold Breaker\nStats: +3 Attack, +3 Defense, +1 Special Attack, +3 Special Defense"
         }, 
         "Standard": "130", 
         "(Standard)": "130"
@@ -2834,7 +2834,7 @@
             "TMs": "#142: Aerodactyl\nStandard Form\nTM/HM Move List:**A2 Fly**, A4 Strength, 01 Hone Claws, 02 Dragon Claw, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 15 Hyper Beam, 17 Protect, 18 Rain Dance, **19 Roost**, 21 Frustration, **23 Smack Down**, 26 Earthquake, 27 Return, 32 Double Team, 35 Flamethrower, **37 Sandstorm**, 38 Fire Blast, **39 Rock Tomb**, **40 Aerial Ace**, 41 Torment, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, 51 Steel Wing, **58 Sky Drop**, 59 Incinerate, 66 Payback, 68 Giga Impact, **69 Rock Polish**, **71 Stone Edge**, 78 Bulldoze, **80 Rock Slide**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash", 
             "Egg": "#142: Aerodactyl\nStandard Form\nEgg Move List:Assurance, Curse, Dragon Breath, Foresight, Pursuit, **Roost**, Steel Wing, **Tailwind**, Whirlwind, **Wide Guard**", 
             "Tutor": "#142: Aerodactyl\nStandard Form\nTutor Move List:**Ancient Power**, Aqua Tail, Double-Edge, Dragon Pulse, Earth Power, Fire Fang (N), Heat Wave, Ice Fang (N), Iron Head (N), Iron Tail, Ominous Wind, **Roost**, Snore, Supersonic (N), Swift, **Sky Attack**, Sleep Talk, Snore, **Stealth Rock**, **Tailwind**, Thunder Fang (N), Twister", 
-            "Mega": "#142: Aerodactyl\nStandard Form\nMega Aerodactyl\nType:Unchanged\nAbility:Tough Claws\nStats: +3, +2, +1, +2, +2"
+            "Mega": "#142: Aerodactyl\nStandard Form\nMega Aerodactyl\nType:Unchanged\nAbility:Tough Claws\nStats: +3 Attack, +2 Defense, +1 Special Attack, +2 Special Defense, +2 Speed"
         }, 
         "Standard": "142", 
         "(Standard)": "142"
@@ -2994,7 +2994,7 @@
             "TMs": "#150: Mewtwo\nStandard Form\nTM/HM Move List:A4 Strength, **03 Psyshock**, **04 Calm Mind**, 06 Toxic, 07 Hail, 08 Bulk Up, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, **16 Light Screen**, 17 Protect, 18 Rain Dance, 20 Safeguard, 21 Frustration, 22 Solar Beam, 24 Thunderbolt, 25 Thunder, 26 Earthquake, 27 Return, **29 Psychic**, 30 Shadow Ball, 31 Brick Break, 32 Double Team, **33 Reflect**, 35 Flamethrower, 37 Sandstorm, 38 Fire Blast, 39 Rock Tomb, 40 Aerial Ace, 41 Torment, 42 Facade, **44 Rest**, 47 Low Sweep, 48 Round, 52 Focus Blast, 53 Energy Ball, 56 Fling, 57 Charge Beam, 59 Incinerate, 61 Will-O-Wisp, 63 Embargo, 68 Giga Impact, 70 Flash, 71 Stone Edge, 73 Thunder Wave, 77 Psych Up, 78 Bulldoze, 80 Rock Slide, 84 Poison Jab, **85 Dream Eater**, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute, **92 Trick Room**, 94 Rock Smash, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#150: Mewtwo\nStandard Form\nNo Egg Moves", 
             "Tutor": "#150: Mewtwo\nStandard Form\nTutor Move List:Aqua Tail, Body Slam, Counter, Double-Edge, Drain Punch, Dynamic Punch, Fire Punch, Foul Play, **Gravity**, Ice Punch, Icy Wind, Iron Tail, Low Kick, **Magic Coat**, **Magic Room**, Mega Punch, Metronome, Mimic, Mud-Slap, Recycle, **Role Play**, Seismic Toss, Signal Beam, **Skill Swap**, Sleep Talk, Snore, Swift, **Telekinesis**, Thunder Punch, **Trick**, **Wonder Room**, **Zen Headbutt**", 
-            "Mega": "#150: Mewtwo\nStandard Form\nMega Mewtwo X\nType:Psychic/Fighting\nAbility:Steadfast\nStats: +8, +1\nMega Mewtwo Y\nType:Unchanged\nAbility:Insomnia\nStats: +4, -2, +4, +3, +1"
+            "Mega": "#150: Mewtwo\nStandard Form\nMega Mewtwo X\nType:Psychic/Fighting\nAbility:Steadfast\nStats: +8 Attack, +1 Defense\n\nMega Mewtwo Y\nType:Unchanged\nAbility:Insomnia\nStats: +4 Attack, -2 Defense, +4 Special Attack, +3 Special Defense, +1 Speed"
         }, 
         "Standard": "150", 
         "(Standard)": "150"
@@ -3614,7 +3614,7 @@
             "TMs": "#181: Ampharos\nStandard Form\nTM/HM Move List:A4 Strength, 06 Toxic, 10 Hidden Power, 15 Hyper Beam, 16 Light Screen, 17 Protect, 18 Rain Dance, 21 Frustration, **24 Thunderbolt**, **25 Thunder**, 27 Return, 31 Brick Break, 32 Double Team, 42 Facade, 44 Rest, 45 Attract, 48 Round, 49 Echoed Voice, 52 Focus Blast, 56 Fling, **57 Charge Beam**, 68 Giga Impact, 70 Flash, **72 Volt Switch**, **73 Thunder Wave**, **73 Thunder Wave**, 78 Bulldoze, 87 Swagger, 88 Sleep Talk, 90 Substitute, **93 Wild Charge**, 94 Rock Smash, 98 Power-Up Punch", 
             "Egg": "#181: Ampharos\nStandard Form\nNo Egg Moves", 
             "Tutor": "#181: Ampharos\nStandard Form\nTutor Move List:After You, Body Slam, Counter, Defense Curl, Double-Edge, Dragon Pulse (N), Dynamic Punch, Fire Punch (N), Focus Punch, Heal Bell, **Ion Deluge (N)**, Iron Tail, **Magnet Rise**, **Magnetic Flux (N)**, Mega Kick, Mega Punch, Outrage, Seismic Toss, **Shock Wave**, Signal Beam, Sleep Talk, Snore, Swift, **Thunder Punch**, **Zap Cannon (N)**", 
-            "Mega": "#181: Ampharos\nStandard Form\nMega Ampharos\nType:Electric/Dragon\nAbility:Mold Breaker\nStats: +2, +2, +5, +2, -1"
+            "Mega": "#181: Ampharos\nStandard Form\nMega Ampharos\nType:Electric/Dragon\nAbility:Mold Breaker\nStats: +2 Attack, +2 Defense, +5 Special Attack, +2 Special Defense, -1 Speed"
         }, 
         "Standard": "181", 
         "(Standard)": "181"
@@ -4154,7 +4154,7 @@
             "TMs": "#208: Steelix\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 15 Hyper Beam, 17 Protect, 21 Frustration, 23 Smack Down, **26 Earthquake**, 27 Return, **28 Dig**, 32 Double Team, 37 Sandstorm, 39 Rock Tomb, 41 Torment, 42 Facade, 44 Rest, 45 Attract, 48 Round, 64 Explosion, 66 Payback, 68 Giga Impact, 69 Rock Polish, 71 Stone Edge, **74 Gyro Ball**, 77 Psych Up, **78 Bulldoze**, 80 Rock Slide, 82 Dragon Tail, 87 Swagger, 88 Sleep Talk, 90 Substitute, **91 Flash Cannon**, 94 Rock Smash, 96 Nature Power, 97 Dark Pulse", 
             "Egg": "#208: Steelix\nStandard Form\nNo Egg Moves", 
             "Tutor": "#208: Steelix\nStandard Form\nTutor Move List:Ancient Power, Aqua Tail, Bind, Block, Body Slam, Dark Pulse, Defense Curl, Dragon Pulse, **Earth Power**, Fire Fang (N), Ice Fang (N), **Iron Head**, **Iron Tail**, Magnet Rise, **Mud-Slap**, Rollout, Sleep Talk, Snore, Stealth Rock, Thunder Fang (N), Twister", 
-            "Mega": "#208: Steelix\nStandard Form\nMega Steelix\nType:Unchanged\nAbility:Sand Force\nStats: +4, +3, +3"
+            "Mega": "#208: Steelix\nStandard Form\nMega Steelix\nType:Unchanged\nAbility:Sand Force\nStats: +4 Attack, +3 Defense, +3 Special Defense"
         }, 
         "Standard": "208", 
         "(Standard)": "208"
@@ -4234,7 +4234,7 @@
             "TMs": "#212: Scizor\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 06 Toxic, 09 Venoshock, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 16 Light Screen, 17 Protect, 18 Rain Dance, 19 Roost, 20 Safeguard, 21 Frustration, 27 Return, 31 Brick Break, 32 Double Team, 37 Sandstorm, 40 Aerial Ace, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, **51 Steel Wing**, 54 False Swipe, 56 Fling, 62 Acrobatics, 68 Giga Impact, 75 Swords Dance, **76 Struggle Bug**, **81 X-Scissor**, 87 Swagger, 88 Sleep Talk, **89 U-Turn**, 90 Substitute, **91 Flash Cannon**, 94 Rock Smash", 
             "Egg": "#212: Scizor\nStandard Form\nNo Egg Moves", 
             "Tutor": "#212: Scizor\nStandard Form\nTutor Move List:**Bug Bite**, **Bullet Punch (N)**, Counter, Defog, Double-Edge, Feint (N), **Fury Cutter**, **Iron Defense**, **Iron Head**, Knock Off, Ominous Wind, Roost, **Silver Wind**, Sleep Talk, Snore, **Steel Wing**, Superpower, Swift, Tailwind", 
-            "Mega": "#212: Scizor\nStandard Form\nMega Scizor\nType:Unchanged\nAbility:Technician\nStats: +2, +4, +1, +2, +1"
+            "Mega": "#212: Scizor\nStandard Form\nMega Scizor\nType:Unchanged\nAbility:Technician\nStats: +2 Attack, +4 Defense, +1 Special Attack, +2 Special Defense, +1 Speed"
         }, 
         "Standard": "212", 
         "(Standard)": "212"
@@ -4274,7 +4274,7 @@
             "TMs": "#214: Heracross\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 06 Toxic, 09 Venoshock, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 23 Smack Down, 26 Earthquake, 27 Return, 28 Dig, **31 Brick Break**, 32 Double Team, 39 Rock Tomb, 40 Aerial Ace, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, **52 Focus Blast**, 54 False Swipe, 56 Fling, 65 Shadow Claw, 67 Retaliate, 68 Giga Impact, 71 Stone Edge, 75 Swords Dance, **76 Struggle Bug**, 78 Bulldoze, 80 Rock Slide, 87 Swagger, 88 Sleep Talk, 90 Substitute, **94 Rock Smash**", 
             "Egg": "#214: Heracross\nStandard Form\nEgg Move List:Bide, Double-Edge, False Swipe, Flail, **Focus Punch**, Harden, **Megahorn**, Pursuit, **Revenge**, Rock Blast, **Seismic Toss**", 
             "Tutor": "#214: Heracross\nStandard Form\nTutor Move List:**Arm Thrust (N)**, Body Slam, **Bug Bite**, **Bulk Up**, Bullet Seed (N), Endure (N), **Fury Cutter**, Helping Hand, Iron Defense, Knock Off, **Low Kick**, Night Slash (N), Rock Blast, **Seismic Toss**, Sleep Talk, Snore, **Vacuum Wave**, Work Up", 
-            "Mega": "#214: Heracross\nStandard Form\nMega Heracross\nType:Unchanged\nAbility:Skill Link\nStats: +6, +4, +1, -1"
+            "Mega": "#214: Heracross\nStandard Form\nMega Heracross\nType:Unchanged\nAbility:Skill Link\nStats: +6 Attack, +4 Defense, +1 Special Defense, -1 Speed"
         }, 
         "Standard": "214", 
         "(Standard)": "214"
@@ -4574,7 +4574,7 @@
             "TMs": "#229: Houndoom\nStandard Form\nTM/HM Move List:A4 Strength, 05 Roar, 06 Toxic, 10 Hidden Power, **11 Sunny Day**, **12 Taunt**, 15 Hyper Beam, 17 Protect, 21 Frustration, 22 Solar Beam, 27 Return, 30 Shadow Ball, 32 Double Team, **35 Flamethrower**, 36 Sludge Bomb, **38 Fire Blast**, **41 Torment**, 42 Facade, **43 Flame Charge**, 44 Rest, 45 Attract, **46 Thief**, 48 Round, **50 Overheat**, **59 Incinerate**, **61 Will-O-Wisp**, **63 Embargo**, **66 Payback**, 67 Retaliate, 68 Giga Impact, 85 Dream Eater, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, **95 Snarl**, **97 Dark Pulse**", 
             "Egg": "#229: Houndoom\nStandard Form\nNo Egg Moves", 
             "Tutor": "#229: Houndoom\nStandard Form\nTutor Move List:Body Slam, Counter, **Dark Pulse**, Double-Edge, **Foul Play**, **Heat Wave**, Hyper Voice, **Inferno (N)**, Iron Tail, Magic Coat, Mud-Slap, **Nasty Plot (N)**, Role Play, Sleep Talk, **Snatch**, Snore, Spite, **Sucker Punch**, Super Fang, Swift, Thunder Fang (N), Uproar", 
-            "Mega": "#229: Houndoom\nStandard Form\nMega Houndoom\nType:Unchanged\nAbility:Solar Power\nStats: +4, +3, +1, +2"
+            "Mega": "#229: Houndoom\nStandard Form\nMega Houndoom\nType:Unchanged\nAbility:Solar Power\nStats: +4 Defense, +3 Special Attack, +1 Special Defense, +2 Speed"
         }, 
         "Standard": "229", 
         "(Standard)": "229"
@@ -4954,7 +4954,7 @@
             "TMs": "#248: Tyranitar\nStandard Form\nTM/HM Move List:A1 Cut, A3 Surf, A4 Strength, **01 Hone Claws**, 02 Dragon Claw, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, **12 Taunt**, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, **23 Smack Down**, 24 Thunderbolt, 25 Thunder, 26 Earthquake, 27 Return, 28 Dig, 31 Brick Break, 32 Double Team, 35 Flamethrower, **37 Sandstorm**, **37 Sandstorm**, 38 Fire Blast, **39 Rock Tomb**, 40 Aerial Ace, **41 Torment**, 42 Facade, 44 Rest, 45 Attract, 48 Round, 52 Focus Blast, **56 Fling**, 59 Incinerate, 65 Shadow Claw, **66 Payback**, 67 Retaliate, 68 Giga Impact, **69 Rock Polish**, **71 Stone Edge**, 73 Thunder Wave, 78 Bulldoze, **80 Rock Slide**, 82 Dragon Tail, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, **95 Snarl**, **97 Dark Pulse**, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#248: Tyranitar\nStandard Form\nNo Egg Moves", 
             "Tutor": "#248: Tyranitar\nStandard Form\nTutor Move List:**Ancient Power**, Avalanche, Aqua Tail, Block, Body Slam, Counter, **Dark Pulse**, Double-Edge, Dragon Pulse, Dynamic Punch, Earth Power, Fire Fang (N), Fire Punch, Focus Punch, **Foul Play**, Fury Cutter, Ice Fang (N), Ice Punch, Iron Defense, Iron Head, Iron Tail, Low Kick, Mega Kick, Mega Punch, Mud-Slap, Outrage, Seismic Toss, Shock Wave, Sleep Talk, Snore, Spite, **Stealth Rock**, Superpower, Thunder Fang (N), Uproar, Water Pulse", 
-            "Mega": "#248: Tyranitar\nStandard Form\nMega Tyranitar\nType:Unchanged\nAbility:Sand Stream\nStats: +3, +4, +2, +1"
+            "Mega": "#248: Tyranitar\nStandard Form\nMega Tyranitar\nType:Unchanged\nAbility:Sand Stream\nStats: +3 Attack, +4 Defense, +2 Special Defense, +1 Speed"
         }, 
         "Standard": "248", 
         "(Standard)": "248"
@@ -5074,7 +5074,7 @@
             "TMs": "#254: Sceptile\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 01 Hone Claws, 02 Dragon Claw, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 17 Protect, 20 Safeguard, 21 Frustration, **22 Solar Beam**, 26 Earthquake, 27 Return, 28 Dig, 31 Brick Break, 32 Double Team, 39 Rock Tomb, 40 Aerial Ace, 42 Facade, 44 Rest, 45 Attract, 47 Low Sweep, 48 Round, 52 Focus Blast, **53 Energy Ball**, 54 False Swipe, 56 Fling, 62 Acrobatics, 68 Giga Impact, 70 Flash, 75 Swords Dance, 78 Bulldoze, 80 Rock Slide, 81 X-Scissor, **86 Grass Knot**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, 96 Nature Power, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#254: Sceptile\nStandard Form\nNo Egg Moves", 
             "Tutor": "#254: Sceptile\nStandard Form\nTutor Move List:Body Slam, **Bullet Seed**, Counter, Double-Edge, Dragon Pulse, Drain Punch, Dynamic Punch, Endeavor, Focus Punch, **Frenzy Plant**, Fury Cutter, **Giga Drain**, **Grass Pledge**, Iron Tail, Low Kick, Mega Kick, Mega Punch, Mud-Slap, Night Slash (N), Outrage, Rock Climb, Secret Power, **Seed Bomb**, Seismic Toss, Sleep Talk, Snore, Swift, **Synthesis**, Thunder Punch, **Worry Seed**", 
-            "Mega": "#254: Sceptile\nStandard Form\nMega Sceptile\nType:Grass/Dragon\nAbility:Lightning Rod\nStats: +2, +1, +4, +3"
+            "Mega": "#254: Sceptile\nStandard Form\nMega Sceptile\nType:Grass/Dragon\nAbility:Lightning Rod\nStats: +2 Attack, +1 Defense, +4 Special Attack, +3 Speed"
         }, 
         "Standard": "254", 
         "(Standard)": "254"
@@ -5134,7 +5134,7 @@
             "TMs": "#257: Blaziken\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 01 Hone Claws, 05 Roar, 06 Toxic, **08 Bulk Up**, 10 Hidden Power, **11 Sunny Day**, 15 Hyper Beam, 17 Protect, 21 Frustration, 22 Solar Beam, 26 Earthquake, 27 Return, 28 Dig, **31 Brick Break**, 32 Double Team, **35 Flamethrower**, **38 Fire Blast**, 39 Rock Tomb, 40 Aerial Ace, 42 Facade, **43 Flame Charge**, 44 Rest, 45 Attract, **47 Low Sweep**, 48 Round, 49 Echoed Voice, **50 Overheat**, **52 Focus Blast**, 56 Fling, **59 Incinerate**, **61 Will-O-Wisp**, 62 Acrobatics, 65 Shadow Claw, 68 Giga Impact, 71 Stone Edge, 75 Swords Dance, 78 Bulldoze, 80 Rock Slide, 84 Poison Jab, 87 Swagger, 88 Sleep Talk, 90 Substitute, **94 Rock Smash**, **98 Power-Up Punch**, 100 Confide", 
             "Egg": "#257: Blaziken\nStandard Form\nNo Egg Moves", 
             "Tutor": "#257: Blaziken\nStandard Form\nTutor Move List:**Blast Burn**, Body Slam, Bounce, **Counter**, Double-Edge, Dual Chop, **Dynamic Punch**, **Fire Pledge**, **Fire Punch (N)**, **Focus Punch**, Fury Cutter, **Heat Wave**, Helping Hand, **High Jump Kick (N)**, Knock Off, Last Resort, **Low Kick**, Magic Coat, Mega Kick, Mega Punch, Mirror Move, Mud-Slap, Rock Climb, Role Play, **Seismic Toss**, Sleep Talk, Snore, **Superpower**, Swift, Thunder Punch, **Vacuum Wave**, Work Up", 
-            "Mega": "#257: Blaziken\nStandard Form\nMega Blaziken\nType:Unchanged\nAbility:Speed Boost\nStats: +4, +1, +2, +1, +2"
+            "Mega": "#257: Blaziken\nStandard Form\nMega Blaziken\nType:Unchanged\nAbility:Speed Boost\nStats: +4 Attack, +1 Defense, +2 Special Attack, +1 Special Defense, +2 Speed"
         }, 
         "Standard": "257", 
         "(Standard)": "257"
@@ -5194,7 +5194,7 @@
             "TMs": "#260: Swampert\nStandard Form\nTM/HM Move List:**A3 Surf**, A4 Strength, **A5 Waterfall**, **A6 Dive**, 05 Roar, 06 Toxic, 07 Hail, 10 Hidden Power, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, **18 Rain Dance**, 21 Frustration, **26 Earthquake**, 27 Return, **28 Dig**, 31 Brick Break, 32 Double Team, 34 Sludge Wave, 39 Rock Tomb, 42 Facade, 44 Rest, 45 Attract, 48 Round, 49 Echoed Voice, 52 Focus Blast, **55 Scald**, 56 Fling, 68 Giga Impact, 71 Stone Edge, **78 Bulldoze**, 80 Rock Slide, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#260: Swampert\nStandard Form\nNo Egg Moves", 
             "Tutor": "#260: Swampert\nStandard Form\nTutor Move List:Ancient Power, **Aqua Tail**, Body Slam, Counter, Defense Curl, **Dive**, Double-Edge, Dynamic Punch, **Earth Power**, Endeavor, **Hydro Cannon**, Ice Punch, Icy Wind, Iron Tail, Low Kick, Mega Kick, Mega Punch, **Mud-Slap**, **Mud Sport**, Low Kick, Outrage, Rollout, Seismic Toss, Sleep Talk, Snore, Stealth Rock, Superpower, **Water Pledge**, **Water Pulse**", 
-            "Mega": "#260: Swampert\nStandard Form\nMega Swampert\nType:Unchanged\nAbility:Swift Swim\nStats: +4, +2, +1, +2, +1"
+            "Mega": "#260: Swampert\nStandard Form\nMega Swampert\nType:Unchanged\nAbility:Swift Swim\nStats: +4 Attack, +2 Defense, +1 Special Attack, +2 Special Defense, +1 Speed"
         }, 
         "Standard": "260", 
         "(Standard)": "260"
@@ -5634,7 +5634,7 @@
             "TMs": "#282: Gardevoir\nStandard Form\nTM/HM Move List:**03 Psyshock**, **04 Calm Mind**, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 15 Hyper Beam, **16 Light Screen**, 17 Protect, 18 Rain Dance, 20 Safeguard, 21 Frustration, 24 Thunderbolt, 27 Return, **29 Psychic**, 30 Shadow Ball, 32 Double Team, 32 Double Team, **33 Reflect**, 41 Torment, 42 Facade, **44 Rest**, 45 Attract, 46 Thief, 48 Round, 49 Echoed Voice, 52 Focus Blast, 53 Energy Ball, 56 Fling, 57 Charge Beam, 61 Will-O-Wisp, 68 Giga Impact, 70 Flash, 73 Thunder Wave, 77 Psych Up, **85 Dream Eater**, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute, **92 Trick Room**, **99 Dazzling Gleam**, 100 Confide", 
             "Egg": "#282: Gardevoir\nStandard Form\nNo Egg Moves", 
             "Tutor": "#282: Gardevoir\nStandard Form\nTutor Move List:**Ally Switch**, Body Slam, Defense Curl, Double-Edge, Fire Punch, Heal Bell, **Healing Wish (N)**, Helping Hand, Hyper Voice, Ice Punch, Icy Wind, **Magic Coat**, **Magic Room**, **Misty Terrain (N)**, **Moonblast (N)**, Mud-Slap, Pain Split, Recycle, **Role Play**, Shock Wave, Signal Beam, **Skill Swap**, Sleep Talk, Snatch, Snore, **Stored Power (N)**, Swift, **Telekinesis**, Thunder Punch, **Trick**, **Wonder Room**, **Zen Headbutt**", 
-            "Mega": "#282: Gardevoir\nStandard Form\nMega Gardevoir\nType:Unchanged\nAbility:Pixilate\nStats: +2, +4, +2, +2"
+            "Mega": "#282: Gardevoir\nStandard Form\nMega Gardevoir\nType:Unchanged\nAbility:Pixilate\nStats: +2 Attack, +4 Special Attack, +2 Special Defense, +2 Speed"
         }, 
         "Standard": "282", 
         "(Standard)": "282"
@@ -6034,7 +6034,7 @@
             "TMs": "#302: Sableye\nStandard Form\nTM/HM Move List:A1 Cut, **01 Hone Claws**, 04 Calm Mind, 06 Toxic, 10 Hidden Power, 11 Sunny Day, **12 Taunt**, 17 Protect, 18 Rain Dance, 21 Frustration, 27 Return, 28 Dig, 29 Psychic, **30 Shadow Ball**, 31 Brick Break, 32 Double Team, 39 Rock Tomb, 40 Aerial Ace, **41 Torment**, 42 Facade, 44 Rest, 45 Attract, **46 Thief**, 47 Low Sweep, 48 Round, **56 Fling**, 59 Incinerate, 61 Will-O-Wisp, **63 Embargo**, **65 Shadow Claw**, **66 Payback**, 67 Retaliate, 70 Flash, 77 Psych Up, 84 Poison Jab, 85 Dream Eater, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, **95 Snarl**, **97 Dark Pulse**, 98 Power-Up Punch, 99 Dazzling Gleam", 
             "Egg": "#302: Sableye\nStandard Form\nEgg Move List:Captivate, Feint, **Flatter**, Imprison, Mean Look, Metal Burst, Moonlight, **Nasty Plot**, Psych Up, Recover, **Sucker Punch**, Trick", 
             "Tutor": "#302: Sableye\nStandard Form\nTutor Move List:Body Slam, Counter, **Dark Pulse**, Double-Edge, Dynamic Punch, Fire Punch, Focus Punch, **Foul Play**, Fury Cutter, Gravity, Ice Punch, Icy Wind, **Knock Off**, Low Kick, Magic Coat, Mean Look (N), Mega Kick, Mega Punch, Metronome, Mud-Slap, **Ominous Wind**, Pain Split, Role Play, Seismic Toss, Shock Wave, Signal Beam, Sleep Talk, **Snatch**, Snore, **Spite**, **Sucker Punch**, Telekinesis, Thunder Punch, Trick, Water Pulse, Wonder Room, Zen Headbutt (N)", 
-            "Mega": "#302: Sableye\nStandard Form\nMega Sableye\nType:Unchanged\nAbility:Magic Bounce\nStats: +1, +5, +2, +5, -3"
+            "Mega": "#302: Sableye\nStandard Form\nMega Sableye\nType:Unchanged\nAbility:Magic Bounce\nStats: +1 Attack, +5 Defense, +2 Special Attack, +5 Special Defense, -3 Speed"
         }, 
         "Standard": "302", 
         "(Standard)": "302"
@@ -6054,7 +6054,7 @@
             "TMs": "#303: Mawile\nStandard Form\nTM/HM Move List:A4 Strength, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 13 Ice Beam, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 22 Solar Beam, 27 Return, 30 Shadow Ball, 31 Brick Break, 32 Double Team, 35 Flamethrower, 36 Sludge Bomb, 37 Sandstorm, 38 Fire Blast, 39 Rock Tomb, 41 Torment, 42 Facade, 44 Rest, 45 Attract, 48 Round, 52 Focus Blast, 54 False Swipe, 56 Fling, 57 Charge Beam, 59 Incinerate, 63 Embargo, 66 Payback, 68 Giga Impact, 71 Stone Edge, 75 Swords Dance, 77 Psych Up, 80 Rock Slide, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute, **91 Flash Cannon**, 94 Rock Smash, 97 Dark Pulse, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#303: Mawile\nStandard Form\nEgg Move List:Ancient Power, Captivate, False Swipe, Fire Fang, Guard Swap, Ice Fang, **Metal Burst**, **Misty Terrain**, Poison Fang, Psych Up, Punishment, Seismic Toss, Slam, Sucker Punch, Swords Dance, Thunder Fang, Tickle", 
             "Tutor": "#303: Mawile\nStandard Form\nTutor Move List:Ancient Power, Body Slam, Counter, Dark Pulse, Double-Edge, Dynamic Punch, **Fairy Wind (N)**, Focus Punch, Foul Play, Ice Punch, Icy Wind, **Iron Defense**, **Iron Head**, Knock Off, Last Resort, Magnet Rise, Mega Kick, Mega Punch, Mud-Slap, Pain Split, **Play Rough (N)**, Seismic Toss, Sleep Talk, Snore, Stealth Rock, Sucker Punch, Super Fang, Thunder Punch", 
-            "Mega": "#303: Mawile\nStandard Form\nMega Mawile\nType:Unchanged\nAbility:Huge Power\nStats: +2, +4, +4"
+            "Mega": "#303: Mawile\nStandard Form\nMega Mawile\nType:Unchanged\nAbility:Huge Power\nStats: +2 Attack, +4 Defense, +4 Special Defense"
         }, 
         "Standard": "303", 
         "(Standard)": "303"
@@ -6114,7 +6114,7 @@
             "TMs": "#306: Aggron\nStandard Form\nTM/HM Move List:A1 Cut, A3 Surf, A4 Strength, 01 Hone Claws, 02 Dragon Claw, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 22 Solar Beam, **23 Smack Down**, 24 Thunderbolt, 25 Thunder, 26 Earthquake, 27 Return, 28 Dig, 31 Brick Break, 32 Double Team, 35 Flamethrower, **37 Sandstorm**, 38 Fire Blast, **39 Rock Tomb**, 40 Aerial Ace, 42 Facade, 44 Rest, 45 Attract, 48 Round, 52 Focus Blast, 56 Fling, 59 Incinerate, 65 Shadow Claw, 66 Payback, 68 Giga Impact, **69 Rock Polish**, **71 Stone Edge**, 73 Thunder Wave, 78 Bulldoze, **80 Rock Slide**, 82 Dragon Tail, 87 Swagger, 88 Sleep Talk, 90 Substitute, **91 Flash Cannon**, 94 Rock Smash, 97 Dark Pulse, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#306: Aggron\nStandard Form\nNo Egg Moves", 
             "Tutor": "#306: Aggron\nStandard Form\nTutor Move List:**Ancient Power**, Aqua Tail, Avalanche, Block, Body Slam, Counter, Dark Pulse, Defense Curl, Dragon Pulse, Dynamic Punch, Earth Power, Endeavor, Fire Punch, Focus Punch, Fury Cutter, Ice Punch, Icy Wind, **Iron Defense**, **Iron Head**, **Iron Tail**, Low Kick, Magnet Rise, Mega Kick, Mega Punch, Mud-Slap, Outrage, Rock Climb, **Rollout**, Seismic Toss, Shock Wave, Sleep Talk, Snore, Spite, **Stealth Rock**, Superpower, Thunder Punch, Uproar, Water Pulse", 
-            "Mega": "#306: Aggron\nStandard Form\nMega Aggron\nType:Steel\nAbility:Filter\nStats: +3, +5, +2"
+            "Mega": "#306: Aggron\nStandard Form\nMega Aggron\nType:Steel\nAbility:Filter\nStats: +3 Attack, +5 Defense, +2 Special Defense"
         }, 
         "Standard": "306", 
         "(Standard)": "306"
@@ -6154,7 +6154,7 @@
             "TMs": "#308: Medicham\nStandard Form\nTM/HM Move List:A4 Strength, **03 Psyshock**, **04 Calm Mind**, 06 Toxic, **08 Bulk Up**, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, **16 Light Screen**, 17 Protect, 18 Rain Dance, 21 Frustration, 27 Return, **29 Psychic**, 30 Shadow Ball, **31 Brick Break**, 32 Double Team, **33 Reflect**, 39 Rock Tomb, 42 Facade, **44 Rest**, 45 Attract, **47 Low Sweep**, 48 Round, **52 Focus Blast**, 53 Energy Ball, 56 Fling, 67 Retaliate, 68 Giga Impact, 70 Flash, 77 Psych Up, 80 Rock Slide, 84 Poison Jab, **85 Dream Eater**, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute, **94 Rock Smash**, **98 Power-Up Punch**, 100 Confide", 
             "Egg": "#308: Medicham\nStandard Form\nNo Egg Moves", 
             "Tutor": "#308: Medicham\nStandard Form\nTutor Move List:Body Slam, **Counter**, Double-Edge, **Drain Punch**, **Dynamic Punch**, Fire Punch (N), **Focus Punch**, **Gravity**, Helping Hand, Ice Punch (N), **Low Kick**, **Magic Coat**, Mega Kick, Mega Punch, Metronome, Mud-Slap, Pain Split, Recycle, **Role Play**, Secret Power, **Seismic Toss**, Signal Beam, Sleep Talk, Snore, Swift, **Telekinesis**, Thunder Punch (N), **Trick**, **Vacuum Wave**, Work Up, **Zen Headbutt (N)**", 
-            "Mega": "#308: Medicham\nStandard Form\nMega Medicham\nType:Unchanged\nAbility:Pure Power\nStats: +4, +1, +2, +1, +2"
+            "Mega": "#308: Medicham\nStandard Form\nMega Medicham\nType:Unchanged\nAbility:Pure Power\nStats: +4 Attack, +1 Defense, +2 Special Attack, +1 Special Defense, +2 Speed"
         }, 
         "Standard": "308", 
         "(Standard)": "308"
@@ -6194,7 +6194,7 @@
             "TMs": "#310: Manectric\nStandard Form\nTM/HM Move List:A4 Strength, 05 Roar, 06 Toxic, 10 Hidden Power, 15 Hyper Beam, 16 Light Screen, 17 Protect, 18 Rain Dance, 21 Frustration, **24 Thunderbolt**, **25 Thunder**, 27 Return, 32 Double Team, 35 Flamethrower, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, 50 Overheat, **57 Charge Beam**, 68 Giga Impact, 70 Flash, **72 Volt Switch**, **73 Thunder Wave**, **73 Thunder Wave**, 87 Swagger, 88 Sleep Talk, 90 Substitute, **93 Wild Charge**, 95 Snarl", 
             "Egg": "#310: Manectric\nStandard Form\nNo Egg Moves", 
             "Tutor": "#310: Manectric\nStandard Form\nTutor Move List:Body Slam, Double-Edge, **Electric Terrain (N)**, Fire Fang (N), Iron Tail, **Magnet Rise**, Mud-Slap, **Shock Wave**, Signal Beam, Sleep Talk, Snore, Swift, Uproar", 
-            "Mega": "#310: Manectric\nStandard Form\nMega Manectric\nType:Unchanged\nAbility:Intimidate\nStats: +2, +3, +2, +3"
+            "Mega": "#310: Manectric\nStandard Form\nMega Manectric\nType:Unchanged\nAbility:Intimidate\nStats: +2 Defense, +3 Special Attack, +2 Special Defense, +3 Speed"
         }, 
         "Standard": "310", 
         "(Standard)": "310"
@@ -6374,7 +6374,7 @@
             "TMs": "#319: Sharpedo\nStandard Form\nTM/HM Move List:**A3 Surf**, A4 Strength, **A5 Waterfall**, **A6 Dive**, 05 Roar, 06 Toxic, 07 Hail, 10 Hidden Power, **12 Taunt**, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, **18 Rain Dance**, 21 Frustration, 26 Earthquake, 27 Return, 32 Double Team, 39 Rock Tomb, **41 Torment**, 42 Facade, 44 Rest, 45 Attract, **46 Thief**, 48 Round, **55 Scald**, **66 Payback**, 67 Retaliate, 68 Giga Impact, 78 Bulldoze, 84 Poison Jab, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, **95 Snarl**, **97 Dark Pulse**", 
             "Egg": "#319: Sharpedo\nStandard Form\nNo Egg Moves", 
             "Tutor": "#319: Sharpedo\nStandard Form\nTutor Move List:Ancient Power, Avalanche, Bounce, **Brine**, **Dark Pulse**, **Dive**, Double-Edge, Feint (N), Fury Cutter, Icy Wind, Mud-Slap, **Night Slash (N)**, Sleep Talk, Snore, Spite, Super Fang, Swift, Uproar, **Water Pulse**, **Whirlpool**, Zen Headbutt", 
-            "Mega": "#319: Sharpedo\nStandard Form\nMega Sharpedo\nType:Unchanged\nAbility:Strong Jaw\nStats: +2, +3, +1, +3, +1"
+            "Mega": "#319: Sharpedo\nStandard Form\nMega Sharpedo\nType:Unchanged\nAbility:Strong Jaw\nStats: +2 Attack, +3 Defense, +1 Special Attack, +3 Special Defense, +1 Speed"
         }, 
         "Standard": "319", 
         "(Standard)": "319"
@@ -6454,7 +6454,7 @@
             "TMs": "#323: Camerupt\nStandard Form\nTM/HM Move List:A4 Strength, 05 Roar, 06 Toxic, 10 Hidden Power, **11 Sunny Day**, 15 Hyper Beam, 17 Protect, 21 Frustration, 22 Solar Beam, **26 Earthquake**, 27 Return, **28 Dig**, 32 Double Team, **35 Flamethrower**, 37 Sandstorm, **38 Fire Blast**, 39 Rock Tomb, 42 Facade, **43 Flame Charge**, 44 Rest, 45 Attract, 48 Round, 49 Echoed Voice, **50 Overheat**, **59 Incinerate**, **61 Will-O-Wisp**, 64 Explosion, 68 Giga Impact, 69 Rock Polish, 71 Stone Edge, **78 Bulldoze**, 80 Rock Slide, 87 Swagger, 88 Sleep Talk, 90 Substitute, 91 Flash Cannon, 94 Rock Smash, 96 Nature Power", 
             "Egg": "#323: Camerupt\nStandard Form\nNo Egg Moves", 
             "Tutor": "#323: Camerupt\nStandard Form\nTutor Move List:After You, Body Slam, Defense Curl, Double-Edge, **Earth Power**, **Eruption (N)**, **Fissure (N)**, **Heat Wave**, Iron Head, **Mud-Slap**, Rollout, Sleep Talk, Snore, Stealth Rock", 
-            "Mega": "#323: Camerupt\nStandard Form\nMega Camerupt\nType:Unchanged\nAbility:Sheer Force\nStats: +2, +3, +4, +3, -2"
+            "Mega": "#323: Camerupt\nStandard Form\nMega Camerupt\nType:Unchanged\nAbility:Sheer Force\nStats: +2 Attack, +3 Defense, +4 Special Attack, +3 Special Defense, -2 Speed"
         }, 
         "Standard": "323", 
         "(Standard)": "323"
@@ -6674,7 +6674,7 @@
             "TMs": "#334: Altaria\nStandard Form\nTM/HM Move List:**A2 Fly**, 01 Hone Claws, **02 Dragon Claw**, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 13 Ice Beam, 15 Hyper Beam, 17 Protect, 18 Rain Dance, **19 Roost**, 20 Safeguard, 21 Frustration, 22 Solar Beam, 26 Earthquake, 27 Return, 32 Double Team, 35 Flamethrower, 38 Fire Blast, **40 Aerial Ace**, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, 49 Echoed Voice, 51 Steel Wing, 59 Incinerate, 68 Giga Impact, 77 Psych Up, 78 Bulldoze, 85 Dream Eater, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, 99 Dazzling Gleam", 
             "Egg": "#334: Altaria\nStandard Form\nNo Egg Moves", 
             "Tutor": "#334: Altaria\nStandard Form\nTutor Move List:**Air Cutter**, Body Slam, Double-Edge, **Draco Meteor**, **Dragon Pulse**, Heal Bell, Heat Wave, Hyper Voice, Iron Tail, Mud-Slap, Ominous Wind, **Outrage**, **Pluck (N)**, **Roost**, **Sky Attack (N)**, Sleep Talk, Snore, Steel Wing, Swift, **Tailwind**, **Twister**, Uproar, Wonder Room", 
-            "Mega": "#334: Altaria\nStandard Form\nMega Altaria\nType:Dragon/Fairy\nAbility:Pixilate\nStats: +4, +2, +4"
+            "Mega": "#334: Altaria\nStandard Form\nMega Altaria\nType:Dragon/Fairy\nAbility:Pixilate\nStats: +4 Attack, +2 Defense, +4 Special Attack"
         }, 
         "Standard": "334", 
         "(Standard)": "334"
@@ -7074,7 +7074,7 @@
             "TMs": "#354: Banette\nStandard Form\nTM/HM Move List:04 Calm Mind, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 24 Thunderbolt, 25 Thunder, 27 Return, 29 Psychic, **30 Shadow Ball**, 32 Double Team, 41 Torment, 42 Facade, 44 Rest, 45 Attract, 46 Thief, 48 Round, 56 Fling, 57 Charge Beam, 61 Will-O-Wisp, 63 Embargo, **65 Shadow Claw**, 66 Payback, 68 Giga Impact, 70 Flash, 73 Thunder Wave, 77 Psych Up, 83 Infestation, 85 Dream Eater, 87 Swagger, 88 Sleep Talk, 90 Substitute, 92 Trick Room, 97 Dark Pulse, 99 Dazzling Gleam", 
             "Egg": "#354: Banette\nStandard Form\nNo Egg Moves", 
             "Tutor": "#354: Banette\nStandard Form\nTutor Move List:Body Slam, Dark Pulse, Double-Edge, Foul Play, Icy Wind, Knock Off, Magic Coat, Magic Room, Metronome, Mud-Slap, **Ominous Wind**, Pain Split, Role Play, Shock Wave, Skill Swap, Sleep Talk, Snatch, Snore, **Spite**, Sucker Punch, Telekinesis, Trick", 
-            "Mega": "#354: Banette\nStandard Form\nMega Banette\nType:Unchanged\nAbility:Prankster\nStats: +5, +1, +1, +2, +1"
+            "Mega": "#354: Banette\nStandard Form\nMega Banette\nType:Unchanged\nAbility:Prankster\nStats: +5 Attack, +1 Defense, +1 Special Attack, +2 Special Defense, +1 Speed"
         }, 
         "Standard": "354", 
         "(Standard)": "354"
@@ -7174,7 +7174,7 @@
             "TMs": "#359: Absol\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, **01 Hone Claws**, 04 Calm Mind, 06 Toxic, 07 Hail, 10 Hidden Power, 11 Sunny Day, **12 Taunt**, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 24 Thunderbolt, 25 Thunder, 27 Return, 30 Shadow Ball, 32 Double Team, 35 Flamethrower, 37 Sandstorm, 38 Fire Blast, 39 Rock Tomb, 40 Aerial Ace, **41 Torment**, 42 Facade, 44 Rest, 45 Attract, **46 Thief**, 48 Round, 49 Echoed Voice, 54 False Swipe, 57 Charge Beam, 59 Incinerate, 61 Will-O-Wisp, 65 Shadow Claw, **66 Payback**, 67 Retaliate, 68 Giga Impact, 70 Flash, 71 Stone Edge, 73 Thunder Wave, 75 Swords Dance, 77 Psych Up, 80 Rock Slide, 81 X-Scissor, 85 Dream Eater, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, **95 Snarl**, **97 Dark Pulse**", 
             "Egg": "#359: Absol\nStandard Form\nEgg Move List:**Assurance**, Baton Pass, Curse, Double-Edge, **Feint Attack**, Hex, Magic Coat, Me First, Mean Look, Megahorn, Play Rough, **Punishment**, Substitute, **Sucker Punch**, Zen Headbutt", 
             "Tutor": "#359: Absol\nStandard Form\nTutor Move List:Body Slam, Bounce, Counter, **Dark Pulse**, Detect (N), **Foul Play**, Fury Cutter, Icy Wind, Iron Tail, **Knock Off**, Feint (N), Magic Coat, Me First (N), Mud-Slap, Perish Song (N), Razor Wind (N), Role Play, Shock Wave, Sleep Talk, **Snatch**, Snore, Spite, **Sucker Punch**, Superpower, Swift, **Taunt (N)**, Water Pulse, Zen Headbutt", 
-            "Mega": "#359: Absol\nStandard Form\nMega Absol\nType:Unchanged\nAbility:Magic Bounce\nStats: +2, +4, +4"
+            "Mega": "#359: Absol\nStandard Form\nMega Absol\nType:Unchanged\nAbility:Magic Bounce\nStats: +2 Attack, +4 Special Attack, +4 Speed"
         }, 
         "Standard": "359", 
         "(Standard)": "359"
@@ -7234,7 +7234,7 @@
             "TMs": "#362: Glalie\nStandard Form\nTM/HM Move List:06 Toxic, **07 Hail**, 10 Hidden Power, 12 Taunt, **13 Ice Beam**, **14 Blizzard**, 15 Hyper Beam, 16 Light Screen, 17 Protect, 18 Rain Dance, 20 Safeguard, 21 Frustration, 26 Earthquake, 27 Return, 30 Shadow Ball, 32 Double Team, 32 Double Team, 41 Torment, 42 Facade, 44 Rest, 45 Attract, 48 Round, 64 Explosion, 66 Payback, 68 Giga Impact, 70 Flash, 74 Gyro Ball, 78 Bulldoze, **79 Frost Breath**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 97 Dark Pulse", 
             "Egg": "#362: Glalie\nStandard Form\nNo Egg Moves", 
             "Tutor": "#362: Glalie\nStandard Form\nTutor Move List:**Avalanche**, Block, Body Slam, Dark Pulse, Double-Edge, **Icy Wind**, Iron Head, Rollout, **Sheer Cold (N)**, Signal Beam, Sleep Talk, Snore, Spite, Super Fang, Water Pulse", 
-            "Mega": "#362: Glalie\nStandard Form\nMega Glalie\nType:Unchanged\nAbility:Refrigerate\nStats: +4, +4, +2"
+            "Mega": "#362: Glalie\nStandard Form\nMega Glalie\nType:Unchanged\nAbility:Refrigerate\nStats: +4 Attack, +4 Special Attack, +2 Speed"
         }, 
         "Standard": "362", 
         "(Standard)": "362"
@@ -7454,7 +7454,7 @@
             "TMs": "#373: Salamence\nStandard Form\nTM/HM Move List:A1 Cut, **A2 Fly**, A4 Strength, 01 Hone Claws, **02 Dragon Claw**, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 17 Protect, 18 Rain Dance, **19 Roost**, 21 Frustration, 26 Earthquake, 27 Return, 31 Brick Break, 32 Double Team, 35 Flamethrower, 38 Fire Blast, 39 Rock Tomb, **40 Aerial Ace**, 42 Facade, 44 Rest, 45 Attract, 48 Round, 51 Steel Wing, 59 Incinerate, 65 Shadow Claw, 68 Giga Impact, 71 Stone Edge, 78 Bulldoze, 80 Rock Slide, **82 Dragon Tail**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash", 
             "Egg": "#373: Salamence\nStandard Form\nNo Egg Moves", 
             "Tutor": "#373: Salamence\nStandard Form\nTutor Move List:**Air Cutter**, Aqua Tail, Body Slam, Defense Curl, **Defog**, Double-Edge (N), **Draco Meteor**, **Dragon Pulse**, **Dragon Tail (N)**, Fire Fang (N), Fury Cutter, Heat Wave, Hyper Voice, Iron Tail, Mud-Slap, Ominous Wind, **Outrage**, Rollout, **Roost**, Sleep Talk, Snore, Steel Wing, Swift, **Tailwind**, Thunder Fang (N), **Twister**, Zen Headbutt", 
-            "Mega": "#373: Salamence\nStandard Form\nMega Salamence\nType:Unchanged\nAbility:Aerilate\nStats: +1, +5, +1, +1, +2"
+            "Mega": "#373: Salamence\nStandard Form\nMega Salamence\nType:Unchanged\nAbility:Aerilate\nStats: +1 Attack, +5 Defense, +1 Special Attack, +1 Special Defense, +2 Speed"
         }, 
         "Standard": "373", 
         "(Standard)": "373"
@@ -7514,7 +7514,7 @@
             "TMs": "#376: Metagross\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 01 Hone Claws, **03 Psyshock**, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, **16 Light Screen**, 17 Protect, 18 Rain Dance, 21 Frustration, 26 Earthquake, 27 Return, **29 Psychic**, 30 Shadow Ball, 31 Brick Break, 32 Double Team, **33 Reflect**, 36 Sludge Bomb, 37 Sandstorm, 39 Rock Tomb, 40 Aerial Ace, 42 Facade, **44 Rest**, 48 Round, 64 Explosion, 68 Giga Impact, 69 Rock Polish, 70 Flash, **74 Gyro Ball**, 77 Psych Up, 78 Bulldoze, 80 Rock Slide, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute, **91 Flash Cannon**, 94 Rock Smash, 98 Power-Up Punch, 100 Confide", 
             "Egg": "#376: Metagross\nStandard Form\nNo Egg Moves", 
             "Tutor": "#376: Metagross\nStandard Form\nTutor Move List:Block, Body Slam, Defense Curl, Defense Curl, Double-Edge, Dynamic Punch, Fury Cutter, **Gravity**, Ice Punch, Icy Wind, **Iron Defense**, **Iron Head**, Magnet Rise (N), Mud-Slap, Rollout, Signal Beam, Sleep Talk, Snore, Stealth Rock, Swift, **Telekinesis**, Thunder Punch, **Trick**, **Zen Headbutt**", 
-            "Mega": "#376: Metagross\nStandard Form\nMega Metagross\nType:Unchanged\nAbility:Tough Claws\nStats: +1, +2, +1, +2, +4"
+            "Mega": "#376: Metagross\nStandard Form\nMega Metagross\nType:Unchanged\nAbility:Tough Claws\nStats: +1 Attack, +2 Defense, +1 Special Attack, +2 Special Defense, +4 Speed"
         }, 
         "Standard": "376", 
         "(Standard)": "376"
@@ -7594,7 +7594,7 @@
             "TMs": "#380: Latias\nStandard Form\nTM/HM Move List:A1 Cut, A2 Fly, A3 Surf, A5 Waterfall, A6 Dive, 01 Hone Claws, **02 Dragon Claw**, **03 Psyshock**, **04 Calm Mind**, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 13 Ice Beam, 15 Hyper Beam, **16 Light Screen**, 17 Protect, 18 Rain Dance, 19 Roost, 20 Safeguard, 21 Frustration, 22 Solar Beam, 24 Thunderbolt, 25 Thunder, 26 Earthquake, 27 Return, **29 Psychic**, 30 Shadow Ball, 32 Double Team, **33 Reflect**, 37 Sandstorm, 40 Aerial Ace, 42 Facade, **44 Rest**, 45 Attract, 48 Round, 51 Steel Wing, 53 Energy Ball, 57 Charge Beam, 65 Shadow Claw, 67 Retaliate, 68 Giga Impact, 70 Flash, 73 Thunder Wave, 77 Psych Up, 78 Bulldoze, **85 Dream Eater**, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute", 
             "Egg": "#380: Latias\nStandard Form\nNo Egg Moves", 
             "Tutor": "#380: Latias\nStandard Form\nTutor Move List:Body Slam, Charm (N), Covet, Dive, Double-Edge, **Draco Meteor**, **Dragon Pulse (N)**, Fury Cutter, **Guard Split (N)**, **Heal Pulse (N)**, **Healing Wish (N)**, Helping Hand, Icy Wind, Last Resort, **Magic Coat**, **Magic Room**, Mud-Slap, **Outrage**, Reflect Type (N), **Role Play**, Roost, Sleep Talk, Snore, Sucker Punch, Swift, Tailwind, **Telekinesis**, **Trick**, **Twister**, **Zen Headbutt**", 
-            "Mega": "#380: Latias\nStandard Form\nMega Latias\nType:Unchanged\nAbility:Levitate\nStats: +2, +3, +3, +2"
+            "Mega": "#380: Latias\nStandard Form\nMega Latias\nType:Unchanged\nAbility:Levitate\nStats: +2 Attack, +3 Defense, +3 Special Attack, +2 Special Defense"
         }, 
         "Standard": "380", 
         "(Standard)": "380"
@@ -7614,7 +7614,7 @@
             "TMs": "#381: Latios\nStandard Form\nTM/HM Move List:A1 Cut, A2 Fly, A3 Surf, A5 Waterfall, A6 Dive, 01 Hone Claws, **02 Dragon Claw**, **03 Psyshock**, **04 Calm Mind**, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 13 Ice Beam, 15 Hyper Beam, **16 Light Screen**, 17 Protect, 18 Rain Dance, 19 Roost, 20 Safeguard, 21 Frustration, 22 Solar Beam, 24 Thunderbolt, 25 Thunder, 26 Earthquake, 27 Return, **29 Psychic**, 30 Shadow Ball, 32 Double Team, **33 Reflect**, 37 Sandstorm, 40 Aerial Ace, 42 Facade, **44 Rest**, 45 Attract, 48 Round, 51 Steel Wing, 53 Energy Ball, 57 Charge Beam, 65 Shadow Claw, 67 Retaliate, 68 Giga Impact, 70 Flash, 73 Thunder Wave, 77 Psych Up, 78 Bulldoze, **85 Dream Eater**, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute", 
             "Egg": "#381: Latios\nStandard Form\nNo Egg Moves", 
             "Tutor": "#381: Latios\nStandard Form\nTutor Move List:Body Slam, Dive, Double-Edge, **Draco Meteor**, **Dragon Dance (N)**, **Dragon Pulse (N)**, Fury Cutter, **Heal Pulse (N)**, Helping Hand, Icy Wind, Last Resort, **Magic Coat**, Memento (N), Mud-Slap, **Outrage**, **Power Split (N)**, Roost, **Role Play**, Sleep Talk, Snore, Sucker Punch, Swift, Tailwind, **Telekinesis (N)**, **Trick**, **Twister**, **Wonder Room**, **Zen Headbutt**", 
-            "Mega": "#381: Latios\nStandard Form\nMega Latios\nType:Unchanged\nAbility:Levitate\nStats: +4, +2, +3, +1"
+            "Mega": "#381: Latios\nStandard Form\nMega Latios\nType:Unchanged\nAbility:Levitate\nStats: +4 Attack, +2 Defense, +3 Special Attack, +1 Special Defense"
         }, 
         "Standard": "381", 
         "(Standard)": "381"
@@ -7634,7 +7634,7 @@
             "TMs": "#382: Kyogre\nStandard Form\nTM/HM Move List:**A3 Surf**, A4 Strength, **A5 Waterfall**, **A6 Dive**, 04 Calm Mind, 05 Roar, 06 Toxic, 07 Hail, 10 Hidden Power, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, **18 Rain Dance**, 20 Safeguard, 21 Frustration, 24 Thunderbolt, 25 Thunder, 26 Earthquake, 27 Return, 31 Brick Break, 32 Double Team, 39 Rock Tomb, 42 Facade, 44 Rest, 48 Round, **55 Scald**, 68 Giga Impact, 73 Thunder Wave, 77 Psych Up, 78 Bulldoze, 80 Rock Slide, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash", 
             "Egg": "#382: Kyogre\nStandard Form\nNo Egg Moves", 
             "Tutor": "#382: Kyogre\nStandard Form\nTutor Move List:Ancient Power, **Aqua Tail**, Block, Defense Curl, **Dive**, Icy Wind, Iron Head, Mud-Slap, Signal Beam, Sleep Talk, Snore, Swift, Uproar", 
-            "Mega": "#382: Kyogre\nStandard Form\nMega Kyogre\nType:Unchanged\nAbility:Wash Away\nStats: +5, +3, +2"
+            "Mega": "#382: Kyogre\nStandard Form\nMega Kyogre\nType:Unchanged\nAbility:Wash Away\nStats: +5 Attack, +3 Special Attack, +2 Special Defense"
         }, 
         "Standard": "382", 
         "(Standard)": "382"
@@ -7654,7 +7654,7 @@
             "TMs": "#383: Groudon\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, 01 Hone Claws, 02 Dragon Claw, 05 Roar, 06 Toxic, 08 Bulk Up, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 17 Protect, 20 Safeguard, 21 Frustration, 22 Solar Beam, 23 Smack Down, 24 Thunderbolt, 25 Thunder, **26 Earthquake**, 27 Return, **28 Dig**, 31 Brick Break, 32 Double Team, 35 Flamethrower, 37 Sandstorm, 38 Fire Blast, 39 Rock Tomb, 40 Aerial Ace, 42 Facade, 44 Rest, 48 Round, 50 Overheat, 52 Focus Blast, 56 Fling, 59 Incinerate, 65 Shadow Claw, 68 Giga Impact, 69 Rock Polish, 71 Stone Edge, 73 Thunder Wave, 75 Swords Dance, 77 Psych Up, **78 Bulldoze**, 80 Rock Slide, 82 Dragon Tail, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash, 98 Power-Up Punch", 
             "Egg": "#383: Groudon\nStandard Form\nNo Egg Moves", 
             "Tutor": "#383: Groudon\nStandard Form\nTutor Move List:Ancient Power, Block, Body Slam, Counter, Defense Curl, Double-Edge, Dragon Pulse, Dynamic Punch, **Earth Power**, Fire Punch, Fury Cutter, Iron Head, Iron Tail, Mega Kick, Mega Punch, **Mud-Slap**, Rollout, Seismic Toss, Sleep Talk, Snore, Stealth Rock, Swift, Thunder Punch, Uproar", 
-            "Mega": "#383: Groudon\nStandard Form\nMega Groudon\nType:Ground/Fire\nAbility:Heat Mirage\nStats: +3, +2, +5"
+            "Mega": "#383: Groudon\nStandard Form\nMega Groudon\nType:Ground/Fire\nAbility:Heat Mirage\nStats: +3 Attack, +2 Defense, +5 Special Attack"
         }, 
         "Standard": "383", 
         "(Standard)": "383"
@@ -7674,7 +7674,7 @@
             "TMs": "#384: Rayquaza\nStandard Form\nTM/HM Move List:**A2 Fly**, A3 Surf, A4 Strength, A5 Waterfall, A6 Dive, 01 Hone Claws, **02 Dragon Claw**, 05 Roar, 06 Toxic, 08 Bulk Up, 10 Hidden Power, 11 Sunny Day, 13 Ice Beam, 14 Blizzard, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 22 Solar Beam, 24 Thunderbolt, 25 Thunder, 26 Earthquake, 27 Return, 31 Brick Break, 32 Double Team, 35 Flamethrower, 37 Sandstorm, 38 Fire Blast, 39 Rock Tomb, **40 Aerial Ace**, 42 Facade, 44 Rest, 48 Round, 49 Echoed Voice, 50 Overheat, 52 Focus Blast, 53 Energy Ball, 56 Fling, **58 Sky Drop**, 59 Incinerate, 65 Shadow Claw, 68 Giga Impact, 71 Stone Edge, 73 Thunder Wave, 74 Gyro Ball, 75 Swords Dance, 77 Psych Up, 78 Bulldoze, 80 Rock Slide, **82 Dragon Tail**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash", 
             "Egg": "#384: Rayquaza\nStandard Form\nNo Egg Moves", 
             "Tutor": "#384: Rayquaza\nStandard Form\nTutor Move List:Ancient Power, Aqua Tail, Bind, Body Slam, Dive, Double-Edge, **Draco Meteor**, **Dragon Ascent**, **Dragon Pulse**, Earth Power, Fury Cutter, Hyper Voice, Icy Wind, Iron Head, Iron Tail, Mud-Slap, **Outrage**, Snore, Swift, **Tailwind**, **Twister**, Uproar", 
-            "Mega": "#384: Rayquaza\nStandard Form\nMega Rayquaza\nType:Unchanged\nAbility:Run Away\nStats: +3, +1, +3, +1, +2"
+            "Mega": "#384: Rayquaza\nStandard Form\nMega Rayquaza\nType:Unchanged\nAbility:Run Away\nStats: +3 Attack, +1 Defense, +3 Special Attack, +1 Special Defense, +2 Speed"
         }, 
         "Standard": "384", 
         "(Standard)": "384"
@@ -8648,7 +8648,7 @@
             "TMs": "#428: Lopunny\nStandard Form\nTM/HM Move List:**A1 Cut**, **A4 Strength**, 06 Toxic, **10 Hidden Power**, 11 Sunny Day, 13 Ice Beam, 14 Blizzard, **15 Hyper Beam**, **17 Protect**, 18 Rain Dance, **21 Frustration**, 22 Solar Beam, 24 Thunderbolt, 25 Thunder, **27 Return**, 28 Dig, 30 Shadow Ball, **32 Double Team**, **42 Facade**, 44 Rest, **45 Attract**, 47 Low Sweep, **48 Round**, 52 Focus Blast, 56 Fling, 57 Charge Beam, **67 Retaliate**, **68 Giga Impact**, 73 Thunder Wave, 86 Grass Knot, **87 Swagger**, **88 Sleep Talk**, **90 Substitute**, 94 Rock Smash, 98 Power-Up Punch, **100 Confide**", 
             "Egg": "#428: Lopunny\nStandard Form\nNo Egg Moves", 
             "Tutor": "#428: Lopunny\nStandard Form\nTutor Move List:**After You**, Bounce (N), **Covet**, **Defense Curl**, Drain Punch, **Endeavor**, Fire Punch, Focus Punch, **Foresight**, Fury Cutter, **Heal Bell**, Healing Wish (N), **Helping Hand**, **Hyper Voice**, Ice Punch, Iron Tail, **Last Resort**, Low Kick, Magic Coat (N), Mirror Coat (N), Mud-Slap, Role Play, Rototiller (N), Shock Wave, **Sleep Talk**, **Snore**, **Swift**, Thunder Punch, **Uproar**, Water Pulse, **Work Up**", 
-            "Mega": "#428: Lopunny\nStandard Form\nMega Lopunny\nType:Normal/Fighting\nAbility:Scrappy\nStats: +6, +1, +3"
+            "Mega": "#428: Lopunny\nStandard Form\nMega Lopunny\nType:Normal/Fighting\nAbility:Scrappy\nStats: +6 Attack, +1 Defense, +3 Speed"
         }, 
         "Standard": "428", 
         "(Standard)": "428"
@@ -8988,7 +8988,7 @@
             "TMs": "#445: Garchomp\nStandard Form\nTM/HM Move List:A1 Cut, A3 Surf, A4 Strength, 01 Hone Claws, **02 Dragon Claw**, 05 Roar, 06 Toxic, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, **26 Earthquake**, 27 Return, **28 Dig**, 31 Brick Break, 32 Double Team, 35 Flamethrower, 37 Sandstorm, 38 Fire Blast, 39 Rock Tomb, 40 Aerial Ace, 42 Facade, 44 Rest, 45 Attract, 48 Round, 54 False Swipe, 56 Fling, 59 Incinerate, 65 Shadow Claw, 68 Giga Impact, 71 Stone Edge, 75 Swords Dance, **78 Bulldoze**, 80 Rock Slide, **82 Dragon Tail**, 84 Poison Jab, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash", 
             "Egg": "#445: Garchomp\nStandard Form\nNo Egg Moves", 
             "Tutor": "#445: Garchomp\nStandard Form\nTutor Move List:Aqua Tail, **Draco Meteor**, **Dragon Pulse**, **Dual Chop**, **Earth Power**, Fire Fang (N), Fury Cutter, Iron Head, Iron Tail, **Mud-Slap**, **Outrage**, Rock Climb, Sleep Talk, Snore, Stealth Rock, Swift, **Twister**", 
-            "Mega": "#445: Garchomp\nStandard Form\nMega Garchomp\nType:Unchanged\nAbility:Sand Force\nStats: +4, +2, +4, +1, -1"
+            "Mega": "#445: Garchomp\nStandard Form\nMega Garchomp\nType:Unchanged\nAbility:Sand Force\nStats: +4 Attack, +2 Defense, +4 Special Attack, +1 Special Defense, -1 Speed"
         }, 
         "Standard": "445", 
         "(Standard)": "445"
@@ -9048,7 +9048,7 @@
             "TMs": "#448: Lucario\nStandard Form\nTM/HM Move List:A4 Strength, 01 Hone Claws, 04 Calm Mind, 05 Roar, 06 Toxic, **08 Bulk Up**, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 17 Protect, 18 Rain Dance, 21 Frustration, 26 Earthquake, 27 Return, 28 Dig, 29 Psychic, 30 Shadow Ball, **31 Brick Break**, 32 Double Team, 39 Rock Tomb, 42 Facade, 44 Rest, 45 Attract, **47 Low Sweep**, 48 Round, **52 Focus Blast**, 56 Fling, 65 Shadow Claw, 66 Payback, 67 Retaliate, 68 Giga Impact, 71 Stone Edge, 75 Swords Dance, 78 Bulldoze, 80 Rock Slide, 84 Poison Jab, 87 Swagger, 88 Sleep Talk, 90 Substitute, **91 Flash Cannon**, **94 Rock Smash**, 97 Dark Pulse, **98 Power-Up Punch**, 100 Confide", 
             "Egg": "#448: Lucario\nStandard Form\nNo Egg Moves", 
             "Tutor": "#448: Lucario\nStandard Form\nTutor Move List:**Aura Sphere (N)**, **Close Combat (N)**, Dark Pulse (N), **Detect (N)**, Dragon Pulse (N), **Drain Punch**, Dual Chop, Extreme Speed (N), **Focus Punch**, Fury Cutter, Helping Hand, Ice Punch, **Iron Defense**, **Iron Tail**, **Low Kick**, Magic Coat, Magnet Rise, **Metal Claw (N)**, Mud-Slap, Role Play, Sleep Talk, Snore, Swift, Thunder Punch, **Vacuum Wave**, Work Up, Zen Headbutt", 
-            "Mega": "#448: Lucario\nStandard Form\nMega Lucario\nType:Unchanged\nAbility:Adaptability\nStats: +4, +2, +2, +2"
+            "Mega": "#448: Lucario\nStandard Form\nMega Lucario\nType:Unchanged\nAbility:Adaptability\nStats: +4 Attack, +2 Defense, +2 Special Attack, +2 Speed"
         }, 
         "Standard": "448", 
         "(Standard)": "448"
@@ -9288,7 +9288,7 @@
             "TMs": "#460: Abomasnow\nStandard Form\nTM/HM Move List:A4 Strength, 06 Toxic, **07 Hail**, 10 Hidden Power, **13 Ice Beam**, **14 Blizzard**, 15 Hyper Beam, 16 Light Screen, 17 Protect, 18 Rain Dance, 20 Safeguard, 21 Frustration, **22 Solar Beam**, 26 Earthquake, 27 Return, 30 Shadow Ball, 31 Brick Break, 32 Double Team, 39 Rock Tomb, 42 Facade, 44 Rest, 45 Attract, 48 Round, 52 Focus Blast, **53 Energy Ball**, 56 Fling, 68 Giga Impact, 70 Flash, 75 Swords Dance, 78 Bulldoze, **79 Frost Breath**, 80 Rock Slide, **86 Grass Knot**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 94 Rock Smash", 
             "Egg": "#460: Abomasnow\nStandard Form\nNo Egg Moves", 
             "Tutor": "#460: Abomasnow\nStandard Form\nTutor Move List:**Avalanche**, Block, **Bullet Seed**, Focus Punch, **Giga Drain**, **Ice Punch (N)**, **Icy Wind**, Iron Tail, Magic Coat, Mud-Slap, Outrage, Rock Climb, Role Play, **Seed Bomb**, Sleep Talk, Snore, **Synthesis**, Water Pulse, **Worry Seed**", 
-            "Mega": "#460: Abomasnow\nStandard Form\nMega Abomasnow\nType:Unchanged\nAbility:Snow Warning\nStats: +4, +3, +4, +2, -3"
+            "Mega": "#460: Abomasnow\nStandard Form\nMega Abomasnow\nType:Unchanged\nAbility:Snow Warning\nStats: +4 Attack, +3 Defense, +4 Special Attack, +2 Special Defense, -3 Speed"
         }, 
         "Standard": "460", 
         "(Standard)": "460"
@@ -9588,7 +9588,7 @@
             "TMs": "#475: Gallade\nStandard Form\nTM/HM Move List:A1 Cut, A4 Strength, **03 Psyshock**, **04 Calm Mind**, 06 Toxic, **08 Bulk Up**, 10 Hidden Power, 11 Sunny Day, 12 Taunt, 15 Hyper Beam, **16 Light Screen**, 17 Protect, 18 Rain Dance, 20 Safeguard, 21 Frustration, 24 Thunderbolt, 26 Earthquake, 27 Return, **29 Psychic**, 30 Shadow Ball, **31 Brick Break**, 32 Double Team, 32 Double Team, **33 Reflect**, 39 Rock Tomb, 40 Aerial Ace, 41 Torment, 42 Facade, **44 Rest**, 45 Attract, 46 Thief, **47 Low Sweep**, 48 Round, 49 Echoed Voice, **52 Focus Blast**, 54 False Swipe, 56 Fling, 57 Charge Beam, 61 Will-O-Wisp, 67 Retaliate, 68 Giga Impact, 70 Flash, 71 Stone Edge, 73 Thunder Wave, 75 Swords Dance, 77 Psych Up, 78 Bulldoze, 80 Rock Slide, 81 X-Scissor, 84 Poison Jab, **85 Dream Eater**, 86 Grass Knot, 87 Swagger, 88 Sleep Talk, 90 Substitute, **92 Trick Room**, **94 Rock Smash**, **98 Power-Up Punch**, 99 Dazzling Gleam, 100 Confide", 
             "Egg": "#475: Gallade\nStandard Form\nNo Egg Moves", 
             "Tutor": "#475: Gallade\nStandard Form\nTutor Move List:**Ally Switch**, Body Slam, **Close Combat (N)**, Defense Curl, Double-Edge, **Drain Punch**, Dual Chop, Fire Punch, **Focus Punch**, Fury Cutter, Helping Hand, Hyper Voice, Ice Punch, Knock Off, Leaf Blade (N), **Low Kick**, **Magic Coat**, **Magic Room**, Mud-Slap, Night Slash (N), Pain Split, Recycle, **Role Play**, Shock Wave, Signal Beam, **Skill Swap**, Sleep Talk, Snatch, Snore, **Stored Power (N)**, Swift, Thunder Punch, **Trick**, **Vacuum Wave**, **Wonder Room**, Work Up, **Zen Headbutt**", 
-            "Mega": "#475: Gallade\nStandard Form\nMega Gallade\nType:Unchanged\nAbility:Inner Focus\nStats: +4, +3, +3"
+            "Mega": "#475: Gallade\nStandard Form\nMega Gallade\nType:Unchanged\nAbility:Inner Focus\nStats: +4 Attack, +3 Defense, +3 Speed"
         }, 
         "Standard": "475", 
         "(Standard)": "475"
@@ -10840,7 +10840,7 @@
             "TMs": "#531: Audino\nStandard Form\nTM/HM Move List:A3 Surf, 03 Psyshock, 04 Calm Mind, 06 Toxic, **10 Hidden Power**, 11 Sunny Day, 13 Ice Beam, 14 Blizzard, **15 Hyper Beam**, 16 Light Screen, **17 Protect**, 18 Rain Dance, **20 Safeguard**, **21 Frustration**, 22 Solar Beam, 24 Thunderbolt, 25 Thunder, **27 Return**, 28 Dig, 29 Psychic, 30 Shadow Ball, **32 Double Team**, 33 Reflect, 35 Flamethrower, 38 Fire Blast, **42 Facade**, 44 Rest, **45 Attract**, **48 Round**, **49 Echoed Voice**, 56 Fling, 57 Charge Beam, 59 Incinerate, **67 Retaliate**, **70 Flash**, 73 Thunder Wave, **77 Psych Up**, 85 Dream Eater, 86 Grass Knot, **87 Swagger**, **88 Sleep Talk**, **90 Substitute**, 92 Trick Room, 93 Wild Charge, 98 Power-Up Punch, 99 Dazzling Gleam, **100 Confide**", 
             "Egg": "#531: Audino\nStandard Form\nEgg Move List:Amnesia, Draining Kiss, **Encore**, **Bestow**, **Heal Bell**, Healing Wish, **Lucky Chant**, **Sleep Talk**, Sweet Kiss, **Wish**, **Yawn**", 
             "Tutor": "#531: Audino\nStandard Form\nTutor Move List:**After You**, **Covet**, Drain Punch, Fire Punch, Gravity, **Heal Bell**, **Helping Hand**, **Hyper Voice**, Ice Punch, Icy Wind, Iron Tail, Knock Off, **Last Resort (N)**, Low Kick, Magic Coat, Misty Terrain (N), **Pain Split**, Role Play, Signal Beam, Skill Swap, **Sleep Talk**, Snatch, Thunder Punch, **Uproar**, **Work Up**, Zen Headbutt", 
-            "Mega": "#531: Audino\nStandard Form\nMega Audino\nType:Normal/Fairy\nAbility:Healer\nStats: +4, +2, +4"
+            "Mega": "#531: Audino\nStandard Form\nMega Audino\nType:Normal/Fairy\nAbility:Healer\nStats: +4 Defense, +2 Special Attack, +4 Special Defense"
         }, 
         "Standard": "531", 
         "(Standard)": "531"
@@ -14866,7 +14866,7 @@
             "TMs": "#719: Diancie\nStandard Form\nTM/HM Move List:03 Psyshock, 04 Calm Mind, 06 Toxic, 07 Hail, 10 Hidden Power, 11 Sunny Day, 15 Hyper Beam, 16 Light Screen, 16 Protect, 20 Safeguard, 21 Frustration, **23 Smack Down**, 27 Return, 29 Psychic, 32 Double Team, 33 Reflect, **37 Sandstorm**, **39 Rock Tomb**, 42 Facade, 44 Rest, 48 Round, 64 Explosion, 68 Giga Impact, **69 Rock Polish**, 70 Flash, **71 Stone Edge**, 74 Gyro Ball, 77 Psych Up, **80 Rock Slide**, 87 Swagger, 88 Sleep Talk, 90 Substitute, 92 Trick Room, 94 Secret Power, 96 Nature Power, **99 Dazzling Gleam**, 100 Confide", 
             "Egg": "#719: Diancie\nStandard Form\nNo Egg Moves", 
             "Tutor": "#719: Diancie\nStandard Form\nTutor Move List:After You, Covet, Earth Power, Endeavor, Gravity, Heal Bell, Helping Hand, Iron Defense, Last Resort, Magnet Rise, Skill Swap, Snore, **Stealth Rock**, Wonder Room", 
-            "Mega": "#719: Diancie\nStandard Form\nMega Diancie\nType:Unchanged\nAbility:Magic Bounce\nStats: +6, -4, +6, -4, +6"
+            "Mega": "#719: Diancie\nStandard Form\nMega Diancie\nType:Unchanged\nAbility:Magic Bounce\nStats: +6 Attack, -4 Defense, +6 Special Attack, -4 Special Defense, +6 Speed"
         }, 
         "Standard": "719", 
         "(Standard)": "719"

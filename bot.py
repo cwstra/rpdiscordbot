@@ -553,53 +553,79 @@ async def on_message(message):
                 if i!='all':
                     outgoing += i+'\n'
             await client.send_message(message.channel, outgoing)
-        elif message.content.lower().startswith(myself['prefix']+'ref dex '):
+        elif message.content.lower().startswith(myself['prefix']+'ref dex') or message.content.lower().startswith(myself['prefix']+'dex'):
+            dontleave = True
             keylist = [i for i in myself['pokedex']['Bulbasaur']['001']]
             keylist.append("Dump")
-            test = message.content[message.content.lower().find('dex ')+4:].split(" ",2)
-            if len(test)>1:
+            if message.content.lower().find('dex ') == -1:
+                await client.send_message(message.channel, "<@"+message.author.id+">: "+myself['dexhelp'])
+            else:
+                work = message.content[message.content.lower().find('dex ')+4:]
+                test = work.split(" ",1)
                 print(test)
-                mon = test[0]
-                if len(test)==3:
-                    form = test[1]
-                    key = test[2]
+                if test[0]=="Mega":
+                    entrykey = "Mega"
+                    work = test[1]
                 else:
-                    form='Normal'
-                    key = test[1]
-                print('Key:')
-                print(key)
-                print('Keylist:')
-                print(keylist)
-                poss = process.extractOne(key, keylist)
-                if poss[1]>80:
-                    key = poss[0]
-                    poss = process.extractOne(mon, myself['pokedex'].keys())
+                    test = work.rsplit(" ",2)
+                    print(test)
+                    if test[-2]=="Mega":
+                        entrykey="Mega"
+                        work = ' '.join(test[:-2])
+                    else:
+                        test = work.rsplit(" ",1)
+                        print(test)
+                        poss = process.extractOne(test[1], keylist)
+                        print(poss)
+                        if poss[1]>80:
+                            print(poss)
+                            entrykey = poss[0]
+                            work = test[0]
+                        else:
+                            dontleave = False
+                            await client.send_message(message.channel, "<@"+message.author.id+">: "+myself['dexhelp'])
+                if dontleave:
+                    test = work.rsplit(' ',1)
+                    poss = process.extractOne(test[0],myself['pokedex'].keys())
                     if poss[1]>80:
                         mon = myself['pokedex'][poss[0]]
-                        poss = process.extractOne(form, mon.keys())
-                        if poss[1]>80:
-                            output = mon[poss[0]]
-                            while type(output) is str:
-                                output = mon[output]
-                            if key == 'Dump':
-                                output = [output[i] for i in output.keys()]
-                                output = [output[0].split('\n',2)[0]+'\n'+output[0].split('\n',2)[1]] + [i.split('\n',2)[2] for i in output]
-                                output = '\n\n'.join(output)
-                                while len(output)>2000:
-                                    index = output[:2000].rfind('\n')
-                                    await client.send_message(message.author, output[:index])
-                                    output = output[index+1:]
-                                await client.send_message(message.author, output)
-                            else:
-                                await client.send_message(message.channel, output[key])                            
+                        if len(test)==1:
+                            form = "Normal"
                         else:
-                            await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match for that Form.")
+                            poss = process.extractOne(test[1],mon)
+                            if poss[1]>80:
+                                form = poss[0]
+                            else:
+                                poss = process.extractOne(work,myself['pokedex'].keys())
+                                if poss[1]>80:
+                                    mon = myself['pokedex'][poss[0]]
+                                    form = "Normal"
+                                else:
+                                    dontleave = False
+                                    await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match for that Pokémon.") 
                     else:
-                        await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match for that Pokémon.")
-                else:
-                    await client.send_message(message.channel, "<@"+message.author.id+">: "+myself['dexhelp'])
-            else:
-                await client.send_message(message.author, "<@"+message.author.id+">: "+myself['dexhelp'])
+                        poss = process.extractOne(work,myself['pokedex'].keys())
+                        if poss[1]>80:
+                            mon = myself['pokedex'][poss[0]]
+                            form = "Normal"
+                        else:
+                            dontleave = False
+                            await client.send_message(message.channel, "Sorry <@"+message.author.id+">, I couldn't find a good match for that Pokémon.")
+                if dontleave:
+                    output = mon[form]
+                    while type(output) is str:
+                        output = mon[output]
+                    if entrykey == 'Dump':
+                        output = [output[i] for i in output.keys()]
+                        output = [output[0].split('\n',2)[0]+'\n'+output[0].split('\n',2)[1]] + [i.split('\n',2)[2] for i in output]
+                        output = '\n\n'.join(output)
+                        while len(output)>2000:
+                            index = output[:2000].rfind('\n')
+                            await client.send_message(message.author, output[:index])
+                            output = output[index+1:]
+                        await client.send_message(message.author, output)
+                    else:
+                        await client.send_message(message.channel, output[entrykey])
         elif message.content.startswith(myself['prefix']+'ref'):
             test = message.content.split(" ",2)
             if len(test)==3 and test[1] in myself['bookdata'].keys():
