@@ -46,6 +46,10 @@ with open('settings.json') as data_file:
 myself['git'] = settings['git_link']
 myself['prefix'] = settings['prefix']
 myself['charsign'] = settings['charsign']
+if myself['charsign'] == "$":
+    myself['recharsign'] = "\\"+myself['charsign']
+else:
+    myself['recharsign'] = myself['charsign']
 myself['help'] = settings['help']
 
 with open('characters.json') as data_file:    
@@ -129,83 +133,6 @@ def explodingRoll(s,n=False,test='='):
         tab = [random.randint(1,t[1]) for i in range(len([x for x in tab if f(x)]))]
         out += tab
     return out
-
-def diceRoll(s):
-    bigmatches = []
-    out=[]
-    while s.count('('):
-        pos=[s.find('(')+1,None]
-        while s[pos[0]:pos[1]].find('(')>-1 and s[pos[0]:pos[1]].find('(')<s[pos[0]:pos[1]].find(')'):
-            pos[0]=pos[0]+s[pos[0]:pos[1]].find('(')+1
-        if s[pos[0]:pos[1]].find(')')>-1: 
-            pos[1]=pos[0]+s[pos[0]:pos[1]].find(')')
-        if pos[0]-6>-1 and s[pos[0]-6:pos[0]-1] in ['floor','round'] or pos[0]-5>-1 and s[pos[0]-6:pos[0]-1]=='ceil' or pos[0]-4>-1 and s[pos[0]-6:pos[0]-1]=='abs':
-            j1='{'
-            j2='}'
-        else:
-            if pos[0]-2<0 or s[pos[0]-2] in ['+','-','*','/','d']:
-                j1 = ''
-            else:
-                j1 = '*'
-            if pos[1]+1>=len(s) or s[pos[1]+1] in ['+','-','*','/','d']:
-                j2 = ''
-            else:
-                j2 = '*'
-        roll = diceRoll(s[pos[0]:pos[1]])
-        s = s[:pos[0]-1]+j1+str(roll[0][1])+j2+s[pos[1]+1:]
-        bigmatches = bigmatches + roll[1]
-    """
-    while s.count('{'):
-        pos=[s.find('{')+1,None]
-        while s[pos[0]:pos[1]].find('{')>-1 and s[pos[0]:pos[1]].find('{')<s[pos[0]:pos[1]].find('}'):
-            pos[0]=s[pos[0]:pos[1]].find('{')+1
-        if s[pos[0]:pos[1]].find(')')>-1: 
-            pos[1]=s[pos[0]:pos[1]].find('}')
-        sub = s[pos[0]:pos[1]]
-        if sub.find(','):
-            sub = sub.split(',')
-            tab = []
-            for i in sub:
-                tab.append(diceRoll(i)[0][1])
-            sub = 
-        else:
-            
-        roll = diceRoll(s[pos[0],pos[1]])
-        s = s[:pos[0]-1]+j1+str(roll[0][1])+j2+s[pos[1]+1:]
-        bigmatches = bigmatches + roll[1]
-    """
-    matches = re.findall('floor{[\d.]+}', s)
-    matches = re.findall('\d*d\d+!>\d+', s)
-    matches = [[i,explodingRoll(i.split('!>')[0],i.split('!>')[1]),'>'] for i in matches]
-    bigmatches = bigmatches + matches
-    matches = re.findall('\d*d\d+!<\d+', s)
-    matches = [[i,explodingRoll(i.split('!<')[0],i.split('!<')[1]),'<'] for i in matches]
-    bigmatches = bigmatches + matches
-    matches = re.findall('\d*d\d+!\d+', s)
-    matches = [[i,explodingRoll(i.split('!')[0],i.split('!')[1])] for i in matches]
-    bigmatches = bigmatches + matches
-    matches = re.findall('\d*d\d+!', s)
-    matches = [[i,explodingRoll(i.split('!')[0])] for i in matches]
-    bigmatches = bigmatches + matches
-    matches = re.findall('\d*d\d+', s)
-    matches = [[i,singleRoll(i)] for i in matches]
-    bigmatches = bigmatches + matches
-    firstpart = s
-    for i in matches:
-        firstpart = firstpart.replace(i[0],'('+' + '.join([str(x) for x in i[1]])+')',1)
-        s = s.replace(i[0],str(sum(i[1])),1)
-    out.append(firstpart)
-    while re.search(r'\d+\*\*\d+',s):
-        match = re.search(r'\d+\*\*\d+',s)
-        s = s[:match.start()]+str(aeval(s[match.start():match.end()]))+s[match.end():]
-    while re.search(r'\d+\*\d+|\d+/\d+|\d+%\d+',s):
-        match = re.search(r'\d+\*\d+|\d+/\d+|\d+%\d+',s)
-        s = s[:match.start()]+str(aeval(s[match.start():match.end()]))+s[match.end():]
-    while re.search(r'\d+\+\d+|\d+-\d+',s):
-        match = re.search(r'\d+\+\d+|\d+-\d+',s)
-        s = s[:match.start()]+str(aeval(s[match.start():match.end()]))+s[match.end():]
-    out.append(s)
-    return [out,bigmatches]
             
 def gBinom(n,k):
     if n<0:
@@ -260,166 +187,6 @@ async def on_message(message):
                 del myself['waiting'][message.author.id]
         elif message.content.startswith(myself['prefix']+'help'):
             await client.send_message(message.author, "<@"+message.author.id+">:\n"+myself['help'].replace('<spec:prefix>',myself['prefix']).replace('<spec:charsign>',myself['charsign']))
-        elif message.content.startswith(myself['prefix']+'roll') or message.content.startswith(myself['prefix']+'r '):
-            work = message.content.replace(' +','+').replace('+ ','+')
-            if message.content.find(myself['charsign']):
-                try:
-                    twork = message.content.split(myself['charsign'])[1::2]
-                    tout = []
-                    for i in twork:
-                        x = i.split(':')
-                        tout.append(myself['characters'][x[0]][x[1]])
-                    for i in range(len(twork)):
-                        work = work.replace('$'+twork[i]+'$',tout[i])
-                except:
-                    work = ''
-            test = work.split()
-            if len(test)<2 or test[1]=='' and len(test)<3:
-                await client.send_message(message.channel, '<@'+message.author.id+'>'+" tried to roll, but didn't know how the syntax works!")
-            if work.count('`')>1:
-                try:
-                    initial = '<@'+message.author.id+'>'+ ' calculated '+work
-                    if not(initial[len(initial)-1] in ['!','.','?']):
-                        initial = initial + '!'
-                    await client.send_message(message.channel, initial)
-                    rolls = []
-                    s = work.split('`')[1:]
-                    while len(s)>1:
-                        rolls.append(s[0])
-                        s = s[2:]
-                    out = '<@'+message.author.id+">'s result"
-                    if len(rolls)>1:
-                        out+='s'
-                    out+=':\n'
-                    for roll in rolls:
-                        evaluation = aeval(roll)
-                        out += "`"+roll+'='+str(evaluation)
-                        if aeval.error!=[]:
-                            out+= " ("+aeval.error[0].msg+")"
-                        out+= '`\n'
-                    await client.send_message(message.channel, out)
-                except Exception as e:
-                    print(e)
-                    await client.send_message(message.channel, '<@'+message.author.id+'>'+" calculation didn't make any sense to me!")
-            else:
-                work = work.split()
-                if len(work)>2:
-                    details = ' '.join(work[2:])
-                else:
-                    details = ''
-                work = work[1]
-                initial = '<@'+message.author.id+'>'+ ' rolled '+work
-                if details != '':
-                    initial += ' for ' + details
-                await client.send_message(message.channel, initial)
-                result,matches = diceRoll(work)
-                out = '<@'+message.author.id+">'s result:`"+result[0]+'='+result[1]+'`'
-                await client.send_message(message.channel, out)
-                if len(matches)>0:
-                    if not('@'+message.author.id in myself['statistics']):
-                        myself['statistics']['@'+message.author.id]={}
-                    for i in matches:
-                        if not(i[0][0].isdigit()):
-                            i[0]='1'+i[0]
-                        if not(i[0] in myself['statistics']['probability']):
-                            if '!' in i[0]:
-                                pass
-                                """
-                                p1,p2 = i[0].split('d')
-                                p2,cond = p2.split('!')
-                                p1 = int(p1)
-                                p2 = int(p2)
-                                if cond=='':
-                                    cond = p2
-                                    def test(x):
-                                        return x==cond
-                                else:
-                                    if cond[0]=='>':
-                                        cond = int(cond[1:])
-                                        def test(x):
-                                            return x>=cond
-                                    elif cond[0]=='<':
-                                        cond = int(cond[1:])
-                                        def test(x):
-                                            return x<=cond
-                                    else:
-                                        cond = int(cond[1:])
-                                        def test(x):
-                                            return x==cond
-                                d=p2**p1
-                                myself['statistics']['probability'][i[0]]={}
-                                m = p1*p2+1
-                                mult = 1/d
-                                lim = 5
-                                splode = []
-                                for j in range(p1,m):
-                                    count = [k for k in partition_min_max(j,p1,1,p2)]
-                                    volatile = [x for x in count if any(map(test,x))]
-                                    stable = [x for x in count if not(any(map(test,x)))]
-                                    if len(volatile)>0:
-                                        for k in volatile:
-                                            volatilemult = numPerms(k)
-                                            splode.append([sum(k),len([x for x in k if test(x)]),volatilemult*mult])
-                                    if len(stable)>0:
-                                        stable = [k for k in map(numPerms,stable)]
-                                        stable = sum(stable)
-                                        myself['statistics']['probability'][i[0]][str(j)]=stable*mult
-                                itercount = 0
-                                while itercount<lim:
-                                    newsplode = []
-                                    for j in splode:
-                                        p1 = j[1]
-                                        m = p1*p2+1
-                                        mult = j[2]*(1/p2**p1)
-                                        for k in range(p1,m):
-                                            count = [x for x in partition_min_max(k,p1,1,p2)]
-                                            volatile = [x for x in count if any(map(test,x))]
-                                            stable = [x for x in count if not(any(map(test,x)))]
-                                            if len(volatile)>0:
-                                                for k in volatile:
-                                                    volatilemult = numPerms(j)
-                                                    newsplode.append([j[0]+sum(k),len([x for x in k if test(x)]),volatilemult*mult])
-                                            if len(stable)>0:
-                                                stable = [x for x in map(numPerms,stable)]
-                                                stable = sum(stable)
-                                                if str(j[0]+k) in myself['statistics']['probability'][i[0]]:
-                                                    myself['statistics']['probability'][i[0]][str(j[0]+k)]+=stable*mult
-                                                else:
-                                                    myself['statistics']['probability'][i[0]][str(j[0]+k)]=stable*mult
-                                    splode = newsplode
-                                    itercount += 1
-                                """
-                            else:
-                                p1,p2 = i[0].split('d')
-                                p1=int(p1)
-                                p2=int(p2)
-                                myself['statistics']['probability'][i[0]]={}
-                                if p1 == 1:
-                                    d = p2**p1
-                                    for j in range(p1,p1*p2+1):
-                                        myself['statistics']['probability'][i[0]][str(j)]=1/d
-                                else:
-                                    m = p1*p2+1
-                                    hold = OrderedDict()
-                                    for j in range(p1,p1+math.ceil((m-p1)/2)):
-                                        myself['statistics']['probability'][i[0]][str(j)]=hold[str(m-j+p1-1)]=diceProb(p1,j,p2)
-                                    hold=list(hold.items())
-                                    hold.reverse()
-                                    hold=OrderedDict(hold)
-                                    myself['statistics']['probability'][i[0]].update(hold)
-                        if '!' in i[0]:
-                            pass
-                        elif i[0] in myself['statistics']['@'+message.author.id]:
-                            myself['statistics']['@'+message.author.id][i[0]][str(sum(i[1]))] += 1
-                            myself['statistics']['@'+message.author.id][i[0]]['rolls'] += 1
-                        else:
-                            myself['statistics']['@'+message.author.id][i[0]]={}
-                            myself['statistics']['@'+message.author.id][i[0]]['rolls']=1
-                            for j in myself['statistics']['probability'][i[0]].keys():
-                                myself['statistics']['@'+message.author.id][i[0]][j]=0
-                            myself['statistics']['@'+message.author.id][i[0]][str(sum(i[1]))] += 1
-                    with open('statistics.json','w') as data_file:    
-                        json.dump(myself['statistics'],data_file,indent=4)
         elif message.content.startswith(myself['prefix']+'poke'):
             await client.send_message(message.channel, myself['navi'].state())
         elif message.content.startswith(myself['prefix']+'git'):
@@ -670,6 +437,67 @@ async def on_message(message):
                         await client.send_message(message.channel, char+' belongs to <@'+myself['characters'][char]['__creator__']+'>. Only the creator or an administrator can edit them.')
                 else:
                     await client.send_message(message.channel, "That character does not exist; use newchar to create them.") 
+    dicereg = r"((\d+#)?\d*d\d+((\+|-)(\d*d|)\d+)*|"+myself['recharsign']+r"(.*):(.*)"+myself['recharsign']+")"
+    test = re.search(dicereg,message.content)
+    if test != None:
+        work = message.content[test.end():]
+        roll = message.content[test.start():test.end()]
+        output = '<@'+message.author.id+">:\n" + roll + ':'
+        while roll != None:
+            if roll.find(myself['charsign'])
+                try:
+                    character = roll[1:-1]
+                    character, attribute= character.split(':')
+                    attribute = myself['characters'][character][attribute]
+                    roll = attribute
+                except:
+                    roll = ''
+            if roll.find('#'):
+                number, individual = roll.split('#')
+                roll = [number,individual]
+            else:
+                roll = [1,roll]
+            roll.append([])
+            rollparse = roll[1]
+            if rollparse[0] == "-":
+                sign = -1
+                rollparse = [1:]
+            else:
+                sign = 1
+            while len(rollparse) > 0:
+                if rollparse[1].find('+') or rollparse[1].find('-'):
+                    oneRoll = rollparse[:min(rollparse[1].find('+'),rollparse[1].find('-'))]
+                    roll[2].append((sign,oneRoll))
+                    rollparse = rollparse[min(rollparse[1].find('+'),rollparse[1].find('-')):]
+                    if rollparse[0] == '-':
+                        sign = -1
+                    else:
+                        sign = 1
+                    rollparse = rollparse[1:]
+                else:
+                    roll[2].append((sign,rollparse))
+                    rollparse = ''
+            result = []
+            for i in range(roll[0]):
+                oneResult = 0
+                for j in roll[2]:
+                    if j[1].find('d'):
+                        oneResult += j[0]*singleRoll(j[1])
+                    else:
+                        try:
+                            oneResult += j[0]*int(j[1])
+                        except:
+                            pass
+                result.append(str(oneResult))
+            output += '`'+','.join(result)+'`'
+            test = re.search(dicereg,work)
+            if test == None:
+                roll = None
+            else:
+                roll = work[test.start():test.end()]
+                work = work[test.start():test.end()]
+                output += '\n' + roll + ':'
+        await client.send_message(message.channel, output)
 sleeptime=0
 sleeptimes=[5,5,30,60,60*5]
 while True:
