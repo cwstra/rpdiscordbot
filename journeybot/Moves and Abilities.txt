@@ -1,0 +1,975 @@
+﻿Abilities
+Updated Abilities
+Ability: Accelerate
+Scene x2 - Standard Action, Priority
+Effect: The user may activate a damaging Move to which they add STAB with Priority. If the Move hits, the user adds double their Speed Stat to the Damage Roll. If the Move already had Priority, the attack gains a +4 Bonus to Accuracy.
+
+
+Ability: Anger Point
+Static
+Effect: Whenever the user is critically hit, they become Enraged, gain a Tick of Hit Points, and their next attack automatically critically strikes.
+
+
+Ability: Aroma Veil
+Static
+Effect: The user and all adjacent Pokémon and Trainers cannot become Confused, Enraged, or Suppressed. Defensive.
+
+
+Ability: Blaze
+Static
+Effect: The user gains a +1 DB bonus to damage rolls with Fire-Type Moves. If Shaken, the bonus increases to +2 DB.
+
+
+Ability: Blow Away
+Scene x2 - Free Action
+Trigger: The user uses a Ranged or Area of Effect Flying-Type Move
+Effect: Push all targets hit by the triggering Move up to 3 meters, after the Move resolves. Push all targets missed by the triggering Move up to 1 meter.
+
+
+Ability: Contrary
+Static
+Effect: Penalties to the user’s Accuracy and Damage becomes Bonuses instead.
+
+
+Ability: Courage
+Static
+Effect: The user gains +5 Damage Reduction while Shaken or Bruised.
+
+
+Ability: Discipline
+Scene x1 – Free Action
+Effect: The user may activate this Ability at any time to cure themselves of Confusion, Infatuation, Rage, Sleep, or Suppression. If the user removes one of these afflictions, they gain a +2 Bonus on their next Accuracy Roll.
+
+
+Ability: Flower Power
+Static
+Effect: The user’s Grass-Type Moves are all Versatile and gain a +1 DB Bonus.
+
+
+Ability: Fox Fire
+Scene – Standard Action
+Effect: The user creates 3 Fire Wisps. Whenever the user is hit by a damaging attack by a foe within 6 meters, the user may expend a Fire Wisp to use the Move Ember against that foe.
+
+
+Ability: Galvanize
+Scene x2 - Free Action
+Trigger: The user uses an Electric-Typed Move
+Effect: The user gains the Galvanized condition. The user can expend Galvanized as a Free Action in the following ways:
+* When hitting with a Normal, Rock, or Steel-Typed attack to have it deal Electric-Typed damage and cause the targets to lose a Tick of Hit Points.
+* When hitting with an Electric-Typed attack to cause all hit targets to become Paralyzed for one full round. 
+
+
+Ability: Guts
+Static
+Effect: While Burned, Cursed, Poisoned, Badly Poisoned, or Paralyzed, the user gains a +8 Bonus to Damage Rolls.
+
+
+Ability: Healer
+Scene x1 – Free Action
+Target: An adjacent target
+Effect: The target is cured of Burn, Poison, Bad Poison, or Paralysis. 
+
+
+Ability: Heatproof
+Static
+Effect: The user is immune to Burn, and resists Fire-Type Moves one step further.
+
+
+Ability: Instinct
+Static
+Effect: The user gains +1 Evasion against ranged attacks and area-of-effect attacks.
+
+
+Ability: Lightning Rod
+Scene – Free Action
+Trigger: A ranged or area of effect Electric Type Move is used within 4 Meters of the user.
+Effect: The Move is turned into a Single-Target Move and is re-directed at the user without fail, and cannot miss.
+This negates Lock-On or Mind Reader. Additionally, the user is immune to the damage and effects of Electric Type attacks, and each time they are hit by an Electric attack, the user gains a Tick of Temporary Hit Points and their next Special Attack deals +5 Damage. Defensive.
+
+
+Ability: Long Reach
+Static
+Effect: The user may use damaging attacks as if they had a range of "6, 1 Target" instead of their usual range.
+
+
+Ability: Marvel Scale
+Static
+Effect: When Asleep, Paralyzed, Burned, Frozen or Poisoned, Marvel Scale raises the user’s Defense by +10. Their Defense returns to normal if the user is cured of their status affliction.
+
+
+Ability: Motor Drive
+Scene x3 - Free Action
+Trigger: The user uses or is hit by an Electric-Type attack
+Effect: The user gains +1 Speed. 
+Bonus: The user is Immune to the effects and damage of Electric-Type attacks. 
+
+
+Ability: Omen
+Scene - Minor Action
+Target: A foe within 5 meters
+Effect: The target becomes Shaken. As long as the user remains on the field, the target suffers a -2 penalty to all Accuracy Rolls and loses a Tick of Hit Points whenever they miss all targets with an attack. If the target Faints or leaves the battlefield, refresh Omen’s Frequency.
+
+
+Ability: Overgrow
+Static
+Effect: The user gains a +1 DB bonus to damage rolls with Grass-Type Moves. If Shaken, the bonus increases to +2 DB.
+
+
+Ability: Rattled
+Scene x1 – Free Action
+Trigger: The user is hit by a Bug, Dark, or Ghost Type Move
+Effect: The user gains +1 Speed for the rest of the Scene.
+
+
+Ability: Reckless
+Static
+Effect: The user gains +2 DB on Moves with the Exhaust, Recoil, or Reckless keywords.
+
+
+Ability: Steadfast
+Static
+Effect: The user gains a +1 Speed for each Mental Status Condition they have. They do not lose Speed when becoming Flinched.
+
+
+Ability: Shields Down 
+Static
+Effect: If the user is not Shaken, they gain +5 Damage Reduction against all damage and are immune to physical ailments. If the user is Shaken, they instead gain a +5 Bonus to all damage rolls and gain a +3 Bonus to Speed. 
+
+
+Ability: Torrent
+Static
+Effect: The user gains a +1 DB bonus to damage rolls with Water-Type Moves. If Shaken, the bonus increases to +2 DB.
+
+
+Ability: Vicious
+Scene - Minor Action
+Trigger: The user hits a foe with a Melee Attack
+Effect: The user chooses one of the following as a Minor Action - the user gains a +2 bonus to Critical Hit Range for the rest of the Scene, or the user uses a Move that grants a Buff Condition.
+
+
+Ability: Water Bubble
+Static
+Effect: The user is immune to Burn, and resists Water and Fire-Type attacks one step further.
+
+
+Ability: Water Veil
+Static
+Effect: The user is immune to Burn. Whenever the user uses a Water-Type Move, they gain a tick of Temporary Hit Points.
+
+
+Ability: White Flame
+Static
+Effect: When the user becomes Shaken, they become Enraged and gain a +1 DB Bonus to all damage rolls for the rest of the scene. They cannot be cured of Rage when they become Enraged this way. 
+________________
+
+
+New Abilities
+Ability: Accelerate
+Scene x2 - Standard Action, Priority
+Effect: The user may activate a damaging Move to which they add STAB with Priority. If the Move hits, the user adds their Speed Stat to the Damage Roll. If the Move already had Priority, the attack also gains a +2 Bonus to Accuracy and a +2 Bonus to DB.
+
+
+Ability: Bubble Strike 
+Static
+Effect: The user may use Water-Type Moves as if they had a range of "Melee, 1 Target". If they do, the triggering Move becomes Physical, gains a +2 Bonus to Critical Hit Range, and deals +5 damage. 
+
+
+Ability: Chemical Romance
+Static
+Effect: Whenever the user hits a male target with Poison Gas, Smog, Sweet Scent, Toxic, or Venom Drench, that target becomes Infatuated with the user.
+
+
+Ability: Wily
+Effect: The user's Status Class Moves may target an additional target within range. This does not apply to area-of-effect moves.
+
+
+________________
+
+
+Moves
+Keywords
+Accurate - roll accuracy for this Move with a +3 bonus
+Critical Mind - When this Move Critically Hits, for one full round all targets roll twice for Accuracy and take the worse result. 
+Critical Phys - When this Move Critically Hits, for one full round all targets are Vulnerable and take 5 more damage from all attacks.
+Critical Sum - When this Move Critically Hits, double all numerical values in its effect. 
+Pass - Before activating a Move with the Pass Keyword, the user may Move up to four squares in a straight line, ignoring their normal Movement Speed and treating foes as Normal Terrain. They must end this Movement in an empty square. The Pass Move attacks all targets the user moved through. This Movement does not trigger Punish Attacks.
+Reliable - When this Move misses, its Frequency is not expended.
+Versatile - This Move may use either Attack or Special Attack and is defended with the corresponding Defensive Stat.
+Bug Moves
+Bug Bite - AW - Bug Phys - DB 4 - AC 2 - Melee,1 Target - Once a Scene when you hit a target with Bug Bite, you may gain all current bonuses to Accuracy, Evasion, and Stats from Abilities and Moves that the target has until the end of your next turn.
+
+
+Bug Buzz - Bug Special - Scene x2 - DB5 - AC2 - Cone 2 or Close Blast 2 - Sonic, Smite
+Effect: The targets become Vulnerable until the end of the round.
+
+
+Infestation - Bug Special - Scene x2 - DB2 - AC 4 - Range 3, 1 Target - Vortex
+
+
+Lunge - Bug Physical - EOT - AC 2 - DB4 - Melee, 1 Target
+Effect: The user may Disengage 2 before using Lunge. On a hit, the target takes a -8 penalty to damage rolls until the end of their next turn. Lunge is a Critical Hit on 17+.
+
+
+Pheromone Blast - Bug Special - EOT - AC 2 - DB 3 - 2m, 1 Target - The user gains a +2 bonus to Accuracy on the next attack it makes against the target this Scene.
+
+
+Signal Beam - Bug Special - EOT - AC 2 - DB 4 - range 4, 1 Target - Confuses on 19+
+
+
+Silver Ascent - Scene x1 - Bug Special - DB 7 - AC6 - Burst 1 - Smite
+Effect: The user cannot take damage until the beginning of their next turn.
+
+
+Spine Shower - Scene x2 - Bug Physical - DB 6 - AC 4 - 6m, Ranged Blast 3, Smite - Critically Hits on 17+. Targets are Stuck for one full round on 19+.
+
+
+Spider Dance - Scene - Bug Status - Minor Action - The area in a Burst 4 of you becomes Webbed Rough Terrain. You count as having Naturewalk for this Webbed Terrain. You may spend a Movement Action while on Webbed Terrain to move to any other contiguous square of Webbed Terrain. You do not trigger Punish Attacks or count as moving through any squares if you Move in this way. You treat foes on Webbed Terrain as if they were Flanked and have +2 to Critical Hit Range against them.
+
+
+Wild Strike - Scene x2 - Bug Physical - DB7 - AC 4 - Melee, 3 Targets - Smite 
+Effect: The user becomes Enraged and then uses Wild Strike.
+________________
+Dark Moves
+Brutal Swing -  Dark Physical - EOT - DB3 - AC 2 - Melee, All Targets, Smite 
+
+
+Devil’s Bargain - Scene x2 - Dark Versatile - AC 2 - DB3 - Melee, 1 Target, Smite -  The user adds both their Attack and Special Attack to Devil’s Bargain, and the target subtracts their lower Defense. On a hit, the user then loses hit points equal to the lesser of their attack or special attack stat.
+
+
+Execution Order - Dark Status - Scene - Minor Action - Special, 1 Target - Execution Order can be triggered after successfully hitting a foe with an attack but not causing them to Faint. All allies have a +3 bonus to Critical Hit against that foe for one full round. If the foe Faints in the next full round, the user gains two Ticks of Temporary HP and increases their Initiative by +2. 
+
+
+Pursuit -At-Will - Dark Physical - AC 2 - DB2 - Melee, 1 Target - When a Pokemon is switched out or moves more than 5 meters away from the user, Pursuit may be used as an Interrupt to shift and attack that foe. When used this way, Pursuit gains a +2 DB Bonus.
+
+
+Kick Hop - Scene x2 - Dark Physical - AC2 - DB4 - 1 Target, Melee - After you resolve the attack, you may move to a spot adjacent to a second foe within 4 meters and repeat this attack but deal Flying-Type damage.
+
+
+Malicious Moonsault - Dark Physical - Scene x1 - DB7 - AC2 - Ranged 4, 1 Target - Smite 
+Effect: The user jumps to a space adjacent to the target and attacks with Malicious Moonsault. Malicious Moonsault deals Fire-Type damage if it would be more effective. Both the user and the target become Vulnerable for 1 round. 
+
+
+Maul - Scene x2 - Dark Physical - AC 2 - DB5 - Melee, 1 Target, Smite -  The target is Flinched. (this move is boosted by Strong Jaw).
+
+
+Night Slash - Dark Physical - EOT - DB4 - AC2 - 1 Target, Melee or Pass; Smite - Crits on 18+
+
+
+Pounce - Scene x2 - Dark Physical - AC 2 - DB6 - Melee, 1 Target, Smite -  Pounce is a Critical Hit on 18+.  
+
+
+Shadow Bind - EOT - Dark Special - AC 2 - DB3 - Range 2, 1 Target - On 17+, the target is Stuck for one full round.
+
+
+Shadow Dash - Scene x2 - Dark Physical - DB 6 - AC 2 - Melee, 1 Target, Smite - If there are no foes within 3m of the user or the user is at least partially obscured by shadow, they may teleport as a Movement Action to any square they would normally be able to Move to, then use Shadow Dash with a +2 bonus to Accuracy and Critical Hit Range. This movement does not trigger Punish Attacks.
+
+
+Snatch - Dark Status - Scene x2 - Range 4, 1 Target, Interrupt - If the target uses a Self-Targeting Move, you may use Snatch, using the same action type as the triggering Move. You gain the benefits of the Self-Targeting Move instead of the target.
+
+
+Throat Chop - Dark Physical - EOT - AC 2 - DB4 - Melee, 1 Target, Smite - The target cannot use Moves with the Sonic Keyword for the next two turns.
+
+
+Torment - Dark Status - Scene x2 - AC 4 - Range 3, 1 Target - Minor Action - The target is Suppressed for one full round. Torment may affect a target only once per Scene.
+________________
+Dragon Moves
+Dragon Rage - Dragon Versatile - EOT - DB2 - AC2 - Melee, 1 Target  -  On 17+ the user becomes Enraged and may immediately make a Struggle Attack.
+
+
+Dragon Pulse - Dragon Special - EOT - DB4 - AC2 - Range 3, 1 Target  -  Dragon Pulse is a Critical Hit on 17+ and causes target becomes Tripped.
+
+
+Dual Chop - Dragon Physical - EOT - DB3 - AC3 - Melee, 1 Target, Double Strike, Smite 
+
+
+Lordly Caliber - Dragon Status - Minor Action - Scene x1 - Self - Social
+The user gains two ticks of Temporary Hit Points and is cured of all status conditions. At the end of the user’s turn, each adjacent foe loses a Tick of Hit Points and becomes Suppressed for 1 round.
+
+
+Outrage - Scene x2 - Dragon Physical - DB7 - AC 4 - Melee, 3 Targets - Smite 
+Effect: The user becomes Enraged and then uses Outrage.
+
+
+Regal Challenge - Dragon Status - Minor Action - Scene x1 - Range 6, 1 Target - Social
+Ask the target if they choose Deference or Defiance. If they choose Deference, the target becomes Tripped, Paralyzed, and gains a -5 penalty to damage rolls for the rest of the scene. If they choose Defiance, the user gains a +8 Bonus to Damage Rolls and a +2 bonus to Critical Hit Range for the rest of the scene.
+
+
+Swat Aside - Dragon Physical - Scene x2 - DB1 - AC2 - Melee, 1 Target - Minor Action
+The target is pushed 1 meter in the direction of the user’s choice. The user gains a -5 penalty to their next damage roll.
+
+
+Twister - Dragon Special - AW - DB2 - AC 2 - Range 4, Blast 2 - Flinches on 18+
+Electric Moves
+Charge - Electric Status - EOT - Self - The next Electric-Typed attack the user performs during the next round adds its damage dice roll an extra time to the damage. The user gains +5 Special Defense for one full round. 
+
+
+Discharge - Electric Special - EOT - AC 2 - DB4 - All cardinally adjacent targets - Paralyzes on 15+
+
+
+Eerie Impulse - Electric Status - EOT - Minor Action - AC 2 - 4 squares, 1 Target - Eerie Impulse may only affect a target hit by an Electric-Type attack this round. The target's next special attack made in the next full round deals damage as if Resisted one step further. May only affect a target once per Scene.
+
+
+Electro Ball - Electric Special - Scene x2 - AC 2 - DB 3 - Range 5, 1 Target - The user adds twice their Speed Stat to the damage of Electro Ball.
+
+
+Ion Deluge - Electric Status - Scene - Movement Action - AC None - 5 squares, Ranged Blast 3 - The user creates an Ion Cloud in the affected area. All Electric-Type attacks which target any square(s) in the Ion Cloud instead target all squares in the Ion Cloud. As a Movement Action, any Electric-Type Pokemon or Pokemon with the Lightning Rod Ability in the Ion Cloud may absorb it, gaining 2 Ticks of Temporary Hit Points. 
+
+
+Jolt Strike - Electric Physical - AW - DB 2 - AC 2 - Melee, 1 Target - Priority
+
+
+Magnet Rise - Electric Status - Scene - Move Action - The user gains the Levitate Ability for 5 turns. 
+
+
+Pulse Tackle - Electric Physical - Scene x2 - DB 5 - AC 3 - Melee, 1 Target, Smite - Both the user and target are Pushed up to 4 meters away in directions of the user’s choice. The direction and distance may be chosen separately for the user and target, but they must both be Pushed at least 2 meters. 
+
+
+Railgun - Electric Versatile - Scene - DB 8 - AC 2 - 10m, 1 Target, Smite - Railgun destroys Covering Terrain it passes through and deals Electric or Steel Type damage, whichever is more effective. Exhaust.
+
+
+Shock Wave - Electric Special - EOT - DB3 - AC2 - Range 4, 1 Target, Accurate
+
+
+Thunder Punch - Electric Physical - EOT - DB 4 - AC 2 - Melee, 1 Target - Paralyzes on 19+
+
+
+Thunder Wave - Electric Status - EOT - AC 2 - Range 4, 1 Target, Priority - If the target is not Paralyzed, Thunder Wave has the following effect: The target is Paralyzed and becomes Suppressed for one full round. If the target is Paralyzed, Thunder Wave is instead a Versatile DB2 Electric-Typed attack that can be used as a Punish Attack against Paralyzed targets. 
+
+
+X-Beam - Electric Special - Scene x2 - AC2 - DB5 - Range 4, 1 Target - Smite
+The user adds their attack instead of special attack to X Beam’s damage roll. The user gains a +3 bonus to Accuracy against X-Beams target for the rest of the Scene.
+
+
+Zap Cannon - Electric Special - EOT - DB5 - AC 8 - Range 3-6, 1 Target, Smite - The target is Paralyzed. Zap Cannon ignores Evasion. If there are no other combatants or non-clear terrain adjacent to the target, Zap Cannon’s AC is instead 5.
+Fairy Moves
+Baby-Doll Eyes - EOT - AC2 - Status Fairy - Ranged 10, 1 Target - Social, Minor Action, Priority
+Effect: The target takes a -10 penalty to physical damage rolls for the rest of the round.
+
+
+Charm - Scene x3 - Status Fairy - AC 2 - Ranged 4, 1 Target - Social, Minor Action
+Effect: The target takes a -10 penalty to Physical Attacks for one full round and must immediately take their next turn's Movement Action to Move towards you, ending adjacent in the square of your choice if possible. Charm may affect a target only once a Scene.
+
+
+Cutesy Snare - Scene x2 - Fairy Physical - DB 6 - AC 2 - Melee, 1 Target, Smite - Cutesy Snare treats all targets you have successfully hit with a Move with the Social Keyword this round as Vulnerable and Critically Hits them on 16+.  
+
+
+Disarming Voice - Fairy Special - AW - DB 2 - AC 2- Burst 1, Accurate, Sonic 
+
+
+Glomp - EOT - AC4 - Physical Fairy - DB3 - Melee, 1 Target -  The target takes a -5 penalty to damage rolls for 1 round. 
+
+
+Joyful Bound 
+Effect: After resolving Joyful Bound, the user may Disengage up to half their speed and attack with Joyful Bound a second time. 
+
+
+Moonblast - Fairy Special - Scene x2 - DB5 - AC2 - Ranged 5, Blast 2 - Smite
+Effect: The targets become Confused on 16+.
+
+
+Nibble - EOT - AC 2 - Physical Fairy - DB 3 - Melee, 1 target
+Effect: On 19+ the target's damaging attacks are resisted one step further for one full round.
+
+
+Sign of Peace - Scene x1 - Fairy Status - Field - Priority
+Effect: Sign of Peace must be used with Priority at the start of the round. For the rest of the round, any damage dealt by combatants on the field is halved.
+
+
+Sparkle Motion - Fairy Versatile - EOT - DB 3 - AC 2 -  Melee, 1 Target - Smite
+Effect: No further effect.
+
+
+Sweet Kiss - Scene x2 - Fairy Status - AC 6 - Range 6, 1 Target - Social, Minor Action
+Effect: The target becomes confused. On a miss, the target suffers a -2 penalty to Accuracy and Evasion for one full round.
+
+
+Twinkle Tackle - Fairy Versatile - Scene x1 - DB 6 - AC 2 -  Melee, 1 Target - Smite
+Effect: The target is Blinded until the end of their next turn.
+
+
+Winds of Whimsy - Scene x2 - Fairy Status - AC 4 - 6m, 3 Targets - All legal targets are Confused. Regardless of whether Winds of Whimsy hit, push all targets up to 5m and they become Slowed for one full round. 
+________________
+
+
+Fighting Moves
+Battle Cry - Fighting Status - Scene x1 - Target: Self - Move Action, Buff
+Effect: The user and up to two allies within 10 meters each gain a +8 Bonus to Damage Rolls and a +3 Bonus to Critical Hit range for 1 round. 
+
+
+Brick Break - Fighting Physical - EOT - DB4 - AC 2 - Melee, 1 Target, Smite - Brick Break does not trigger Blessings. Remove all Blessings on the target.
+
+
+Bulk Up - AW - Normal Status - Target: Self  - Buff
+Effect: The user gains the Bulked Up buff. While under the effects of Bulked Up, the user gains a +5 Bonus to Physical Damage Rolls, and +2 Evasion against melee attacks. The user may expend Bulked Up when hit by a physical attack to resist it one step further.
+
+
+Counter - Fighting Physical - Scene x2 - Reaction, Trigger - Counter may be used as a Reaction when the user is hit by a damaging Physical Attack. Resolve the Triggering Attack, with Counter’s user resisting the attack one step further. After the attack is resolved, if Counter’s user was not Fainted, the triggering foe then loses Hit Points equal to the amount of Hit Points lost by the user from the triggering attack. Note that Counter is Physical, and while it cannot miss, it cannot hit targets immune to Fighting-Type Moves.
+
+
+Hoof Kick - EOT - Fighting Physical - AC2 - DB3 - Melee, 1 target - Hoof Kick may be performed as a full action; if it is, it gains +2DB and Trips the target on 16+. 
+
+
+Low Kick - Fighting Physical - EOT - DBX- AC2 - Ranged 4, 1 Target - Low Kick’s DB is equal to the target’s Weight Class.
+
+
+Monkeyshines  - Fighting Physical - EOT - DB1 - AC2 - Melee, 1 Target - If the user is smaller than the target, the user leaps on top of the target and grabs them and forces them to shift 3 meters in a direction of the user’s choice; the user is then placed in an empty square adjacent to the target. If the user is the same size or larger than the target, Monkeyshines gains a +1 DB bonus and the target is pushed 1 meter away from the user.
+
+
+
+
+________________
+
+
+Fire Moves
+Fire Lash- Fire Physical - EOT - DB4 - AC 2 - Ranged 3, 1 Target
+Effect: The target takes +5 damage from the next attack to hit it this round. 
+
+
+Fiery Dance - Fire Special - EOT - AC 2 - DB4 - Special - Fiery Dance hits either all cardinally adjacent foes or all diagonally adjacent foes. On even numbered Accuracy Rolls, the user gets a +5 bonus to their next Special damage roll.
+
+
+Fire Spin - Fire Special - Scene x2 - DB2 - AC 4 - Range 3, 1 Target - Vortex
+
+
+Flame Burst - Fire Special - EOT - DB3 - AC4 - Range 3, Blast 2 -  No Effect
+
+
+Flame Cutter - Fire Physical - EOT - AC 2 - DB4 - Melee, 1 Target, or Pass, Smite - On 19+, Burns and Critically Hits
+
+
+Flamethrower - Fire Special - EOT - DB5 - AC2 - Range 4, 1 Target
+Effect: The target is Burned on 19+. 
+
+
+Inferno - Fire Special - EOT - DB5 - AC 8 - Range 3-6, 1 Target, Smite - The target is Burned. Inferno ignores Evasion. If there are no other combatants or non-clear terrain adjacent to the target, Inferno’s AC is instead 5. 
+
+
+Mystical Fire - Fire Special - EOT - DB4 - AC 2 - Range 4, 1 Target, Critical Sum - The target suffers a -5 penalty to all Special damage rolls for one full round.
+
+
+Purifying Flames - Fire Special - Scene x2 - DB5 - AC 2 - Range 6, 1 Target - For each Status Affliction on the target, Purifying Flames deals +1 DB damage and the target suffers a -2 penalty to all rolls on its next turn, to a maximum of -6. Then, the target is cured of all Status Afflictions.
+
+
+Scorched Earth - Fire Special - Scene x2 - DB4 - AC 2 - Range 4, 2 Targets - After one full round, create Fire Hazards in the squares targeted by Scorched Earth and a Burst 1 around those squares. This effect occurs even if Scorched Earth misses.
+
+
+Will-O-Wisp - Fire Status - EOT - AC 4 - Range 5, 1 Target - If the target is not Burned, Will-O-Wisp has the following effect: The target is Burned. If Will-O-Wisp Burns the target in this way, you may cause the target to take their next Move action as an Interrupt to Move towards you as if Slowed. If the target is Burned, Will-O-Wisp is instead a Versatile DB3 Fire-Typed attack.
+________________
+
+
+Flying Moves
+Acrobatics - Flying Physical - EOT - DB 3 - AC 2 - Pass or Melee, 1 Target - Smite
+Effect: If the user has a Accessory Item, all bonuses and penalties from the item are doubled when attacking with Acrobatics. If the user has no Accessory Item, Acrobatics gains a +2 DB Bonus. 
+
+
+Aerial Ace - Flying Physical - EOT - DB3 - AC 2 - Melee, 1 Target, Accurate
+
+
+Air Slash - Flying Special - EOT - DB 4 - AC 3 - Range 4, 1 Target - Flinches on 15+
+
+
+Airy Aria - Flying Special - Scene x2 - AC 2 - DB5 - Burst 1, Friendly, Sonic, Smite - Targets hit by Airy Aria cannot make Punish Attacks for the rest of the round. The user gains a +2 bonus to their Movement for the rest of their turn. 
+
+
+Bounce - Flying Physical - Scene x2 - DB5 - AC 2 - Melee, 1 Target
+Effect: The user Disengages up to half their Speed, then attacks with Bounce. The target becomes Vulnerable, and is Paralyzed on 16+. 
+
+
+Cyclone - Flying Special - Scene x2 - DB 5 - AC 4 - 5 sq, Ranged Blast 2, Smite - Cyclone destroys all Smokescreens and Hazards in the targeted squares, regardless of whether it hits. Push all targets hit 1 square away from the targeted squares. 
+
+
+Feather Dance - Flying Status - Scene x2 - Move Action - AC 2 - Burst 1 - All targets suffer a -5 penalty to Damage Rolls and -2 penalty to Accuracy Rolls for one full round.
+
+
+Fly - Flying Physical - Scene x2 - DB5 - AC 2 - Melee, 1 Target - Smite
+Effect: Fly is a Critical Hit on 16+. 
+
+
+Hurricane - Flying Special - Scene x2 DB 6 - AC 6 - Burst 1, Smite - 
+
+
+Nectar’s Dance - Daily x1 - Flying Status - The user recovers 50% of their Hit Points. If the user is an Oricorio, they may change their current forme and primary type. 
+
+
+Razor Wind - EOT - Flying Special - DB 4 - AC 2 - Range 4, 3 targets, set-up
+Set-Up Effect: The user may not Move this round. The user whips up a whirlwind around themselves, granting +2 Evasion until the end of their next turn, and destroying any Smokescreen or Hazards on any squares they are standing on and in all squares adjacent to them.
+Resolution Effect: The user Moves and attacks with Razor Wind. Razor Wind is a Critical Hit on 17+.
+
+
+Sky Drop - Flying Physical - Scene x2 - DB4 - Melee, 1 Target, Smite - The user may Move up to 3 squares as a Free Action after using Sky Drop. This Movement does not trigger Punish Attacks. If the target is the user’s Size or lower, the user may Pull the target with them and drop them in any adjacent square after they finish Moving. 
+
+
+Swift Bird - Flying Physical - EOT - DB 3 - Melee, Special - Swift Bird may be used as either a 1 Target Priority Move or a 2 Target Move. 
+
+
+Twilight Gale - Flying Special - Scene x2 - DB5 - AC 2 - 4m, 1 Target - Either before or after using Twilight Gale, the user may Teleport 4 meters as a Free Action. Increase this to 6 meters at night or if the user is obscured by darkness. Twilight Gale does Flying or Ghost Type Damage, whichever is more effective. 
+________________
+Ghost Moves
+Arrow Raid - Ghost Physical - Scene x2 - DB5 - AC2 - Range 6, 3 Targets - Smite. 
+Effect:  If you target only one foe with Arrow Raid, it gains a +2 DB bonus. The user cannot make ranged attacks until the end of their next turn. 
+
+
+Chilling Gaze - Ghost Status - Scene x2 - AC 2 - 4 sq, 1 Target, Reliable, Critical Sum - The target loses 3 Ticks of Hit Points.
+
+
+Confuse Ray - Ghost Status - EOT - AC 2 - Cone 2, Critical Mind - All legal targets are Confused. If a target is already Confused, they instead lose Hit Points equal to the higher of their Attack or Special Attack and suffers a -2 penalty to their next Accuracy Roll taken during the next full round.
+
+
+Curse - Ghost Status - Scene - AC 2 - Range 5, 1 Target, Reliable, Critical Phys - The target becomes Cursed. The user may choose to lose 25% of their Maximum Hit Points when using Curse. If they do, Curse cannot Miss and the target is also Tripped. 
+
+
+Final Flicker - Scene - Ghost Special - DB 7 - AC 2 - 6m, 1 Target, Smite - After resolving Final Flicker’s damage, the target reveals whether they are now above or below 50% of their Maximum HP. If they are above, they lose a Tick of Hit Points at the start of their next turn and are Suppressed for that turn. If they are below, they become Slowed and Vulnerable for the rest of the Scene. Final Flicker cannot be Intercepted, avoided by Moves with the Shield Keyword, or affected by Defensive Abilities. 
+
+
+Haunting Echo - Ghost Status - EOT - Minor Action - AC 2 - 4 squares, 1 Target - Haunting Echo may only affect a target hit by an Ghost-Type attack this round. The target's next physical attack made in the next full round deals damage as if Resisted one step further. May only affect a target once per Scene.
+
+
+Hex - EOT - Ghost Special - DB4 - AC2 - Range 5, 1 Target - Once per Scene, if the target is suffering from a Status Affliction, Hex is DB6.
+
+
+Liminal Rites - Ghost Status - Scene - Move Action - Self, Priority - Liminal Rites must be declared as Priority at the start of a round. Choose Burst 1, 2, or 3 around the user. For the rest of the Round, whenever a target enters or exits the chosen area of effect, the user may perform a Ghost-Typed DB 5 Special Attack against the target as a Free Action with a +3 bonus to Accuracy Roll. Targets hit by this attack are Flinched. If no attacks are triggered as a result of Liminal Rites, the Frequency is not expended.
+
+
+Night Shade - Ghost Versatile - EOT - DB2 - AC 3 - Range 6, 1 Target  -  On 17+ the target makes attacks against the user as if Blinded for one full round and cannot make Punish Attacks against the user for that time.
+
+
+Ominous Wind - Ghost Versatile - EOT - DB3 - AC 2 - Line 4  -  On 19+ the user gains a Power Surge of their choice for the remainder of the encounter;+5 to Damage Rolls, +5 Damage Reduction, or +1 Speed. Each Surge does not stack with itself. 
+
+
+Panic - Ghost Status - Scene x2 - 1 Target, 10 meters - The target 
+
+
+Reaper - Ghost Physical - Scene x2 - DB5 - AC3 - Melee, 1 Target or Pass - Smite. For each target fainted by Reaper, the user gains a +1d6 bonus to damage rolls on their following turn. 
+
+
+Shadow Bone - EOT - Physical Ghost - AC2 - DB3 - Melee, 1 target - Shadow Bone may be performed as a full action; if it is, it gains +1DB and causes the next damaging attack to hit the target this Scene to deal +10 more damage.
+
+
+Witch's Hymn - Scene x2 - Ghost Special - AC 2 - DB5 - Burst 1, Friendly, Sonic, Smite - You may force all legal targets to Move away from you as if Slowed. 
+________________
+
+
+Grass Moves
+Fairy Rose - Grass Versatile - EOT - DB3 - AC 2 - Range 6, 1 Target
+Effect: Fairy Rose deals Fairy-Type Damage if it would be more effective. On 18+, the target is Confused. On 19+ The target is Poisoned.
+
+
+Giga Drain - Grass Special - Scene x2 - DB4 - AC 2 - Ranged 4, 1 Target - The user regains Hit Points equal to half the damage dealt by Giga Drain.
+
+
+Grass Knot - Grass Special - EOT - DBX - AC2 - Ranged 4, 1 Target - Grass Knot’s DB is equal to the target’s Weight Class.
+
+
+Petal Blizzard - Grass Versatile - EOT - DB4 - AC2 - Close Blast 2 - No additional effect.
+
+
+Power Whip - Grass Physical - Scene x2 - DB6 - AC5 - Range 4, 3 Targets - Smite.
+
+
+Harvest Scythe - Grass Physical - Scene x2 - DB5 - AC3 - Melee, 1 Target or Pass - Smite. For each target fainted by Harvest Scythe, the user gains a +1d6 bonus to damage rolls on their following turn. 
+
+
+Leaf Tornado - Grass Versatile - Scene x2 - DB5 - AC2 - Range 6, Blast 3 - Smite
+Medium-sized or smaller Targets in the central square of the blast are not hit by this attack. Foes hit by Leaf Tornado have a -2 penalty to Accuracy Rolls until the end of their next turn.
+
+
+Twisted Blossom - Grass Physical - EOT - DB4 - AC 2 - Burst 1 - If the user is exposed to sunlight, Twisted Blossom does Grass or Fire Damage, whichever is more effective. If the user is not exposed to sunlight, Twisted Blossom does Grass or Dark Damage, whichever is more effective. 
+
+
+Vital Drain - Grass Special - Scene x1 - DB6 - AC2 - Ranged 4, 1 Target - The user regains Hit Points equal to half the damage dealt by Vital Drain.
+
+
+Worry Seed - Grass Status - EOT - AC2 - Range 6, 1 Target
+Effect: The target gains the Insomnia Ability and become Poisoned. Targets that already have Insomnia are immune to this effect.
+Ground Moves
+Living Sand - Ground Status - Scene x1 - Movement Action
+Effect: The user creates up to four walls made of sand, set within 8 meters. Each wall is 2 meters tall, 1 meter thick, and up to 5 meters long. These walls can’t be destroyed; they reform themselves from damage almost instantly. However if the user is knocked out, recalled, or leaves the field for any other reason, the effect ends. 
+
+
+Desert Wind - Ground Special - Scene x2 - DB6 - AC2 - Cone 2
+Effect: Each target is Blinded for 1 round on 18+.
+Ice Moves
+Icy Claw - AW - Ice Physical - DB 3 - AC 3 - Melee, 1 Target - On 16+, for one full round the target is Slowed and suffers a -5 penalty to Damage Rolls. On 19+ the target is Frozen.
+
+
+Icy Wind - Ice Special - EOT - AC 3 - DB 3 - Cone 2 - Targets have their Speed lowered by 1
+
+
+Ice Hammer - EOT - Ice Physical - DB5 - AC 2 - Melee, 1 Target
+Effect: The user’s Initiative is lowered by 1.
+
+
+Sub-Zero Slammer - Scene x2 - Ice Physical - DB7 - AC 2 - Melee, 1 Target - Smite
+Effect: The user is Paralyzed until the end of their next turn.
+
+
+Winter's Wrath - Ice Physical - Scene x2 - DB 5 - AC 3 - Melee, 3 Targets, Smite - Winter's Wrath reduces the initiative of all targets hit by 1.
+________________
+Normal Moves
+Battle Rally - Normal Status - Scene x2 - Minor Action Burst 3 - Sonic - You and each ally in the Burst gain a +2 bonus to Accuracy and Movement this round.
+
+
+Bide - Normal Status - EOT - Burst 1
+Effect: The user may declare Bide as an Interrupt upon being hit by a Damaging Move. At the end of the round, the user may Shift and then use Bide, causing all Adjacent foes to lose X HP, where X is the amount of Damage taken since declaring use of Bide (Loss of life through effects such as Poison is not ‘Damage’).
+
+
+Carefree Smile - Normal Status - Scene x1 - AC 2 - Range 5, 3 Targets - You do not need an Accuracy Roll to hit Allies targeted by this Move. Allies targeted by this Move gain two ticks of Temporary Hit Points; foes targeted by this Move become Charmed with the user. The user also resists all damage one step further until the end of their next turn.
+
+
+Confide - Normal Status - EOT - Minor Action - AC 3 - 4m, 1 Target, Sonic, Social, Critical Sum - The target suffers a -5 penalty to Special Attack for one full round. Confide may affect a target only once per Scene. 
+
+
+Defense Curl - Normal Status - AW - Move Action - Interrupt - The user gains +5 Defense for one full round. Bonus: As long as the user knows Defense Curl, they deal +5 more damage when using Rollout or Ice Ball.
+
+
+Encourage - Normal Status - Scene x2 - Social, Sonic - Up to three other allies within 5 meters each gain a tick of Temporary Hit Points. 
+
+
+Fake Tears - Scene x2 - Normal Status - Minor Action - AC 2 - 4m, 1 Target, Social
+Effect: The user treats the target as Vulnerable for its next attack. Until the user attacks the target, the target takes a -2 penalty to  Accuracy and -10 penalty to Damage Rolls against the user. 
+
+
+Finisher - Scene x2 - Physical Normal - DB 4 - AC 2 - Melee, 1 Target - Smite
+Finisher gains a +1 DB bonus for each attack that has hit its target this round, up to a maximum of +4 DB. 
+
+
+Flail - EOT - Normal Physical - DB3 - AC 2 - Melee, 1 Target
+Effect: The user may Push 1.  If the user is Shaken, Flail gains a +1 DB Bonus and gains the Smite Keyword. If the user is Exhausted, Flail gains a +1 DB Bonus and hits all adjacent foes.
+
+
+Fluffy Punch - EOT - Normal Physical - DB4 - AC 2 - Melee, 1 Target - If Fluffy Punch misses, the missed target becomes Infatuated with the user.
+
+
+Follow Me - Scene - Normal Status - Minor - Burst 5, Social, Friendly - For one full round, all foes in Follow Me’s area of effect are Provoked by the user.
+
+
+Fury Attack  - EOT - Normal Physical - DB1 - AC 4 - Melee, 3 Targets - If you target only one foe with Fury Attack, it gains a +2 DB bonus. 
+
+
+Glare - Normal Status - Scene x2 - AC 7 - Minor Action - Range 3, 1 Target, Social - The target is Paralyzed
+
+
+Growl - Normal Status - EOT - Minor Action - AC 3 - 4m, 1 Target, Social, Sonic, Critical Sum - The target suffers a -5 penalty to Attack for one full round. Growl may affect a target only once per Scene. 
+
+
+Growth - Scene x1 - Normal Status - The user gains two ticks of Temporary Hit Points and becomes Grown for the rest of the scene or until Fainted.  While Grown, the user gains a +1 DB bonus to all damage rolls. Users that are Medium-sized or smaller become Large and gain +1 reach when they become Grown. 
+
+
+Helping Hand - EOT - Normal Status - 
+
+
+Hyper Beam - Scene - Normal Special - AC 2 - DB 7 - Line 10, Smite, Exhaust 
+Exhaust: For one full round, the user is Vulnerable, Slowed, and takes a -10 penalty to Damage Rolls.
+
+
+Invisible Light  - EOT - Normal Special - DB3 - AC 2 - Range 4, 1 Target - Inexorable
+Effect: Inexorable - Invisible Light cannot miss.
+
+
+Lucky Day - Scene x1 - Normal Status -  Minor - The user gains a +3 bonus to Critical Hit Range. When they land a Critical Hit with a damaging attack, this bonus is removed. 
+
+
+Pay Day- Scene x2 - Normal Physical - AC 2 - DB5 - Cone 2, Smite -  Each target reduces their Speed by 1 for the rest of the scene. 
+
+
+Revelation Dance - EOT - Normal Special - DB2 - AC 2 - Ranged 4, 1 Target
+Effect: Revelation Dance deals damage of the user’s current primary type, and gains a +1 DB bonus per Tier the user has reached. 
+
+
+Rock Climb - EOT - Normal Physical - DB5 - AC 2 - Pass or Melee, 1 Target
+Effect: Rock Climb confuses the target on 18+.
+
+
+Roughhouse - EOT - Normal Physical - DB1 - AC 2 - Melee, 1 Target
+Effect: After you resolve Roughhouse, you may initiate a grapple, push, or trip maneuver for free.
+
+
+Screech - Normal Status - Scene x2 - Minor Action - AC 5 - Burst 2, Friendly, Social, Sonic, Critical Sum - All targets suffer a -5 penalty to Defense for one full round. 
+
+
+Sing - Normal Status - Scene x2 - AC 10 - Burst 2, Friendly, Sonic - All legal Targets fall Asleep. On a miss, Sing
+instead causes targets to become Slowed and suffer a -2 penalty to their Evasion until the end of the user’s next turn.
+
+
+Slash - Normal Physical - EOT - DB4 - AC2 - 1 Target, Melee or Pass; Smite - Crits on 18+
+
+
+Smokescreen - Normal Status - EOT - Range 5, Blast 3 - Smokescreen creates a blast of Smoke that covers the target area; the Smoke persists until the end of the encounter, or until Defog or Whirlwind are used. All targets attacking from or into the Smoke receive a -3 penalty to Accuracy. Once per Scene, Smokescreen may be used as a Move Action.
+
+
+Splash - Normal Status - At-Will - Self-Target
+Effect: Splash may be used as a Move Action. When used, the user Disengages up to 2 meters and gains +2 Evasion until the start of their next turn.
+
+
+Strength - EOT - Normal Physical - AC3 - DB3 - Melee, 1 target - Strength may be performed as a full action; if it is, it gains +2DB and Pushes the target on 16+. 
+
+
+Stomp - EOT - Normal Physical - DB3 - AC 2 - Melee, 1 Target
+Effect: Stomp Flinches the target on 15+. If the target is at least one size category smaller than the user, Stomp deals an additional 5 damage.
+
+
+Supersonic - EOT - Normal Status - AC 6 - Cone 2 or Burst 1; Sonic, Critical Mind - All targets are Confused. On a Miss, instead they are Confused for their next turn only. If a target is already Confused, Supersonic is instead a DB4 Normal Special attack with Smite. 
+
+
+Swords Dance - AW - Normal Status - Target: Self  - Buff
+Effect: The user gains the Swords Dance buff. While under the effects of Swords Dance, the user gains a +5 Bonus to Physical Damage Rolls, and +2 Evasion against ranged attacks. The user may expend Swords Dance when a foe within reach misses them with an attack to immediately make an At-Will physical attack against that foe as a free action.
+
+
+Thrash - Scene x2 - Normal Physical - DB7 - AC 4 - Melee, 3 Targets - Smite 
+Effect: The user becomes Enraged and then uses Thrash.
+
+
+Tongue Whip - Scene x2 - Physical Normal - AC 2 - DB6 - Melee, 1 Target - Smite
+Effect: This move may be performed as if the user had Reach 3. On 18+ or on a miss, the target becomes Paralyzed. 
+
+
+Turnabout - Scene x1 - Normal Status - Trigger 
+Effect: Turnabout may be used as an interrupt when the user is hit by a melee attack. The triggering attack misses the user and instead hits a target adjacent to the user (the foe that made the triggering attack may be chosen).  The foe that made the triggering attack may then be pushed to any empty square adjacent to the user.
+
+
+Uproar - Normal Special - EOT - DB 3 - AC 2 - Burst 1, Spirit Surge, Sonic - All combatants within 10m are cured of Sleep. 
+
+
+Vice Grip - AW - Normal Physical - AC 2 - DB 3 - Melee, 1 Target  - The user may perform a Grapple Maneuver against the target as a Free Action. 
+________________
+
+
+Poison Moves
+Acid - EOT - Special Poison - AC 2 - DB2 - Cone 2 -  On 19+, the targets do not apply their Special Defense to this damage. 
+
+
+Acid Cloud - Scene x2 - Special Poison - AC 2 - DB5 - Ranged 6, Blast 3
+Effect: The area in the blast becomes an Acid Cloud for the rest of the scene. Any non-Poison-typed Pokemon or Trainers that begin their turn in the Acid Cloud lose a Tick of Hit Points.
+
+
+Assassinate - Scene x2 - Physical Poison - AC2 - DB5 - Melee, 1 Target - Smite
+Effect: Assassinate gains +1 DB for each of the following conditions the target has:  Asleep, Flanked, Shaken, Poisoned, or Vulnerable.
+
+
+Chemical Burn - Scene x2 - Special Poison - AC 2 - DB6 - Cone 2, Smite -  This move deals damage as if it was Poison or Fire typed, whichever is most effective against each target. The targets are Burned on 15+. 
+
+
+Clear Smog - Poison Special - Scene x2 - DB 3 - AC 2 - Range 3, 1 Target, Reliable, Accurate - The target’s Stats are set back to their default and all Coats on the target are destroyed
+
+
+Coil - Poison Status - Target: Self - The user may use Coil as a Move Action to become Coiled. The user gains +5 Damage Reduction while Coiled. The next time the user makes an attack, they stop being Coiled, and their attack gains +1 reach, +2 Accuracy, and a +2 DB bonus. The user cannot Shift while Coiled. 
+
+
+Fumigate - Poison Status - Scene x2 - AC 4 - Burst 1 or Close Blast 3, Critical Sum - All targets are Poisoned. If a target is already Poisoned, they lose 3 Ticks of Hit Points instead and become Flinched. Regardless of whether Fumigate hit, all targets suffer a -5 penalty to all Damage Rolls for one full round. 
+
+
+Poison Gas - Poison Status - Scene x2 - AC 4 - Burst 1 or Cone 2, Critical Phys - If the target is not Poisoned, they are Poisoned and Flinched. If the target is already Poisoned, then they become Flinched and are Blinded for one full round. All targets also lose a Tick of Hit Points, whether they were hit or not and whether they were Poisoned or not.
+
+
+Poison Powder - Poison Status - EOT - AC 4 - Line 3, Critical Phys - If the target is not Poisoned, Poison Powder has the following effect: The target is Poisoned. If the target is Poisoned, Poison Powder instead causes them to lose two Ticks of Hit Points.
+
+
+Slime Tackle - EOT - Versatile Poison - AC 2 - DB3 - Melee, 1 Target
+Effect: The target is Slowed for one full round on even rolls, and Poisoned on 17+.
+
+
+Sludge - Poison Versatile - AW - AC 2 - DB 3 - Range 3, 1 Target - Poisons on 15+
+
+
+Tetra Poison - Scene x1 - Poison Status - AC 2 - Melee, 1 Target - Reliable
+Effect: The target becomes Asleep, Confused, Paralyzed, and Poisoned.  Reliable - Tetra Poison’s Frequency is not expended if it misses all targets. 
+
+
+Toxic - Scene x2 - Poison Status - AC 2 - Ranged 4, 1 Target, Critical Phys - Reliable
+Effect: The target becomes Poisoned and Burned. Reliable - Toxic’s Frequency is not expended if it misses all targets. 
+
+
+Toxic Spikes - Poison Status - EOT - Field, Hazard - Set 8 square meters of Toxic Spikes, all 8 meters must be adjacent with at least one other space of Toxic Spikes next to each other. Toxic Spikes cause Terrain to become Slow Terrain, and a grounded foe that runs into the hazard becomes Poisoned, and Slowed until the end of their next turn.
+
+
+Venom Dart - EOT - Poison Status - AC 2 - Ranged 4, 1 Target
+Effect: The target loses a Tick of Hit Points, and takes a -5 penalty to damage rolls for 1 round. On 17+, the target becomes Poisoned. Target’s immune to Poison-Type Damage or the Poison Condition are immune to Venom Dart. 
+
+
+Venoshock - EOT - Poison Special - DB4 - AC2 - Range 5, 1 Target - If the target is Poisoned, Venoshock is DB6.
+________________
+
+
+Psychic Moves
+Agility - Psychic Status - At-Will - Self-Target
+Effect: The user disengages up to 3 meters and gains the Speedy Status. While Speedy, the user gains +2 Speed; the user may expend this Status during their turn to Disengage up to 3 meters and gain +4 Evasion until the beginning of their next turn.
+
+
+Circle of Protection - Psychic Status - Scene - Move Action - Create a Burst 2 around the user. The area becomes Consecrated as long as the user stays inside and is not Fainted. All allies standing in Consecrated squares have +2 Evasion against Status-Class attacks and +5 Damage Reduction.
+
+
+Cosmic Power- Psychic Status - At-Will - Target: Self - Cosmic Power may be used as a Move Action to gain +5 Damage Reduction for 1 turn.
+
+
+Dream Eater - Psychic Special - EOT - DB2 - AC 2 - Melee, 1 Target - If the target is awake, the last Move it used becomes Disabled. Dream Eater may affect a given target in this way only once per Scene. If the target is Asleep, increase its DB by +3 and it gains the Drain Keyword. 
+
+
+Extrasensory - Psychic Special - EOT - DB4 - AC 2 - Range 4, 1 Target - Flinches on 19+
+
+
+Hypnosis - Psychic Status - Scene x2 - AC 6 - Range 3, 1 Target - The target falls Asleep. On a Miss, the target takes a -5 penalty to all Damage Rolls and is Vulnerable for one full round. 
+
+
+Foretell Doom - Psychic Status - Scene x2 - Range 6, 1 Target - On the target's next Accuracy Roll, they roll twice and take the worse result. The next time the target is hit by a damaging attack, that attack automatically Critically Hits. On a 16+, the target is Blinded for one full round. 
+
+
+Future Sight - Psychic Special - Scene x2 - DB6 - AC 2 - Special, 1 Target -  Inexorable - Future Sight does nothing on the turn it is used. At the end of the following round, a target within 15 meters of the location where Future Sight was used is hit by Future Sight. This occurs even if the user is Fainted or no longer on the field. 
+
+
+Light Screen - Psychic Status - Scene - Blessing - The user gains two Light Screen Blessings. While the user has Light Screen Blessings, it has +2 Evasion against ranged and area of effect Special attacks. Whenever the user or an ally within 2 squares is hit by a damaging Special Attack, expend one Light Screen Blessing and the damage is Resisted one step further.
+
+
+Magic Coat - Psychic Status - Scene - Interrupt, Trigger - If the user is about to be hit by a non-damaging attack, they may use Magic Coat as an Interrupt. The Move’s user instead is treated as if they were the target of their own attack, with the user of Magic Coat as the user. Magic Coat uses the same Action type as the Triggering Attack.
+
+
+Miracle Eye - Psychic Status - EOT - Minor Action - Self - For the rest of the user's turn, their Psychic-Type attacks gain the Reliable Keyword, ignore Dark's Immunity to Psychic damage, and cannot be Intercepted.
+
+
+Mirror Coat - Psychic Special - Scene x2 - Reaction, Triggered - Mirror Coat may be used as a Reaction when the user is hit by a damaging Special Attack. Resolve the Triggering Attack, with Mirror Coat’s user resisting the attack one step further. After the attack is resolved, if Mirror Coat’s user was not Fainted, the triggering foe then loses Hit Points equal to the amount of Hit Points lost by the user from the triggering attack. Note that Mirror Coat is Special, and while it cannot miss, it cannot hit targets immune to Psychic-Type Moves.
+
+
+Psybeam - Psychic Special - AW - DB3 - AC 2 - Range 4, 1 Target - Confuses on 19+
+
+
+Psychic  - Psychic Special - Scene x2 - DB4 - AC 3 - Range 6, 1 Target -  Smite - The target is pushed around and then pinned down by telekinetic forces; they’re pushed 3 meters in the direction of the user’s choice and then become Vulnerable and Stuck for 1 full round or until hit by a damaging attack, whichever comes first.
+
+
+Psywave - Psychic Special - EOT - AC 2 - DB3 - Range 4, 1 Target - 17+: Critically Hits
+
+
+Reflect  - Psychic Status - Scene - Blessing - The user gains two Reflect Blessings. While the user has Reflect Blessings, it has +2 Evasion against ranged and area of effect Physical attacks. Whenever the user or an ally within 2 squares is hit by a damaging Physical Attack, expend one Reflect Blessing and the damage is Resisted one step further.
+
+
+Stat Swap - Psychic Status - Scene - Minor Action - 8 sq, 1 Target, Reliable - Stat Swap cannot miss. Choose Power or Guard. If you chose Power, you and your target trade Attack and Special Attack values with each other for one full round. If you chose Guard, you and your target trade Defense and Special Defense values with each other for one full round.
+
+
+________________
+
+
+Rock Moves
+Ancient Power  - Rock Versatile - EOT - DB3 - AC 3 - Line 4  -  On 19+ the user gains a Power Surge of their choice for the remainder of the encounter;+5 to Damage Rolls, +5 Damage Reduction, or +1 Speed. Each Surge does not stack with itself. 
+
+
+Obsidian Razor - Rock Physical - EOT - DB4 - AC 2 - Pass or Melee, 1 Target
+Effect: Obsidian Blade is a Critical Hit on 18+. 
+
+
+Power Gem - Rock Special - AW - DB3 - AC 2 - Range 4, 1 Target
+
+
+Rock Slide - Rock Physical - Scene x2 - DB4 - AC 4 - Range 6, Blast 3, Smite - Flinches on 17+
+
+
+Rock Throw - Rock Physical - AW - DB3 - AC 4 - Range 5, 1 Target - If Rock Throw hits a target floating in the air, it is immediately grounded for one full round. During this time, it loses any immunity to Ground-Type Moves.
+
+
+Rollout - Rock Physical - At-Will - DB2 - AC 3 - Pass or Melee, 1 Target
+Effect: When rollout is used and it hits at least 1 target, the user gains a Rollout counter after the move is resolved; but if Rollout hits no targets, the user loses all Rollout counters. Each Rollout counter the user has raises this Move’s DB by +1 but also imposes a -1 penalty to AC when using Rollout. 
+
+
+Splintered Stormshards - Rock Physical - Scene x1 - DB7 - AC 2 - Ranged 6, Blast 3 - Smite
+Effect: Until the end of their next turn, the user is Vulnerable, Slowed, and takes a -10 penalty to Damage Rolls.
+
+
+Stealth Rock - Rock Status - Scene - Field, Hazard - Set 4 square meters of Stealth Rock hazards within 6 meters. If a foe moves within 2 meters of a space occupied by Rocks, move at most one Rock to the offender, then destroy the Rock. When that happens, the Stealth Rock causes a foe to lose a Tick of Hit Points. Stealth Rock is considered to be dealing damage; Apply Weakness and Resistance. Do not apply stats
+
+
+________________
+Steel Moves
+Hammerfall - EOT - Physical Steel - AC2 - DB3 - Melee, 1 target - Hammerfall may be performed as a full action; if it is, it gains +2DB and Trips the target on 16+. 
+
+
+Iron Defense - EOT - Steel Status - Self - The user gains the Reinforced Condition. While Reinforced, the user gains 10 Defense. When the user is hit by a Physical Attack while Reinforced, they may choose to resist it one step further. If they do, remove the Reinforced Condition after the attack is resolved. 
+
+
+Iron Head - Steel Physical - EOT - DB4 - AC 2 - Melee, 1 Target, Smite - Flinches on 15+
+
+
+Infinity Slice - Scene x2 - Physical Steel - AC4 - DBX - Melee, 1 target
+Effect: Make four attack rolls against the target. For each attack that hits, Infinity Slice’s Damage Base is increased by +2. If at least one attack hits this attack gains smite; if no attacks hit, the move fails.
+
+
+Metal Sound - Steel Status - Scene x2 - Minor Action - AC 5 - Burst 2, Friendly, Social, Sonic, Critical Sum - All targets suffer a -5 penalty to Special Defense for one full round. 
+
+
+Steel Clamp - Scene x2 - Physical Steel - DB6 - Melee, 1 target, Smite
+Effect: The user may perform a Grapple Maneuver against the target as a Free Action.
+
+
+
+
+Water Moves
+Aqua Ring - Water Status - Scene - Self - Aqua Ring covers the user in a Coat that grants the user a Tick of Temporary Hit Points at the beginning of their turn. The user may expend this Coat as a Free Action when using a Water-Typed Move that targets foes to change its range to Burst 1. 
+
+
+Aqua Tail - Water Physical - EOT - DB4 - AC 2 - Pass or Melee, 1 Target
+Effect: Aqua Tail is a Critical Hit on 18+. 
+
+
+Bonds of the Sea - Scene - Water Status - Up to 3 Allies within 5m - Each affected ally gains a Gift of the Sea. Gifts of the Sea may be spent by allies as a Free Action at any time, including immediately when Bonds of the Sea is used, to gain Two Ticks of Temporary Hit Points, cure themselves of all Mental Status Afflictions, or to regain a use of a Scene Frequency Status Move. When a Gift of the Sea is spent, the user of Bonds of the Sea gains +5 Damage Reduction for one full round, up to once a round. 
+
+
+Bubble Beam - EOT - Water Special - DB 4 - AC 2 - Range 4, 1 Target - On 16+, the target acts at Initiative 0 on their next turn.
+
+
+Bubble Slide - At-Will - Physical Water  - AC 2 - DB2 - Melee, 1 Target 
+Effect: The user may Disengage 2 either before or after using Bubble Slide.
+
+
+Dive  - EOT - Physical Water  - AC2 - DB 4 - Melee, 1 Target 
+Effect: If in the water, Dive causes the target to Flinch. 
+
+
+Drown - Scene x2 - Physical Water  - AC2 - DB5 - Melee, 1 Target 
+Effect: Drown gains +1 DB for each of the following conditions the target has:  Asleep, Shaken, Paralyzed, Tripped, or Vulnerable.
+
+
+Innards Out  - Scene x2 - Status Water - Trigger, Free Action, Reaction
+Effect: Innards Out may be used when the user is hit by a damaging attack. The user resists the triggering attack one step further. After the attack is resolved, the user may cause a foe within 2 meters loses Hit Points equal to twice the amount of Hit Points lost by the user from the triggering attack, even if the triggering attack caused the user to Faint.
+
+
+Liquidation - Water Physical - EOT - DB4 - AC 2 - Melee, 1 Target
+Effect: The target takes +8 damage from the next attack to hit it this round. 
+
+
+Muddy Water - Water Versatile - Scene x2 - DB5 - AC2 -  Close Blast 2
+Effect: As a Movement Action, the user may move to any open square in Muddy Water’s area of effect without provoking a punish attack. On 16+, the targets are Blinded for 1 turn.
+
+
+Oceanic Operetta - Water Special - Scene x1 - DB7 - AC2 - Ranged 8, Blast 3 - Set-Up, Smite 
+Set-Up Effect: The user gains five ticks of Temporary Hit Points.
+Resolution Effect: The user attacks with Oceanic Operetta, loses any Temporary Hit Points, and becomes Vulnerable for 1 round. 
+
+
+Shoal Up - Daily x2 - Water Status  - Self-Target 
+Effect: The user regains HP equal to half their maximum HP value. If the user is a Wishiwashi, they remove the Shaken condition and change into Schooling Form.
+
+
+Surf - Water Special - EOT - DB4 - AC2 - Line 6
+Effect: As a Movement Action, the user may move to any open square in Surf’s area of effect without provoking a punish attack. 
+
+
+Waterfall - Water Physical - Scene x2 - DB6 - AC 2 - Pass or Melee, 1 Target
+Effect: The target are Flinched on 14+, and Tripped on 16+.
+
+
+Water Pulse - Water Special - AW - DB3 - AC 2 - Range 4, 1 Target - Confuses on 17+
+
+
+Whirlpool - Water Special - Scene x2 - DB2 - AC 4 - Range 3, 1 Target - Vortex
+
+
+
+
+
+
+________________
+Moves Doxy wants DEAD
+Natural Gift
+Echoed Voice
+Pluck
+Odor Sleuth
+Rototiller
+Mega Drain (GOD! It’s just such useless filler! Because anything that gets it also gets absorb and giga drain!)
+Stored Power (FU!)
+Gastro Acid

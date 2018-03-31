@@ -62,7 +62,16 @@ myself['statistics'] = statistics
 
 with open('bookdata.json') as data_file:    
     bookdata = json.load(data_file)
-myself['bookdata'] = bookdata
+myself['bookdata']={}
+def merge_two_dicts(x, y):
+    """Given two dicts, merge them into a new dict as a shallow copy."""
+    z = x.copy()
+    z.update(y)
+    return z
+for i in bookdata:
+    myself['bookdata']=merge_two_dicts(myself['bookdata'], bookdata[i])
+myself['bookdata'] = {"all":myself['bookdata']}
+myself['bookdata'] = merge_two_dicts(myself['bookdata'],bookdata)
 
 
 plt.bar([1],[1])
@@ -156,6 +165,8 @@ async def on_ready():
 @client.event
 async def on_message(message):
     global myself
+    dicereg = r"((\d+#)?\d*d\d+((\+|-)(\d*d|)\d+)*|"+myself['recharsign']+r"(.*):(.*)"+myself['recharsign']+")"
+    test = re.search(dicereg,message.content)
     if message.content.startswith(myself['prefix']):
         print(message.content)
         if message.author.id in myself['waiting']:
@@ -437,14 +448,13 @@ async def on_message(message):
                         await client.send_message(message.channel, char+' belongs to <@'+myself['characters'][char]['__creator__']+'>. Only the creator or an administrator can edit them.')
                 else:
                     await client.send_message(message.channel, "That character does not exist; use newchar to create them.") 
-    dicereg = r"((\d+#)?\d*d\d+((\+|-)(\d*d|)\d+)*|"+myself['recharsign']+r"(.*):(.*)"+myself['recharsign']+")"
-    test = re.search(dicereg,message.content)
-    if test != None:
+    elif test != None and not(message.author.bot):
         work = message.content[test.end():]
         roll = message.content[test.start():test.end()]
         output = '<@'+message.author.id+">:\n" + roll + ':'
         while roll != None:
-            if roll.find(myself['charsign'])
+            if roll.find(myself['charsign'])>-1:
+                print('charsign')
                 try:
                     character = roll[1:-1]
                     character, attribute= character.split(':')
@@ -452,23 +462,29 @@ async def on_message(message):
                     roll = attribute
                 except:
                     roll = ''
-            if roll.find('#'):
+            if roll.find('#')>-1:
                 number, individual = roll.split('#')
-                roll = [number,individual]
+                roll = [int(number),individual]
             else:
                 roll = [1,roll]
             roll.append([])
             rollparse = roll[1]
             if rollparse[0] == "-":
                 sign = -1
-                rollparse = [1:]
+                rollparse=rollparse[1:]
             else:
                 sign = 1
             while len(rollparse) > 0:
-                if rollparse[1].find('+') or rollparse[1].find('-'):
-                    oneRoll = rollparse[:min(rollparse[1].find('+'),rollparse[1].find('-'))]
+                if rollparse.find('+')>-1 or rollparse.find('-')>-1:
+                    if rollparse.find('+')>-1 and rollparse.find('-')>-1:
+                        ind = min(rollparse.find('+'),rollparse.find('-'))
+                    elif rollparse.find('+')>-1:
+                        ind = rollparse.find('+')
+                    else:
+                        ind = rollparse.find('-')
+                    oneRoll = rollparse[:ind]
                     roll[2].append((sign,oneRoll))
-                    rollparse = rollparse[min(rollparse[1].find('+'),rollparse[1].find('-')):]
+                    rollparse = rollparse[ind:]
                     if rollparse[0] == '-':
                         sign = -1
                     else:
@@ -477,25 +493,33 @@ async def on_message(message):
                 else:
                     roll[2].append((sign,rollparse))
                     rollparse = ''
+            print(roll)
             result = []
             for i in range(roll[0]):
+                strResult = ''
                 oneResult = 0
                 for j in roll[2]:
-                    if j[1].find('d'):
-                        oneResult += j[0]*singleRoll(j[1])
+                    if j[1].find('d')>-1:
+                        rollout = singleRoll(j[1])
+                        strResult += ('-' if j[0]<0 else '+')+'('+'+'.join([str(k) for k in rollout])+')'
+                        oneResult += j[0]*sum(rollout)
                     else:
                         try:
+                            strResult += ('-' if j[0]<0 else '+')+j[1] 
                             oneResult += j[0]*int(j[1])
                         except:
                             pass
-                result.append(str(oneResult))
+                if strResult[0]=='+':
+                    strResult=strResult[1:]
+                result.append(strResult+"="+str(oneResult))
+
             output += '`'+','.join(result)+'`'
             test = re.search(dicereg,work)
             if test == None:
                 roll = None
             else:
                 roll = work[test.start():test.end()]
-                work = work[test.start():test.end()]
+                work = work[test.end():]
                 output += '\n' + roll + ':'
         await client.send_message(message.channel, output)
 sleeptime=0
