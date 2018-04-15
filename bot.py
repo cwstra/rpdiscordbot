@@ -41,7 +41,7 @@ random.seed(os.urandom(64))
 #Building myself
 myself = {}
 
-with open('settings.json') as data_file:    
+with open('settings.json', encoding='utf-8-sig') as data_file:    
     settings = json.load(data_file)
 myself['git'] = settings['git_link']
 myself['prefix'] = settings['prefix']
@@ -50,19 +50,19 @@ myself['help'] = settings['help']
 myself['top_amount'] = settings['top_amount']
 myself['dexhelp'] = settings['dexhelp']
 
-with open('characters.json') as data_file:    
+with open('characters.json', encoding='utf-8-sig') as data_file:    
     characters = json.load(data_file)
 myself['characters'] = characters
 
-with open('dexdata.json') as data_file:    
+with open('dexdata.json', encoding='utf-8-sig') as data_file:    
     dex = json.load(data_file, object_pairs_hook=OrderedDict)
 myself['pokedex'] = dex
 
-with open('statistics.json') as data_file:    
+with open('statistics.json', encoding='utf-8-sig') as data_file:    
     statistics = json.load(data_file, object_pairs_hook=OrderedDict)
 myself['statistics'] = statistics
 
-with open('bookdata.json') as data_file:    
+with open('bookdata.json', encoding='utf-8-sig') as data_file:    
     bookdata = json.load(data_file)
 myself['bookdata']={}
 def merge_two_dicts(x, y):
@@ -249,10 +249,10 @@ async def on_message(message):
             if myself['waiting'][message.author.id][0]=='prefix' or myself['waiting'][message.author.id][0]=='charsign' or myself['waiting'][message.author.id][0]=='top_amount':
                 thing = myself['waiting'][message.author.id][0]
                 if message.content.strip() == myself['prefix']+'Yes':
-                    with open('settings.json') as data_file:
+                    with open('settings.json', encoding='utf-8-sig') as data_file:
                         settings = json.load(data_file)
                     settings[thing] = myself['waiting'][message.author.id][1] 
-                    with open('settings.json','w') as data_file:
+                    with open('settings.json','w', encoding='utf-8-sig') as data_file:
                         json.dump(settings,data_file,indent=4)
                     myself[thing] = settings[thing]
                     if type(myself[thing]) is str:
@@ -268,7 +268,7 @@ async def on_message(message):
             elif myself['waiting'][message.author.id][0]=='delete':
                 if message.content.strip() == myself['prefix']+'Yes':
                     del myself['characters'][myself['waiting'][message.author.id][1]]
-                    with open('characters.json','w') as data_file:
+                    with open('characters.json','w', encoding='utf-8-sig') as data_file:
                         json.dump(myself['characters'],data_file,indent=4)
                     await client.send_message(message.channel, 'Character '+myself['waiting'][message.author.id][1]+' deleted. Goodbye, old friend! :cry:')
                 elif message.content.strip() == myself['prefix']+'No':
@@ -441,7 +441,7 @@ async def on_message(message):
                             for j in myself['statistics']['probability'][i[0]].keys():
                                 myself['statistics']['@'+message.author.id][i[0]][j]=0
                             myself['statistics']['@'+message.author.id][i[0]][str(sum(i[1]))] += 1
-                    with open('statistics.json','w') as data_file:    
+                    with open('statistics.json','w', encoding='utf-8-sig') as data_file:    
                         json.dump(myself['statistics'],data_file,indent=4)
         elif message.content.startswith(myself['prefix']+'poke'):
             await client.send_message(message.channel, myself['navi'].state())
@@ -513,7 +513,7 @@ async def on_message(message):
                                     plt.clf()
                                     await client.send_file(message.channel,'Probabilities/'+i+'.png',content="Expected "+i)
                                     probs[i]['image']='Probabilities/'+i+'.png'
-                                    with open('statistics.json','w') as data_file:    
+                                    with open('statistics.json','w', encoding='utf-8-sig') as data_file:    
                                         json.dump(myself['statistics'],data_file,indent=4)
                         else:
                             await client.send_message(message.channel, '<@'+message.author.id+'>: Results for '+mentioned+"'s rolls of "+work[2]+".\n")
@@ -541,7 +541,7 @@ async def on_message(message):
                                     plt.clf()
                                     await client.send_file(message.channel,'Probabilities/'+i+'.png',content="Expected "+work[2])
                                     probs[work[2]]['image']='Probabilities/'+work[2]+'.png'
-                                    with open('statistics.json','w') as data_file:    
+                                    with open('statistics.json','w', encoding='utf-8-sig') as data_file:    
                                         json.dump(myself['statistics'],data_file,indent=4)
                             else:
                                 await client.send_message(message.channel, '<@'+message.author.id+'>: '+mentioned+" doesn't seem to have ever rolled "+work[2]+".")
@@ -738,7 +738,7 @@ async def on_message(message):
                             if not(w[0] in ['__creator__']) and w[0].find('!')!=0:
                                 myself['characters'][char][w[0]]=w[1]
                         work = work[1:]
-                    with open('characters.json','w') as data_file:
+                    with open('characters.json','w', encoding='utf-8-sig') as data_file:
                         json.dump(myself['characters'],data_file,indent=4)
                     await client.send_message(message.channel, char + " created! Use "+myself['prefix']+"editattr to change attributes, or "+myself['prefix']+"viewchar to view.")
         elif message.content.startswith(myself['prefix']+'viewchar'):
@@ -826,7 +826,7 @@ async def on_message(message):
                                     print(w)
                                     myself['characters'][char][w[0]]=w[1]
                             work = work[1:]
-                        with open('characters.json','w') as data_file:
+                        with open('characters.json','w', encoding='utf-8-sig') as data_file:
                             json.dump(myself['characters'],data_file,indent=4)
                         await client.send_message(message.channel, char + " edited!")
                     else:
